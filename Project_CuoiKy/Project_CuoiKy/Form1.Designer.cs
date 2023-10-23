@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.rjButton4 = new CustomControls.RJControls.RJButton();
-            this.rjButton3 = new CustomControls.RJControls.RJButton();
+            this.btnTaiKhoan = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.btnHome = new CustomControls.RJControls.RJButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLogout = new CustomControls.RJControls.RJButton();
             this.rjButton5 = new CustomControls.RJControls.RJButton();
-            this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
+            this.pnlChildForm = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
@@ -51,9 +51,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.panel1.Controls.Add(this.rjButton4);
-            this.panel1.Controls.Add(this.rjButton3);
+            this.panel1.Controls.Add(this.btnTaiKhoan);
             this.panel1.Controls.Add(this.rjButton2);
-            this.panel1.Controls.Add(this.rjButton1);
+            this.panel1.Controls.Add(this.btnHome);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -83,27 +83,28 @@
             this.rjButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.rjButton4.UseVisualStyleBackColor = false;
             // 
-            // rjButton3
+            // btnTaiKhoan
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton3.BorderRadius = 0;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton3.Image = global::Project_CuoiKy.Properties.Resources.icons8_user_account_45;
-            this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(0, 263);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(220, 80);
-            this.rjButton3.TabIndex = 3;
-            this.rjButton3.Text = "Tài khoản";
-            this.rjButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton3.UseVisualStyleBackColor = false;
+            this.btnTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.btnTaiKhoan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.btnTaiKhoan.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnTaiKhoan.BorderRadius = 0;
+            this.btnTaiKhoan.BorderSize = 0;
+            this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTaiKhoan.FlatAppearance.BorderSize = 0;
+            this.btnTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnTaiKhoan.Image = global::Project_CuoiKy.Properties.Resources.icons8_user_account_45;
+            this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 263);
+            this.btnTaiKhoan.Name = "btnTaiKhoan";
+            this.btnTaiKhoan.Size = new System.Drawing.Size(220, 80);
+            this.btnTaiKhoan.TabIndex = 3;
+            this.btnTaiKhoan.Text = "Khách hàng";
+            this.btnTaiKhoan.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
             // rjButton2
             // 
@@ -127,27 +128,27 @@
             this.rjButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.rjButton2.UseVisualStyleBackColor = false;
             // 
-            // rjButton1
+            // btnHome
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
-            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton1.Location = new System.Drawing.Point(0, 103);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(220, 80);
-            this.rjButton1.TabIndex = 1;
-            this.rjButton1.Text = "Home";
-            this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.btnHome.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.btnHome.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnHome.BorderRadius = 0;
+            this.btnHome.BorderSize = 0;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 103);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(220, 80);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -243,35 +244,20 @@
             this.rjButton5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.rjButton5.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox1
+            // pnlChildForm
             // 
-            this.rjTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(150)))), ((int)(((byte)(218)))));
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(168)))), ((int)(((byte)(233)))));
-            this.rjTextBox1.BorderRadius = 15;
-            this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(781, 110);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.LightGray;
-            this.rjTextBox1.PlaceholderText = "Tìm kiếm";
-            this.rjTextBox1.Size = new System.Drawing.Size(239, 35);
-            this.rjTextBox1.TabIndex = 2;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
+            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildForm.Location = new System.Drawing.Point(220, 103);
+            this.pnlChildForm.Name = "pnlChildForm";
+            this.pnlChildForm.Size = new System.Drawing.Size(827, 461);
+            this.pnlChildForm.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 564);
-            this.Controls.Add(this.rjTextBox1);
+            this.Controls.Add(this.pnlChildForm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -288,17 +274,17 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private CustomControls.RJControls.RJButton rjButton1;
+        private CustomControls.RJControls.RJButton btnHome;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private CustomControls.RJControls.RJButton rjButton4;
-        private CustomControls.RJControls.RJButton rjButton3;
+        private CustomControls.RJControls.RJButton btnTaiKhoan;
         private CustomControls.RJControls.RJButton rjButton2;
         private System.Windows.Forms.Label label1;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
         private CustomControls.RJControls.RJButton btnLogout;
         private CustomControls.RJControls.RJButton rjButton5;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
+        private System.Windows.Forms.Panel pnlChildForm;
     }
 }
 

@@ -117,37 +117,57 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="MaKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TenKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TongTienNap.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="MatKhau.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dgvSuaThongTin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="dataGridViewCellStyle3.NullValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABfhJREFUaEPtVwlQlVUYfZVZmbm06DgOloiYj0X2LeEli+yCIoKsv4IEuGIzaqlD
-        k9K4jCFhWiE64tQkpU8lpBJwEicdl2zR0mZMMmwyw6URddTe6dyf62N5LO/NkFnzzsyZe+853/fdM4/L
-        prHCCiussOL/CW0+eg+ZjeQhszDDNgv9pXz/YtgsBNvMxKlhM2Eg79jk4rdhuUjVaPCALLl/MPIlDLXL
-        xocjswGuB+xz4DwiBzbUP5baF7bZcJTl/y50+ejlMANzyasOWWgUe00+HpS2Cm0mArVZ+F47A7e5FtnN
-        Rj9p3Xu4ZcLfJQPfuk7HX1zL3LPwtLRMQO9hl+mY65qBa1x/dZmGNGndG3hnYLC3gi0+Cgze6TjsOR0e
-        0lLhocDGJx1rWLOBNU5SVuExDbbsqaAO1nzumQp7af0ziI/HQ/4pmEVeDkhBo38qsls/BfFpUl9A/Rp5
-        kawnb1Mr9Epu+ySox3DOWfIm9wXs7SOtnkNICgYFJeFIcDIMXDeFxeMZaakITMK44CScDErGHfrFunQM
-        CAvDI6xfzHMT9fPcT5XlKqIYlF4BvZvkWd7hLa2eQUQi8sjrEQnwk5KK0GQMiUzE+6SBPBiWCFdpGRGa
-        gOfo7SQRmYAazhgtLRXhCbCnfpx6nZR6BrGTsWTiZFyUR00+n0VsPLLIK9QvcZ0rno/wdDr0io1DOLWp
-        0YkYrDYQMXEImhiPU5x1iyyaMAFPSEtDvZjad/LYM5gyCUtINXRiHDwS4nCYNEyJQxnDGp9KVBT6sO4Q
-        PUhepu8rbfF98Ri111hzI2ESGqZMbv4pwjnF1Hs2dFosXiGvpsWglKuB67H0ifCRthFpE5BH73pqLHzJ
-        p7j/MjUGB6VtREo07KhXcRa47uG6m7U9GzozEu4Z0WjKjIaBRBY/UWm1QWYU1pPfyKOGta+SjfJoAnqf
-        iXkqo3CefNeE0Sgih8sWy/ByCB7PiURWbgSQrsOjUm6D7HAk0TfkhGN+TgQiudaTO6VtAtbqWXc1NxxH
-        O2UELogaMkW2WYb5oVDywoD8TkKLP4zmhaGYNQZRx/3R+eNhI00T5IVCz5oqeewQs8PQb14otop5rP8o
-        bzyelJZ5WBgChewidDMWRWLgoiDYymOnWBgMPedVq/XdcEEI5pA3WF/Pr7r5z2VJIJSlgd2HNhdLx0Ev
-        5llK5jD/qSzXQSE7DL0iGP2XB2AZ/fLWXBaAktcDTH/pCLBeT/846+LNYUEAkriiQGdB6FX+UMgOQ6/0
-        R9XKsbhG1nC/9y5XjcVZ9vy5xgdDZakR1PWsP8ya4O5Y5IV+4l5xP3v4j4WZKPSDstYP2NwudL4WvQt9
-        cYecIyUjVvtikOh50w/JUjKCul54ZtEXb4h7xb7I14LQG7yhkCah1+nQV+hve5t+2fjp9BLeeh9kSskI
-        6vp3dPh603to6Irs/Zm1heJeMWuDlwV/j2/0hFLqCZCLuV+4fiwGCn2dFn1V3aMldKkXMkrcESJCC2+T
-        Z0voEk+ki/6NHji5xRf7G97Ciq7IWT+yXg2t3mNJ6DI3KFvdAPIy95fKnJt/9JQztKq7toTm+QTP6/Yx
-        tOq5t4Quc0Wt6Kd/i/qnhXoM6Iqs/4FUQ4tZZS4WhC4fA4XE5mfbPg8RWujbxrSE3uaME+XOzaGFV+5k
-        +jzo68tfwBH9B0BX3OaGM5xXKO5VZzlbEFrvBGWnIwc5YrveAeWtuEPoOxxbQu/SImy3E9xEaLXHgeHa
-        9gg27HJBbcNaJHZF9p8mC/cxtJjF2enymu5RpYWyRwtUeODYLk8cvcsKd3wl9D2jTb8RRWjhVY5Bfese
-        wUoH/FHpjOrVFXixK36ixelKbXNo9R5LQlePglIzCqgtxc3aLVzvsgQQerV9x6GFV5PXql6yxguHatxx
-        pL3enjVanOEMNbSYtfd5M0PvH4HtdSPwe50dUGePXw7Y41wrNgh9vx0usOZMO/6k9oxEY7uec5zZxJ6m
-        9np7su4WZ1wxzmIOkUdG6xwHhyP30HCsuF8o8shoVlhhhRVW/Ceg0fwN1uLSaTAxJ2UAAAAASUVORK5C
-        YII=
+        Qk32AgAAAAAAADYAAAAoAAAADgAAABAAAAABABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEgoTGw8bGw8bGw8bGw8bGw8bGw8bG
+        w8bGw8bGw8bGw8bGw8bGw8YAAAAAAISChP///////////////////////////////////////////8bD
+        xgAAAAAAhIKE////////////////////////////////////////////xsPGAAAAAACEgoT/////////
+        ///////////////////////////////////Gw8YAAAAAAISChP//////////////////////////////
+        /////////////8bDxgAAAAAAhIKE////////////AAD/AAD/////////AAD/AAD/////////xsPGAAAA
+        AACEgoT///////////////8AAP8AAP8AAP8AAP/////////////Gw8YAAAAAAISChP//////////////
+        /////wAA/wAA/////////////////8bDxgAAAAAAhIKE////////////////AAD/AAD/AAD/AAD/////
+        ////////xsPGAAAAAACEgoT///////////8AAP8AAP////////8AAP8AAP/////////Gw8YAAAAAAISC
+        hP///////////////////////////////////////////8bDxgAAAAAAhIKE////////////////////
+        ////////////////////////xsPGAAAAAACEgoT/////////////////////////////////////////
+        ///Gw8YAAAAAAISChP///////////////////////////////////////////8bDxgAAAAAAhIKEhIKE
+        hIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEAAA=
+</value>
+  </data>
+  <metadata name="dgvXoaKhachHang.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridViewCellStyle4.NullValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AgAAAAAAADYAAAAoAAAADgAAABAAAAABABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEgoTGw8bGw8bGw8bGw8bGw8bGw8bG
+        w8bGw8bGw8bGw8bGw8bGw8YAAAAAAISChP///////////////////////////////////////////8bD
+        xgAAAAAAhIKE////////////////////////////////////////////xsPGAAAAAACEgoT/////////
+        ///////////////////////////////////Gw8YAAAAAAISChP//////////////////////////////
+        /////////////8bDxgAAAAAAhIKE////////////AAD/AAD/////////AAD/AAD/////////xsPGAAAA
+        AACEgoT///////////////8AAP8AAP8AAP8AAP/////////////Gw8YAAAAAAISChP//////////////
+        /////wAA/wAA/////////////////8bDxgAAAAAAhIKE////////////////AAD/AAD/AAD/AAD/////
+        ////////xsPGAAAAAACEgoT///////////8AAP8AAP////////8AAP8AAP/////////Gw8YAAAAAAISC
+        hP///////////////////////////////////////////8bDxgAAAAAAhIKE////////////////////
+        ////////////////////////xsPGAAAAAACEgoT/////////////////////////////////////////
+        ///Gw8YAAAAAAISChP///////////////////////////////////////////8bDxgAAAAAAhIKEhIKE
+        hIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEAAA=
 </value>
   </data>
 </root>

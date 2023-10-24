@@ -93,9 +93,29 @@ namespace Project_CuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icons8_arrow_35 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-arrow-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_delete_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-delete-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_detail_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-detail-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

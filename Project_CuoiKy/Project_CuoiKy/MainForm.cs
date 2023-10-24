@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Project_CuoiKy
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private Form currentChildForm;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -34,7 +34,17 @@ namespace Project_CuoiKy
             childForm.Show();
         }
 
+        private void ToggleSubmenu(Panel submenu)
+        {
+            submenu.Visible = !submenu.Visible;
+        }
+
         private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            ToggleSubmenu(pnlSubmenuKhachHang);
+        }
+
+        private void btnXemChiTietKH_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.frmKhachHang());
         }

@@ -53,7 +53,8 @@
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.pnlHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlHeader.Controls.Add(this.txtTimKiem);
             this.pnlHeader.Controls.Add(this.btnThemKhachHang);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,7 +73,7 @@
             this.txtTimKiem.BorderSize = 2;
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(537, 13);
+            this.txtTimKiem.Location = new System.Drawing.Point(535, 13);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Multiline = false;
             this.txtTimKiem.Name = "txtTimKiem";
@@ -80,7 +81,7 @@
             this.txtTimKiem.PasswordChar = false;
             this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTimKiem.PlaceholderText = "Tìm kiếm khách hàng";
-            this.txtTimKiem.Size = new System.Drawing.Size(250, 35);
+            this.txtTimKiem.Size = new System.Drawing.Size(250, 37);
             this.txtTimKiem.TabIndex = 1;
             this.txtTimKiem.Texts = "";
             this.txtTimKiem.UnderlinedStyle = false;
@@ -99,7 +100,7 @@
             this.btnThemKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemKhachHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThemKhachHang.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_user_male_30;
-            this.btnThemKhachHang.Location = new System.Drawing.Point(488, 11);
+            this.btnThemKhachHang.Location = new System.Drawing.Point(486, 11);
             this.btnThemKhachHang.Name = "btnThemKhachHang";
             this.btnThemKhachHang.Padding = new System.Windows.Forms.Padding(5);
             this.btnThemKhachHang.Size = new System.Drawing.Size(42, 37);
@@ -122,13 +123,13 @@
             // 
             this.dgvKhachHang.AllowUserToAddRows = false;
             this.dgvKhachHang.AllowUserToDeleteRows = false;
-            this.dgvKhachHang.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvKhachHang.ColumnHeadersHeight = 40;
@@ -144,8 +145,8 @@
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvKhachHang.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -155,8 +156,8 @@
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.ReadOnly = true;
             this.dgvKhachHang.RowHeadersVisible = false;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             this.dgvKhachHang.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvKhachHang.RowTemplate.DividerHeight = 1;
             this.dgvKhachHang.RowTemplate.Height = 35;

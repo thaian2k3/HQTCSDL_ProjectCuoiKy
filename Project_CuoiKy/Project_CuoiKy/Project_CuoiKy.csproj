@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\ApiQLKH.cs" />
+    <Compile Include="Api\Api.cs" />
     <Compile Include="ConnectDatabase.cs" />
     <Compile Include="CustomControls\MenuColorTable.cs" />
     <Compile Include="CustomControls\MenuRenderer.cs" />

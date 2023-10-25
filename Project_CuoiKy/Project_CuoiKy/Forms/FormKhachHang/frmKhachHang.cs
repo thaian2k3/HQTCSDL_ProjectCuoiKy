@@ -12,7 +12,7 @@ namespace Project_CuoiKy.Forms
 {
     public partial class frmKhachHang : Form
     {
-        Api.ApiQLKH api = new Api.ApiQLKH();
+        Api.Api api = new Api.Api();
         public frmKhachHang()
         {
             InitializeComponent();
@@ -71,7 +71,9 @@ namespace Project_CuoiKy.Forms
                 if (result == DialogResult.Yes)
                 {
                     string maKH = dgvKhachHang.CurrentRow.Cells["MaKH"].Value.ToString();
-                    api.XoaKhachHang(maKH);
+                    string query = $"DELETE from KhachHang WHERE MaKH = '{maKH}'";
+                    //api.XoaKhachHang(maKH);
+                    api.ExecQuery(query, "Xóa khách hàng thành công");
                     LoadData();
                 }
             }
@@ -79,7 +81,8 @@ namespace Project_CuoiKy.Forms
 
         private void txtTimKiem__TextChanged(object sender, EventArgs e)
         {
-            dgvKhachHang.DataSource = api.TimKiemKhachHang(txtTimKiem.Texts);
+            string query = $"SELECT * FROM dbo.func_TimKhachHang('{txtTimKiem.Texts}')";
+            dgvKhachHang.DataSource = api.TimKiemKhachHang(query);
         }
     }
 }

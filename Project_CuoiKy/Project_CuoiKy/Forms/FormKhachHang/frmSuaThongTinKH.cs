@@ -12,7 +12,7 @@ namespace Project_CuoiKy.Forms.FormKhachHang
 {
     public partial class frmSuaThongTinKH : Form
     {
-        private Api.ApiQLKH api = new Api.ApiQLKH();
+        private Api.Api api = new Api.Api();
         private string maKH;
         private string tenKH;
         private string matKhau;
@@ -32,7 +32,9 @@ namespace Project_CuoiKy.Forms.FormKhachHang
 
         private void btnLuuThongTin_Click(object sender, EventArgs e)
         {
-            bool result = api.SuaThongTin(txtMaKH.Texts, txtTenKH.Texts, txtMatKhau.Texts);
+            string query = $"EXEC dbo.SuaThongTinKhachHang '{txtMaKH.Texts}', '{txtTenKH.Texts}', '{txtMatKhau.Texts}'";
+            //bool result = api.SuaThongTin(txtMaKH.Texts, txtTenKH.Texts, txtMatKhau.Texts);
+            bool result = api.ExecQuery(query, "Lưu thông tin thành công !");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
         }
     }

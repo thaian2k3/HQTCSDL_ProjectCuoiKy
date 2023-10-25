@@ -60,7 +60,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(800, 60);
+            this.pnlHeader.Size = new System.Drawing.Size(874, 63);
             this.pnlHeader.TabIndex = 0;
             // 
             // txtTimKiem
@@ -73,7 +73,7 @@
             this.txtTimKiem.BorderSize = 2;
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(535, 13);
+            this.txtTimKiem.Location = new System.Drawing.Point(609, 13);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Multiline = false;
             this.txtTimKiem.Name = "txtTimKiem";
@@ -100,7 +100,7 @@
             this.btnThemKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemKhachHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThemKhachHang.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_user_male_30;
-            this.btnThemKhachHang.Location = new System.Drawing.Point(486, 11);
+            this.btnThemKhachHang.Location = new System.Drawing.Point(560, 13);
             this.btnThemKhachHang.Name = "btnThemKhachHang";
             this.btnThemKhachHang.Padding = new System.Windows.Forms.Padding(5);
             this.btnThemKhachHang.Size = new System.Drawing.Size(42, 37);
@@ -114,9 +114,9 @@
             // 
             this.pnlBody.Controls.Add(this.dgvKhachHang);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(0, 60);
+            this.pnlBody.Location = new System.Drawing.Point(0, 63);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(800, 390);
+            this.pnlBody.Size = new System.Drawing.Size(874, 512);
             this.pnlBody.TabIndex = 1;
             // 
             // dgvKhachHang
@@ -124,6 +124,8 @@
             this.dgvKhachHang.AllowUserToAddRows = false;
             this.dgvKhachHang.AllowUserToDeleteRows = false;
             this.dgvKhachHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.dgvKhachHang.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvKhachHang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -141,10 +143,11 @@
             this.MatKhau,
             this.dgvSuaThongTin,
             this.dgvXoaKhachHang});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -164,7 +167,7 @@
             this.dgvKhachHang.RowTemplate.ReadOnly = true;
             this.dgvKhachHang.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKhachHang.Size = new System.Drawing.Size(800, 390);
+            this.dgvKhachHang.Size = new System.Drawing.Size(874, 512);
             this.dgvKhachHang.TabIndex = 0;
             this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
             this.dgvKhachHang.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellDoubleClick);
@@ -214,7 +217,7 @@
             this.dgvSuaThongTin.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
             this.dgvSuaThongTin.Name = "dgvSuaThongTin";
             this.dgvSuaThongTin.ReadOnly = true;
-            this.dgvSuaThongTin.Width = 5;
+            this.dgvSuaThongTin.Width = 16;
             // 
             // dgvXoaKhachHang
             // 
@@ -227,13 +230,13 @@
             this.dgvXoaKhachHang.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
             this.dgvXoaKhachHang.Name = "dgvXoaKhachHang";
             this.dgvXoaKhachHang.ReadOnly = true;
-            this.dgvXoaKhachHang.Width = 5;
+            this.dgvXoaKhachHang.Width = 16;
             // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(874, 575);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
             this.Name = "frmKhachHang";

@@ -12,7 +12,7 @@ namespace Project_CuoiKy.Forms.FormKhachHang
 {
     public partial class frmSuaThongTinKH : Form
     {
-        private Api.Api api = new Api.Api();
+        private Api.ApiService api = new Api.ApiService();
         private string maKH;
         private string tenKH;
         private string matKhau;

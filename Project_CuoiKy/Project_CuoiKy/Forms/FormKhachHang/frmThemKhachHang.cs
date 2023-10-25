@@ -12,7 +12,7 @@ namespace Project_CuoiKy.Forms.FormKhachHang
 {
     public partial class frmThemKhachHang : Form
     {
-        Api.Api api = new Api.Api();
+        Api.ApiService api = new Api.ApiService();
         public frmThemKhachHang()
         {
             InitializeComponent();
@@ -20,7 +20,6 @@ namespace Project_CuoiKy.Forms.FormKhachHang
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //bool result = api.ThemKhachHang(txtMaKH.Texts, txtTenKH.Texts, txtMatKhau.Texts);
             string query = $"EXEC dbo.ThemKhachHang '{txtMaKH.Texts}', '{txtTenKH.Texts}', '{txtMatKhau.Texts}'";
             bool result = api.ExecQuery(query, "Thêm khách hàng thành công");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;

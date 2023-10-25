@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Project_CuoiKy.Utils;
+using Project_CuoiKy.Forms;
+using Project_CuoiKy.Api;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +15,8 @@ namespace Project_CuoiKy.Forms
 {
     public partial class frmKhachHang : Form
     {
-        Api.Api api = new Api.Api();
+        private ApiService api = new ApiService();
+        private Helpers helpers = new Helpers();
         public frmKhachHang()
         {
             InitializeComponent();
@@ -30,7 +34,7 @@ namespace Project_CuoiKy.Forms
         }
         private void ShowFormThemKhachHang()
         {
-            Forms.FormKhachHang.frmThemKhachHang f2 = new Forms.FormKhachHang.frmThemKhachHang();
+            FormKhachHang.frmThemKhachHang f2 = new FormKhachHang.frmThemKhachHang();
             if (f2.ShowDialog() == DialogResult.OK)
             {
                 LoadData();
@@ -38,9 +42,9 @@ namespace Project_CuoiKy.Forms
         }
         private void ShowFormSuaThongTin()
         {
-            string maKH = dgvKhachHang.CurrentRow.Cells["MaKH"].Value.ToString();
-            string matKhau = dgvKhachHang.CurrentRow.Cells["MatKhau"].Value.ToString();
-            string tenKH = dgvKhachHang.CurrentRow.Cells["TenKH"].Value.ToString();
+            string maKH = helpers.DataInRow(dgvKhachHang, "MaKH");
+            string matKhau = helpers.DataInRow(dgvKhachHang, "MatKhau");
+            string tenKH = helpers.DataInRow(dgvKhachHang, "TenKH");
             //float tongTienNap = float.Parse(dtgvKhachHang.CurrentRow.Cells["TongTienNap"].Value.ToString());
             Forms.FormKhachHang.frmSuaThongTinKH f2 = new Forms.FormKhachHang.frmSuaThongTinKH(maKH, tenKH, matKhau);
             if (f2.ShowDialog() == DialogResult.OK)
@@ -72,7 +76,6 @@ namespace Project_CuoiKy.Forms
                 {
                     string maKH = dgvKhachHang.CurrentRow.Cells["MaKH"].Value.ToString();
                     string query = $"DELETE from KhachHang WHERE MaKH = '{maKH}'";
-                    //api.XoaKhachHang(maKH);
                     api.ExecQuery(query, "Xóa khách hàng thành công");
                     LoadData();
                 }

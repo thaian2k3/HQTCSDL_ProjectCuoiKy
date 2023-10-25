@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Project_CuoiKy.Api
 {
-    internal class Api
+    internal class ApiService
     {
         ConnectDatabase conn = new ConnectDatabase();
         public DataTable CreateTable(string query)

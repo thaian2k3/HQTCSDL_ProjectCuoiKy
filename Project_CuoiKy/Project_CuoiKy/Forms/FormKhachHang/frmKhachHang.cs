@@ -34,7 +34,7 @@ namespace Project_CuoiKy.Forms
         }
         private void ShowFormThemKhachHang()
         {
-            FormKhachHang.frmThemKhachHang f2 = new FormKhachHang.frmThemKhachHang();
+            FormPhong.frmThemKhachHang f2 = new FormPhong.frmThemKhachHang();
             if (f2.ShowDialog() == DialogResult.OK)
             {
                 LoadData();
@@ -42,11 +42,11 @@ namespace Project_CuoiKy.Forms
         }
         private void ShowFormSuaThongTin()
         {
-            string maKH = helpers.DataInRow(dgvKhachHang, "MaKH");
-            string matKhau = helpers.DataInRow(dgvKhachHang, "MatKhau");
-            string tenKH = helpers.DataInRow(dgvKhachHang, "TenKH");
+            string maKH = helpers.DataInCol(dgvKhachHang, "MaKH");
+            string matKhau = helpers.DataInCol(dgvKhachHang, "MatKhau");
+            string tenKH = helpers.DataInCol(dgvKhachHang, "TenKH");
             //float tongTienNap = float.Parse(dtgvKhachHang.CurrentRow.Cells["TongTienNap"].Value.ToString());
-            Forms.FormKhachHang.frmSuaThongTinKH f2 = new Forms.FormKhachHang.frmSuaThongTinKH(maKH, tenKH, matKhau);
+            FormPhong.frmSuaThongTinKH f2 = new FormPhong.frmSuaThongTinKH(maKH, tenKH, matKhau);
             if (f2.ShowDialog() == DialogResult.OK)
             {
                 LoadData();
@@ -65,16 +65,16 @@ namespace Project_CuoiKy.Forms
 
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvKhachHang.Columns["dgvSuaThongTin"].Index)
+            if (e.ColumnIndex == dgvKhachHang.Columns["dgvSua"].Index)
             {
                 ShowFormSuaThongTin();
             }
-            else if (e.ColumnIndex == dgvKhachHang.Columns["dgvXoaKhachHang"].Index)
+            else if (e.ColumnIndex == dgvKhachHang.Columns["dgvXoa"].Index)
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn xóa khách hàng không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
-                    string maKH = dgvKhachHang.CurrentRow.Cells["MaKH"].Value.ToString();
+                    string maKH = helpers.DataInCol(dgvKhachHang, "MaKH");
                     string query = $"DELETE from KhachHang WHERE MaKH = '{maKH}'";
                     api.ExecQuery(query, "Xóa khách hàng thành công");
                     LoadData();

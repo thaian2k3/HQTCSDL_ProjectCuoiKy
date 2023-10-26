@@ -49,5 +49,17 @@ namespace Project_CuoiKy
         {
             OpenChildForm(new Forms.frmKhachHang());
         }
+
+        private void btnPhong_Click(object sender, EventArgs e)
+        {
+            ToggleSubmenu(pnlSubmenuPhong);
+
+        }
+
+        private void btnThongTinPhong_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormPhong.frmPhong());
+        }
+
     }
 }

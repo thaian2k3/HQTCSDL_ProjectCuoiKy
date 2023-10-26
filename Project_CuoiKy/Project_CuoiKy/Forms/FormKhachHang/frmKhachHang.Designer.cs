@@ -44,8 +44,8 @@
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTienNap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvSuaThongTin = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvXoaKhachHang = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvSua = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvXoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlHeader.SuspendLayout();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
@@ -141,8 +141,8 @@
             this.TenKH,
             this.TongTienNap,
             this.MatKhau,
-            this.dgvSuaThongTin,
-            this.dgvXoaKhachHang});
+            this.dgvSua,
+            this.dgvXoa});
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -194,7 +194,7 @@
             // 
             this.TongTienNap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TongTienNap.DataPropertyName = "TongTienNap";
-            this.TongTienNap.HeaderText = "Tổng tiền nạp";
+            this.TongTienNap.HeaderText = "Tiền tích lũy";
             this.TongTienNap.Name = "TongTienNap";
             this.TongTienNap.ReadOnly = true;
             // 
@@ -206,31 +206,31 @@
             this.MatKhau.ReadOnly = true;
             this.MatKhau.Visible = false;
             // 
-            // dgvSuaThongTin
+            // dgvSua
             // 
-            this.dgvSuaThongTin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgvSua.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            this.dgvSuaThongTin.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvSuaThongTin.HeaderText = "";
-            this.dgvSuaThongTin.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
-            this.dgvSuaThongTin.Name = "dgvSuaThongTin";
-            this.dgvSuaThongTin.ReadOnly = true;
-            this.dgvSuaThongTin.Width = 16;
+            this.dgvSua.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvSua.HeaderText = "";
+            this.dgvSua.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
+            this.dgvSua.Name = "dgvSua";
+            this.dgvSua.ReadOnly = true;
+            this.dgvSua.Width = 16;
             // 
-            // dgvXoaKhachHang
+            // dgvXoa
             // 
-            this.dgvXoaKhachHang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgvXoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle4.NullValue")));
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            this.dgvXoaKhachHang.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvXoaKhachHang.HeaderText = "";
-            this.dgvXoaKhachHang.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
-            this.dgvXoaKhachHang.Name = "dgvXoaKhachHang";
-            this.dgvXoaKhachHang.ReadOnly = true;
-            this.dgvXoaKhachHang.Width = 16;
+            this.dgvXoa.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvXoa.HeaderText = "";
+            this.dgvXoa.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
+            this.dgvXoa.Name = "dgvXoa";
+            this.dgvXoa.ReadOnly = true;
+            this.dgvXoa.Width = 16;
             // 
             // frmKhachHang
             // 
@@ -260,7 +260,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienNap;
         private System.Windows.Forms.DataGridViewTextBoxColumn MatKhau;
-        private System.Windows.Forms.DataGridViewImageColumn dgvSuaThongTin;
-        private System.Windows.Forms.DataGridViewImageColumn dgvXoaKhachHang;
+        private System.Windows.Forms.DataGridViewImageColumn dgvSua;
+        private System.Windows.Forms.DataGridViewImageColumn dgvXoa;
     }
 }

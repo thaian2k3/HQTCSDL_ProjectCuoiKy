@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project_CuoiKy.Forms.FormKhachHang
+namespace Project_CuoiKy.Forms.FormPhong
 {
     public partial class frmSuaThongTinKH : Form
     {

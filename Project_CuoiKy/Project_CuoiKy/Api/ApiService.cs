@@ -11,7 +11,7 @@ namespace Project_CuoiKy.Api
 {
     internal class ApiService
     {
-        ConnectDatabase conn = new ConnectDatabase();
+        private ConnectDatabase conn = new ConnectDatabase();
         public DataTable CreateTable(string query)
         {
             DataTable dt = new DataTable();

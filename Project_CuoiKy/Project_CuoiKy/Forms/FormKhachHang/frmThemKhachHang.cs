@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project_CuoiKy.Forms.FormKhachHang
+namespace Project_CuoiKy.Forms.FormPhong
 {
     public partial class frmThemKhachHang : Form
     {
@@ -24,5 +24,6 @@ namespace Project_CuoiKy.Forms.FormKhachHang
             bool result = api.ExecQuery(query, "Thêm khách hàng thành công");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
         }
+
     }
 }

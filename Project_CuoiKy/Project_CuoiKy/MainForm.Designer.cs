@@ -30,7 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnlSidebar = new System.Windows.Forms.Panel();
-            this.rjButton4 = new CustomControls.RJControls.RJButton();
+            this.pnlSubmenuPhong = new System.Windows.Forms.Panel();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.btnThongTinPhong = new CustomControls.RJControls.RJButton();
+            this.btnPhong = new CustomControls.RJControls.RJButton();
             this.pnlSubmenuKhachHang = new System.Windows.Forms.Panel();
             this.btnXemChiTietKH = new CustomControls.RJControls.RJButton();
             this.btnTaiKhoan = new CustomControls.RJControls.RJButton();
@@ -44,6 +47,7 @@
             this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.pnlChildForm = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
+            this.pnlSubmenuPhong.SuspendLayout();
             this.pnlSubmenuKhachHang.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
@@ -53,7 +57,8 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.pnlSidebar.Controls.Add(this.rjButton4);
+            this.pnlSidebar.Controls.Add(this.pnlSubmenuPhong);
+            this.pnlSidebar.Controls.Add(this.btnPhong);
             this.pnlSidebar.Controls.Add(this.pnlSubmenuKhachHang);
             this.pnlSidebar.Controls.Add(this.btnTaiKhoan);
             this.pnlSidebar.Controls.Add(this.rjButton2);
@@ -65,27 +70,88 @@
             this.pnlSidebar.Size = new System.Drawing.Size(220, 646);
             this.pnlSidebar.TabIndex = 0;
             // 
-            // rjButton4
+            // pnlSubmenuPhong
             // 
-            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton4.Image = global::Project_CuoiKy.Properties.Resources.icons8_room_45__1_;
-            this.rjButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton4.Location = new System.Drawing.Point(0, 393);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(220, 80);
-            this.rjButton4.TabIndex = 4;
-            this.rjButton4.Text = "Phòng";
-            this.rjButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton4.UseVisualStyleBackColor = false;
+            this.pnlSubmenuPhong.AutoSize = true;
+            this.pnlSubmenuPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.pnlSubmenuPhong.Controls.Add(this.rjButton1);
+            this.pnlSubmenuPhong.Controls.Add(this.btnThongTinPhong);
+            this.pnlSubmenuPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSubmenuPhong.Location = new System.Drawing.Point(0, 473);
+            this.pnlSubmenuPhong.Name = "pnlSubmenuPhong";
+            this.pnlSubmenuPhong.Size = new System.Drawing.Size(220, 100);
+            this.pnlSubmenuPhong.TabIndex = 0;
+            this.pnlSubmenuPhong.Visible = false;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.rjButton1.Image = global::Project_CuoiKy.Properties.Resources.icons8_computer_30;
+            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton1.Location = new System.Drawing.Point(0, 50);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.rjButton1.Size = new System.Drawing.Size(220, 50);
+            this.rjButton1.TabIndex = 6;
+            this.rjButton1.Text = "Danh sách máy";
+            this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // btnThongTinPhong
+            // 
+            this.btnThongTinPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.btnThongTinPhong.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.btnThongTinPhong.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnThongTinPhong.BorderRadius = 0;
+            this.btnThongTinPhong.BorderSize = 0;
+            this.btnThongTinPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongTinPhong.FlatAppearance.BorderSize = 0;
+            this.btnThongTinPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongTinPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongTinPhong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnThongTinPhong.Image = global::Project_CuoiKy.Properties.Resources.icons8_detail_30;
+            this.btnThongTinPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongTinPhong.Location = new System.Drawing.Point(0, 0);
+            this.btnThongTinPhong.Name = "btnThongTinPhong";
+            this.btnThongTinPhong.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnThongTinPhong.Size = new System.Drawing.Size(220, 50);
+            this.btnThongTinPhong.TabIndex = 5;
+            this.btnThongTinPhong.Text = "Thông tin phòng";
+            this.btnThongTinPhong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnThongTinPhong.UseVisualStyleBackColor = false;
+            this.btnThongTinPhong.Click += new System.EventHandler(this.btnThongTinPhong_Click);
+            // 
+            // btnPhong
+            // 
+            this.btnPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.btnPhong.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.btnPhong.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPhong.BorderRadius = 0;
+            this.btnPhong.BorderSize = 0;
+            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPhong.FlatAppearance.BorderSize = 0;
+            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnPhong.Image = global::Project_CuoiKy.Properties.Resources.icons8_room_45__1_;
+            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhong.Location = new System.Drawing.Point(0, 393);
+            this.btnPhong.Name = "btnPhong";
+            this.btnPhong.Size = new System.Drawing.Size(220, 80);
+            this.btnPhong.TabIndex = 4;
+            this.btnPhong.Text = "Phòng";
+            this.btnPhong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnPhong.UseVisualStyleBackColor = false;
+            this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
             // 
             // pnlSubmenuKhachHang
             // 
@@ -118,8 +184,7 @@
             this.btnXemChiTietKH.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnXemChiTietKH.Size = new System.Drawing.Size(220, 50);
             this.btnXemChiTietKH.TabIndex = 4;
-            this.btnXemChiTietKH.Text = "         Thông tin chi tiết";
-            this.btnXemChiTietKH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXemChiTietKH.Text = "Thông tin chi tiết";
             this.btnXemChiTietKH.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnXemChiTietKH.UseVisualStyleBackColor = false;
             this.btnXemChiTietKH.Click += new System.EventHandler(this.btnXemChiTietKH_Click);
@@ -305,8 +370,10 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlSidebar.ResumeLayout(false);
             this.pnlSidebar.PerformLayout();
+            this.pnlSubmenuPhong.ResumeLayout(false);
             this.pnlSubmenuKhachHang.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -322,7 +389,7 @@
         private CustomControls.RJControls.RJButton btnHome;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private CustomControls.RJControls.RJButton rjButton4;
+        private CustomControls.RJControls.RJButton btnPhong;
         private CustomControls.RJControls.RJButton btnTaiKhoan;
         private CustomControls.RJControls.RJButton rjButton2;
         private System.Windows.Forms.Label label1;
@@ -332,6 +399,9 @@
         private System.Windows.Forms.Panel pnlChildForm;
         private System.Windows.Forms.Panel pnlSubmenuKhachHang;
         private CustomControls.RJControls.RJButton btnXemChiTietKH;
+        private System.Windows.Forms.Panel pnlSubmenuPhong;
+        private CustomControls.RJControls.RJButton btnThongTinPhong;
+        private CustomControls.RJControls.RJButton rjButton1;
     }
 }
 

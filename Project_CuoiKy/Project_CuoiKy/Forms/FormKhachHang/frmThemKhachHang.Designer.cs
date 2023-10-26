@@ -1,4 +1,4 @@
-﻿namespace Project_CuoiKy.Forms.FormKhachHang
+﻿namespace Project_CuoiKy.Forms.FormPhong
 {
     partial class frmThemKhachHang
     {

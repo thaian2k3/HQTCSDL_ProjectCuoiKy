@@ -49,5 +49,10 @@ namespace Project_CuoiKy
         {
             OpenChildForm(new Forms.frmKhachHang());
         }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormHoaDon.frmHoaDon());
+        }
     }
 }

@@ -48,6 +48,15 @@ namespace Project_CuoiKy.Forms.FormMay
                 LoadData();
             }
         }
+        private void ShowFormCauHinhMay()
+        {
+            string maMay = helpers.DataInCol(dgvMay, "MaMay");
+            frmCauHinhMay f2 = new frmCauHinhMay(maMay);
+            if (f2.ShowDialog() == DialogResult.OK)
+            {
+                LoadData();
+            }
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
             ShowFormThemMay();
@@ -59,13 +68,17 @@ namespace Project_CuoiKy.Forms.FormMay
             {
                 ShowFormSuaThongTinMay();
             }
+            else if (e.ColumnIndex == dgvMay.Columns["dgvCauHinh"].Index)
+            {
+                ShowFormCauHinhMay();
+            }
             else if (e.ColumnIndex == dgvMay.Columns["dgvXoa"].Index)
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn xóa máy không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     string maMay = helpers.DataInCol(dgvMay, "MaMay");
-                    string query = $"DELETE from Phong WHERE MaPhong = '{maMay}'";
+                    string query = $"DELETE from May WHERE MaMay = '{maMay}'";
                     api.ExecQuery(query, "Xóa máy thành công");
                     LoadData();
                 }

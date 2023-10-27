@@ -32,7 +32,7 @@ namespace Project_CuoiKy.Forms.FormPhong
 
         private void btnLuuThongTin_Click(object sender, EventArgs e)
         {
-            string query = $"EXEC dbo.SuaThongTinKhachHang '{txtMaKH.Texts}', '{txtTenKH.Texts}', '{txtMatKhau.Texts}'";
+            string query = $"EXEC dbo.SuaThongTinKhachHang '{txtMaKH.Texts}', N'{txtTenKH.Texts}', '{txtMatKhau.Texts}'";
             //bool result = api.SuaThongTin(txtMaKH.Texts, txtTenKH.Texts, txtMatKhau.Texts);
             bool result = api.ExecQuery(query, "Lưu thông tin thành công !");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;

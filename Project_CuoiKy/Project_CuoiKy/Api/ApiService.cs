@@ -47,6 +47,22 @@ namespace Project_CuoiKy.Api
             }
             finally { conn.CloseConnection(); }
         }
+
+        public String FuncScalar(string query)
+        {
+            try
+            {
+                conn.OpenConnection();
+                SqlCommand cmd = new SqlCommand(query, conn.Conn);
+                return cmd.ExecuteScalar().ToString();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Thông báo lỗi", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                return null;
+            }
+            finally { conn.CloseConnection(); }
+        }
     }
 }
 

@@ -67,12 +67,12 @@ namespace Project_CuoiKy.Forms.FormPhong
             }
             else if (e.ColumnIndex == dgvPhong.Columns["dgvXoa"].Index)
             {
-                DialogResult result = MessageBox.Show("Bạn có muốn xóa khách hàng không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Bạn có muốn xóa phòng không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     string maPhong = helpers.DataInCol(dgvPhong, "MaPhong");
                     string query = $"DELETE from Phong WHERE MaPhong = '{maPhong}'";
-                    api.ExecQuery(query, "Xóa khách hàng thành công");
+                    api.ExecQuery(query, "Xóa phòng thành công");
                     LoadData();
                 }
             }

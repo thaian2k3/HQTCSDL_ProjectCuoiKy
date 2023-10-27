@@ -262,6 +262,12 @@ namespace CustomControls.RJControls
             set { cmbList.SelectedItem = value; }
         }
 
+        public object SelectedValue
+        {
+            get { return cmbList.SelectedValue; }
+            set { cmbList.SelectedValue = value; }
+        }
+
         [Category("RJ Code - Data")]
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]

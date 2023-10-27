@@ -36,7 +36,7 @@ namespace Project_CuoiKy.Forms.FormPhong
         private void btnLuuThongTin_Click(object sender, EventArgs e)
         {
             string giaPhong = txtGiaPhong.Texts.Trim() == "" ? "0" : txtGiaPhong.Texts;
-            string query = $"EXEC proc_SuaPhong {maPhong}, '{txtTenPhong.Texts}', '{txtViTri.Texts}', {float.Parse(giaPhong)}";
+            string query = $"EXEC proc_SuaPhong {maPhong}, N'{txtTenPhong.Texts}', N'{txtViTri.Texts}', {float.Parse(giaPhong)}";
             this.DialogResult = api.ExecQuery(query, "Thêm phòng thành công") ? DialogResult.OK : DialogResult.None;
         }
     }

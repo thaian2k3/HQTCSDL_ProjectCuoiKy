@@ -14,6 +14,7 @@ namespace Project_CuoiKy
     public partial class MainForm : Form
     {
         private Form currentChildForm;
+        private Panel currentSubmenu;
 
         public MainForm()
         {
@@ -37,6 +38,11 @@ namespace Project_CuoiKy
 
         private void ToggleSubmenu(Panel submenu)
         {
+            if (currentSubmenu != null)
+            {
+                currentSubmenu.Visible = false;
+            }
+            currentSubmenu = submenu;
             submenu.Visible = !submenu.Visible;
         }
 
@@ -61,5 +67,9 @@ namespace Project_CuoiKy
             OpenChildForm(new Forms.FormPhong.frmPhong());
         }
 
+        private void btnDanhSachMay_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormMay.frmMay());
+        }
     }
 }

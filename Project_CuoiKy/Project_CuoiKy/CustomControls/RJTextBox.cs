@@ -104,6 +104,13 @@ namespace CustomControls.RJControls
         }
 
         [Category("RJ Code Advance")]
+        public bool ReadOnly
+        {
+            get { return textBox1.ReadOnly; }
+            set { textBox1.ReadOnly = value; }
+        }
+
+        [Category("RJ Code Advance")]
         public override Color BackColor
         {
             get { return base.BackColor; }

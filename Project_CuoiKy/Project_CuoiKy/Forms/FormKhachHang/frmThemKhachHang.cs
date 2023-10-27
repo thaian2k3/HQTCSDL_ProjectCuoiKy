@@ -20,7 +20,7 @@ namespace Project_CuoiKy.Forms.FormPhong
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string query = $"EXEC dbo.ThemKhachHang '{txtMaKH.Texts}', '{txtTenKH.Texts}', '{txtMatKhau.Texts}'";
+            string query = $"EXEC dbo.ThemKhachHang '{txtMaKH.Texts}', N'{txtTenKH.Texts}', '{txtMatKhau.Texts}'";
             bool result = api.ExecQuery(query, "Thêm khách hàng thành công");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
         }

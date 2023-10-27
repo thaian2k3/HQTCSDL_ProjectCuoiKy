@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.pnlSubmenuPhong = new System.Windows.Forms.Panel();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.btnDanhSachMay = new CustomControls.RJControls.RJButton();
             this.btnThongTinPhong = new CustomControls.RJControls.RJButton();
             this.btnPhong = new CustomControls.RJControls.RJButton();
             this.pnlSubmenuKhachHang = new System.Windows.Forms.Panel();
@@ -74,7 +74,7 @@
             // 
             this.pnlSubmenuPhong.AutoSize = true;
             this.pnlSubmenuPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
-            this.pnlSubmenuPhong.Controls.Add(this.rjButton1);
+            this.pnlSubmenuPhong.Controls.Add(this.btnDanhSachMay);
             this.pnlSubmenuPhong.Controls.Add(this.btnThongTinPhong);
             this.pnlSubmenuPhong.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubmenuPhong.Location = new System.Drawing.Point(0, 473);
@@ -83,28 +83,29 @@
             this.pnlSubmenuPhong.TabIndex = 0;
             this.pnlSubmenuPhong.Visible = false;
             // 
-            // rjButton1
+            // btnDanhSachMay
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton1.Image = global::Project_CuoiKy.Properties.Resources.icons8_computer_30;
-            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton1.Location = new System.Drawing.Point(0, 50);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.rjButton1.Size = new System.Drawing.Size(220, 50);
-            this.rjButton1.TabIndex = 6;
-            this.rjButton1.Text = "Danh sách máy";
-            this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnDanhSachMay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.btnDanhSachMay.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.btnDanhSachMay.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDanhSachMay.BorderRadius = 0;
+            this.btnDanhSachMay.BorderSize = 0;
+            this.btnDanhSachMay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDanhSachMay.FlatAppearance.BorderSize = 0;
+            this.btnDanhSachMay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhSachMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhSachMay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnDanhSachMay.Image = global::Project_CuoiKy.Properties.Resources.icons8_computer_30;
+            this.btnDanhSachMay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDanhSachMay.Location = new System.Drawing.Point(0, 50);
+            this.btnDanhSachMay.Name = "btnDanhSachMay";
+            this.btnDanhSachMay.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnDanhSachMay.Size = new System.Drawing.Size(220, 50);
+            this.btnDanhSachMay.TabIndex = 6;
+            this.btnDanhSachMay.Text = "Danh sách máy";
+            this.btnDanhSachMay.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnDanhSachMay.UseVisualStyleBackColor = false;
+            this.btnDanhSachMay.Click += new System.EventHandler(this.btnDanhSachMay_Click);
             // 
             // btnThongTinPhong
             // 
@@ -401,7 +402,7 @@
         private CustomControls.RJControls.RJButton btnXemChiTietKH;
         private System.Windows.Forms.Panel pnlSubmenuPhong;
         private CustomControls.RJControls.RJButton btnThongTinPhong;
-        private CustomControls.RJControls.RJButton rjButton1;
+        private CustomControls.RJControls.RJButton btnDanhSachMay;
     }
 }
 

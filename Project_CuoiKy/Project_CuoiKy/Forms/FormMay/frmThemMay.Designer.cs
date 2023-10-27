@@ -30,14 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.cboMaPhong = new CustomControls.RJControls.RJComboBox();
-            this.btnThem = new CustomControls.RJControls.RJButton();
-            this.txtGiaPhong = new CustomControls.RJControls.RJTextBox();
-            this.txtViTri = new CustomControls.RJControls.RJTextBox();
-            this.txtTenPhong = new CustomControls.RJControls.RJTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtGiaPhong = new CustomControls.RJControls.RJTextBox();
+            this.txtViTri = new CustomControls.RJControls.RJTextBox();
+            this.txtTenPhong = new CustomControls.RJControls.RJTextBox();
+            this.cboMaPhong = new CustomControls.RJControls.RJComboBox();
+            this.btnThem = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
             // label1
@@ -62,50 +62,38 @@
             this.label4.TabIndex = 43;
             this.label4.Text = "Thêm máy";
             // 
-            // cboMaPhong
+            // label3
             // 
-            this.cboMaPhong.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboMaPhong.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboMaPhong.BorderSize = 1;
-            this.cboMaPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cboMaPhong.ForeColor = System.Drawing.Color.DimGray;
-            this.cboMaPhong.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboMaPhong.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cboMaPhong.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboMaPhong.Location = new System.Drawing.Point(280, 152);
-            this.cboMaPhong.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cboMaPhong.Name = "cboMaPhong";
-            this.cboMaPhong.Padding = new System.Windows.Forms.Padding(1);
-            this.cboMaPhong.Size = new System.Drawing.Size(273, 30);
-            this.cboMaPhong.TabIndex = 51;
-            this.cboMaPhong.Texts = "";
-            this.cboMaPhong.OnSelectedIndexChanged += new System.EventHandler(this.cboMaPhong_OnSelectedIndexChanged);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.label3.Location = new System.Drawing.Point(276, 371);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.TabIndex = 54;
+            this.label3.Text = "Giá phòng";
             // 
-            // btnThem
+            // label2
             // 
-            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnThem.BorderRadius = 18;
-            this.btnThem.BorderSize = 2;
-            this.btnThem.FlatAppearance.BorderSize = 0;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_user_male_30;
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(365, 493);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(5);
-            this.btnThem.Size = new System.Drawing.Size(96, 40);
-            this.btnThem.TabIndex = 50;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThem.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.label2.Location = new System.Drawing.Point(275, 289);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 20);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "Vị trí";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.label5.Location = new System.Drawing.Point(276, 215);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 20);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "Tên phòng";
             // 
             // txtGiaPhong
             // 
@@ -177,38 +165,51 @@
             this.txtTenPhong.Texts = "";
             this.txtTenPhong.UnderlinedStyle = false;
             // 
-            // label3
+            // cboMaPhong
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label3.Location = new System.Drawing.Point(276, 371);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
-            this.label3.TabIndex = 54;
-            this.label3.Text = "Giá phòng";
+            this.cboMaPhong.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboMaPhong.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboMaPhong.BorderSize = 1;
+            this.cboMaPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cboMaPhong.ForeColor = System.Drawing.Color.DimGray;
+            this.cboMaPhong.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboMaPhong.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboMaPhong.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboMaPhong.Location = new System.Drawing.Point(280, 152);
+            this.cboMaPhong.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cboMaPhong.Name = "cboMaPhong";
+            this.cboMaPhong.Padding = new System.Windows.Forms.Padding(1);
+            this.cboMaPhong.SelectedValue = null;
+            this.cboMaPhong.Size = new System.Drawing.Size(273, 30);
+            this.cboMaPhong.TabIndex = 51;
+            this.cboMaPhong.Texts = "";
+            this.cboMaPhong.OnSelectedIndexChanged += new System.EventHandler(this.cboMaPhong_OnSelectedIndexChanged);
             // 
-            // label2
+            // btnThem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label2.Location = new System.Drawing.Point(275, 289);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 20);
-            this.label2.TabIndex = 53;
-            this.label2.Text = "Vị trí";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label5.Location = new System.Drawing.Point(276, 215);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 20);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "Tên phòng";
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnThem.BorderRadius = 18;
+            this.btnThem.BorderSize = 2;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_301;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(365, 467);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Padding = new System.Windows.Forms.Padding(5);
+            this.btnThem.Size = new System.Drawing.Size(96, 40);
+            this.btnThem.TabIndex = 50;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThem.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // frmThemMay
             // 

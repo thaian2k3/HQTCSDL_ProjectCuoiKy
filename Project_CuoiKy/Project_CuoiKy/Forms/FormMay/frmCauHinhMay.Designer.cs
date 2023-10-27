@@ -37,7 +37,7 @@
             this.lblTaiNghe = new System.Windows.Forms.Label();
             this.txtManHinh = new CustomControls.RJControls.RJTextBox();
             this.lblManHinh = new System.Windows.Forms.Label();
-            this.btnThoát = new CustomControls.RJControls.RJButton();
+            this.btnThoat = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
             // label4
@@ -187,30 +187,30 @@
             this.lblManHinh.TabIndex = 51;
             this.lblManHinh.Text = "Màn hình";
             // 
-            // btnThoát
+            // btnThoat
             // 
-            this.btnThoát.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThoát.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThoát.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThoát.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnThoát.BorderRadius = 18;
-            this.btnThoát.BorderSize = 2;
-            this.btnThoát.FlatAppearance.BorderSize = 0;
-            this.btnThoát.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoát.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoát.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnThoát.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_user_male_30;
-            this.btnThoát.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoát.Location = new System.Drawing.Point(320, 411);
-            this.btnThoát.Name = "btnThoát";
-            this.btnThoát.Padding = new System.Windows.Forms.Padding(5);
-            this.btnThoát.Size = new System.Drawing.Size(96, 40);
-            this.btnThoát.TabIndex = 53;
-            this.btnThoát.Text = "Thoát";
-            this.btnThoát.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThoát.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnThoát.UseVisualStyleBackColor = false;
-            this.btnThoát.Click += new System.EventHandler(this.btnThoát_Click);
+            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThoat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThoat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnThoat.BorderRadius = 18;
+            this.btnThoat.BorderSize = 2;
+            this.btnThoat.FlatAppearance.BorderSize = 0;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnThoat.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_user_male_30;
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(320, 411);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Padding = new System.Windows.Forms.Padding(5);
+            this.btnThoat.Size = new System.Drawing.Size(96, 40);
+            this.btnThoat.TabIndex = 53;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThoat.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmCauHinhMay
             // 
@@ -218,7 +218,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(720, 500);
-            this.Controls.Add(this.btnThoát);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.txtManHinh);
             this.Controls.Add(this.lblManHinh);
             this.Controls.Add(this.txtTaiNghe);
@@ -248,6 +248,6 @@
         private System.Windows.Forms.Label lblTaiNghe;
         private CustomControls.RJControls.RJTextBox txtManHinh;
         private System.Windows.Forms.Label lblManHinh;
-        private CustomControls.RJControls.RJButton btnThoát;
+        private CustomControls.RJControls.RJButton btnThoat;
     }
 }

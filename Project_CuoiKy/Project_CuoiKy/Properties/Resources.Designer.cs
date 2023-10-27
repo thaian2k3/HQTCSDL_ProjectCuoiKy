@@ -93,6 +93,16 @@ namespace Project_CuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icons8_add_301 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-301", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_add_user_male_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-add-user-male-30", resourceCulture);
@@ -206,6 +216,16 @@ namespace Project_CuoiKy.Properties {
         public static System.Drawing.Bitmap icons8_networking_manager_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8_networking_manager_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_reset_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-reset-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

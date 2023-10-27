@@ -1,4 +1,5 @@
-﻿using Project_CuoiKy.Api;
+﻿using CustomControls.RJControls;
+using Project_CuoiKy.Api;
 using Project_CuoiKy.Forms.FormPhong;
 using Project_CuoiKy.Utils;
 using System;
@@ -17,6 +18,7 @@ namespace Project_CuoiKy.Forms.FormMay
     {
         private ApiService api = new ApiService();
         private Helpers helpers = new Helpers();
+        private bool isLoading = true;
         public frmMay()
         {
             InitializeComponent();
@@ -26,10 +28,39 @@ namespace Project_CuoiKy.Forms.FormMay
             string query = "select * from V_XemMayTinh";
             dgvMay.DataSource = api.CreateTable(query);
         }
+        private void LoadComboBox()
+        {
+            cboMaPhong = helpers.CboData("select distinct MaPhong from Phong", cboMaPhong, "MaPhong");
+            cboMaPhong.Texts = "Mã phòng";
+            cboTinhTrang = helpers.CboData("select distinct TinhTrang from May", cboTinhTrang, "TinhTrang");
+            cboTinhTrang.Texts = "Tình trạng";
+            cboViTri = helpers.CboData("select distinct ViTri from Phong", cboViTri, "ViTri");
+            cboViTri.Texts = "Vị trí";
+        }
+        private void FilterMay(RJComboBox cboMaPhong, RJComboBox cboTinhTrang, RJComboBox cboViTri)
+        {
+            string query = "select * from V_XemMayTinh";
+            List<string> subQueryList = new List<string>();
+            if (cboMaPhong.SelectedValue != null)
+            {
+                subQueryList.Add($"MaPhong={cboMaPhong.SelectedValue}");
+            }
+            if (cboTinhTrang.SelectedValue != null)
+            {
+                subQueryList.Add($"TinhTrang=N'{cboTinhTrang.SelectedValue}'");
+            }
+            if (cboViTri.SelectedValue != null)
+            {
+                subQueryList.Add($"ViTri=N'{cboViTri.SelectedValue}'");
+            }
+            query = subQueryList.Count == 0 ? query : $"{query} WHERE {string.Join(" AND ", subQueryList)}";
+            dgvMay.DataSource = api.CreateTable(query);
+        }   
         private void frmMay_Load(object sender, EventArgs e)
         {
             LoadData();
-            
+            LoadComboBox();
+            isLoading= false;
         }
         private void ShowFormThemMay()
         {
@@ -83,6 +114,40 @@ namespace Project_CuoiKy.Forms.FormMay
                     LoadData();
                 }
             }
+        }
+
+        private void cboMaPhong_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!isLoading)
+            {
+                FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
+            }
+        }
+
+        private void cboTinhTrang_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!isLoading)
+            {
+                FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
+            }
+        }
+
+        private void cboViTri_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!isLoading)
+            {
+                FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.Invoke(new EventHandler(this.frmMay_Load));
+        }
+
+        private void dgvMay_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ShowFormCauHinhMay();
         }
     }
 }

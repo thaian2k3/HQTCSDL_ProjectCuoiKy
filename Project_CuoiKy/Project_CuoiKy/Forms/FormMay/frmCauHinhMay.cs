@@ -40,7 +40,7 @@ namespace Project_CuoiKy.Forms.FormMay
             txtManHinh.Texts = LayTenLK(lblManHinh.Text);
         }
 
-        private void btnThoát_Click(object sender, EventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
         }

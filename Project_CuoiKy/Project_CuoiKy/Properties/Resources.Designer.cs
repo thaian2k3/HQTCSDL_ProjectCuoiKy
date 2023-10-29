@@ -103,6 +103,16 @@ namespace Project_CuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icons8_check_dollar_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-check-dollar-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_delete_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-delete-30", resourceCulture);

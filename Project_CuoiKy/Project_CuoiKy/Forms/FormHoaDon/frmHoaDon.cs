@@ -33,7 +33,7 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         }
         private void ShowFormSuaThongTin()
         {
-            string maHD = helpers.DataInRow(dgvHoaDon, "MaHD");
+            string maHD = helpers.DataInCol(dgvHoaDon, "MaHD");
             Forms.FormHoaDon.frmChiTietHoaDon f2 = new Forms.FormHoaDon.frmChiTietHoaDon(maHD);
             if (f2.ShowDialog() == DialogResult.OK)
             {

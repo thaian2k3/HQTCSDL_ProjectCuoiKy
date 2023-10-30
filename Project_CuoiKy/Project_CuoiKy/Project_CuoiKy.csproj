@@ -80,6 +80,18 @@
     <Compile Include="CustomControls\RJToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\FormHoaDon\frmChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHoaDon\frmChiTietHoaDon.Designer.cs">
+      <DependentUpon>frmChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHoaDon\frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHoaDon\frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormMay\frmCauHinhMay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +185,12 @@
     <EmbeddedResource Include="Forms\FormPhong\frmThemPhong.resx">
       <DependentUpon>frmThemPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHoaDon\frmChiTietHoaDon.resx">
+      <DependentUpon>frmChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHoaDon\frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,18 +279,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-detail-30.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-add-30.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-computer-30.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-gear-30.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-reset-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

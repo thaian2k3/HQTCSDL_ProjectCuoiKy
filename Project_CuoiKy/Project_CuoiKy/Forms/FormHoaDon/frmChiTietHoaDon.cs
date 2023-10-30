@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Không có gì hết
 namespace Project_CuoiKy.Forms.FormHoaDon
 {
     public partial class frmChiTietHoaDon : Form

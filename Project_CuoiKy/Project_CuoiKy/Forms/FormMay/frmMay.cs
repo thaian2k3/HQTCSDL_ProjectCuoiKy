@@ -118,26 +118,29 @@ namespace Project_CuoiKy.Forms.FormMay
 
         private void cboMaPhong_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!isLoading)
+            if (isLoading)
             {
-                FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
+                return;
             }
+            FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
         }
 
         private void cboTinhTrang_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!isLoading)
+            if (isLoading)
             {
-                FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
+                return;
             }
+            FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
         }
 
         private void cboViTri_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!isLoading)
+            if (isLoading)
             {
-                FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
+                return;
             }
+            FilterMay(cboMaPhong, cboTinhTrang, cboViTri);
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)

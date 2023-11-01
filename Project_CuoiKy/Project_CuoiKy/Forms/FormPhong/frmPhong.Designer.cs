@@ -48,6 +48,10 @@
             this.dgvXoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.lblBoLoc = new System.Windows.Forms.Label();
+            this.btnRefresh = new CustomControls.RJControls.RJButton();
+            this.cboViTri = new CustomControls.RJControls.RJComboBox();
+            this.cboTenPhong = new CustomControls.RJControls.RJComboBox();
             this.txtTimKiem = new CustomControls.RJControls.RJTextBox();
             this.btnThem = new CustomControls.RJControls.RJButton();
             this.pnlHeader.SuspendLayout();
@@ -58,6 +62,10 @@
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.pnlHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlHeader.Controls.Add(this.btnRefresh);
+            this.pnlHeader.Controls.Add(this.lblBoLoc);
+            this.pnlHeader.Controls.Add(this.cboViTri);
+            this.pnlHeader.Controls.Add(this.cboTenPhong);
             this.pnlHeader.Controls.Add(this.txtTimKiem);
             this.pnlHeader.Controls.Add(this.btnThem);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -209,6 +217,83 @@
             this.dataGridViewImageColumn2.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
+            // lblBoLoc
+            // 
+            this.lblBoLoc.AutoSize = true;
+            this.lblBoLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBoLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.lblBoLoc.Location = new System.Drawing.Point(36, 20);
+            this.lblBoLoc.Name = "lblBoLoc";
+            this.lblBoLoc.Size = new System.Drawing.Size(59, 20);
+            this.lblBoLoc.TabIndex = 49;
+            this.lblBoLoc.Text = "Bộ lọc";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnRefresh.BorderRadius = 18;
+            this.btnRefresh.BorderSize = 2;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(395, 10);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5);
+            this.btnRefresh.Size = new System.Drawing.Size(97, 40);
+            this.btnRefresh.TabIndex = 52;
+            this.btnRefresh.Text = "Reset";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRefresh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // cboViTri
+            // 
+            this.cboViTri.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboViTri.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboViTri.BorderSize = 1;
+            this.cboViTri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboViTri.ForeColor = System.Drawing.Color.DimGray;
+            this.cboViTri.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboViTri.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboViTri.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboViTri.Location = new System.Drawing.Point(254, 13);
+            this.cboViTri.MinimumSize = new System.Drawing.Size(100, 30);
+            this.cboViTri.Name = "cboViTri";
+            this.cboViTri.Padding = new System.Windows.Forms.Padding(1);
+            this.cboViTri.SelectedValue = null;
+            this.cboViTri.Size = new System.Drawing.Size(120, 35);
+            this.cboViTri.TabIndex = 48;
+            this.cboViTri.Texts = "";
+            this.cboViTri.OnSelectedIndexChanged += new System.EventHandler(this.cboViTri_OnSelectedIndexChanged);
+            // 
+            // cboTenPhong
+            // 
+            this.cboTenPhong.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboTenPhong.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboTenPhong.BorderSize = 1;
+            this.cboTenPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTenPhong.ForeColor = System.Drawing.Color.DimGray;
+            this.cboTenPhong.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboTenPhong.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboTenPhong.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboTenPhong.Location = new System.Drawing.Point(111, 13);
+            this.cboTenPhong.MinimumSize = new System.Drawing.Size(100, 30);
+            this.cboTenPhong.Name = "cboTenPhong";
+            this.cboTenPhong.Padding = new System.Windows.Forms.Padding(1);
+            this.cboTenPhong.SelectedValue = null;
+            this.cboTenPhong.Size = new System.Drawing.Size(120, 35);
+            this.cboTenPhong.TabIndex = 47;
+            this.cboTenPhong.Texts = "";
+            this.cboTenPhong.OnSelectedIndexChanged += new System.EventHandler(this.cboTenPhong_OnSelectedIndexChanged);
+            // 
             // txtTimKiem
             // 
             this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -227,6 +312,7 @@
             this.txtTimKiem.PasswordChar = false;
             this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTimKiem.PlaceholderText = "Tìm kiếm phòng";
+            this.txtTimKiem.ReadOnly = false;
             this.txtTimKiem.Size = new System.Drawing.Size(250, 37);
             this.txtTimKiem.TabIndex = 1;
             this.txtTimKiem.Texts = "";
@@ -267,6 +353,7 @@
             this.Text = "frmPhong";
             this.Load += new System.EventHandler(this.frmPhong_Load);
             this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).EndInit();
             this.ResumeLayout(false);
 
@@ -287,5 +374,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongMay;
         private System.Windows.Forms.DataGridViewImageColumn dgvSua;
         private System.Windows.Forms.DataGridViewImageColumn dgvXoa;
+        private System.Windows.Forms.Label lblBoLoc;
+        private CustomControls.RJControls.RJComboBox cboViTri;
+        private CustomControls.RJControls.RJComboBox cboTenPhong;
+        private CustomControls.RJControls.RJButton btnRefresh;
     }
 }

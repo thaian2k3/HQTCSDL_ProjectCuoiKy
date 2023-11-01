@@ -59,10 +59,9 @@
             // 
             this.pnlBody.Controls.Add(this.dgvHoaDon);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(0, 77);
-            this.pnlBody.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlBody.Location = new System.Drawing.Point(0, 63);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(895, 490);
+            this.pnlBody.Size = new System.Drawing.Size(889, 499);
             this.pnlBody.TabIndex = 5;
             // 
             // dgvHoaDon
@@ -107,7 +106,6 @@
             this.dgvHoaDon.EnableHeadersVisualStyles = false;
             this.dgvHoaDon.GridColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgvHoaDon.Location = new System.Drawing.Point(0, 0);
-            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersVisible = false;
@@ -120,7 +118,7 @@
             this.dgvHoaDon.RowTemplate.ReadOnly = true;
             this.dgvHoaDon.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvHoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHoaDon.Size = new System.Drawing.Size(895, 490);
+            this.dgvHoaDon.Size = new System.Drawing.Size(889, 499);
             this.dgvHoaDon.TabIndex = 0;
             // 
             // MaHD
@@ -245,9 +243,8 @@
             this.pnlHeader.Controls.Add(this.txtTimKiem);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(895, 77);
+            this.pnlHeader.Size = new System.Drawing.Size(889, 63);
             this.pnlHeader.TabIndex = 4;
             // 
             // txtTimKiem
@@ -260,27 +257,29 @@
             this.txtTimKiem.BorderSize = 2;
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(542, 16);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTimKiem.Location = new System.Drawing.Point(623, 13);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTimKiem.Multiline = false;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(13, 10, 13, 10);
+            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.txtTimKiem.PasswordChar = false;
             this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTimKiem.PlaceholderText = "Tìm kiếm chi tiết hóa đơn";
-            this.txtTimKiem.Size = new System.Drawing.Size(333, 46);
+            this.txtTimKiem.ReadOnly = false;
+            this.txtTimKiem.Size = new System.Drawing.Size(250, 37);
             this.txtTimKiem.TabIndex = 1;
             this.txtTimKiem.Texts = "";
             this.txtTimKiem.UnderlinedStyle = false;
             // 
             // frmChiTietHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(895, 567);
+            this.ClientSize = new System.Drawing.Size(889, 562);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmChiTietHoaDon";
             this.Text = "frmChiTietHoaDon";
             this.pnlBody.ResumeLayout(false);

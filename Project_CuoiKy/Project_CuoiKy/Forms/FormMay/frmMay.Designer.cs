@@ -32,12 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMay));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvMay = new System.Windows.Forms.DataGridView();
             this.MaMay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,14 +45,14 @@
             this.GiaMay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCauHinh = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvSua = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvXoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblBoLoc = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvCauHinh = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvSua = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvXoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnRefresh = new CustomControls.RJControls.RJButton();
             this.cboViTri = new CustomControls.RJControls.RJComboBox();
             this.cboTinhTrang = new CustomControls.RJControls.RJComboBox();
@@ -168,6 +168,40 @@
             this.ViTri.Name = "ViTri";
             this.ViTri.ReadOnly = true;
             // 
+            // dgvCauHinh
+            // 
+            this.dgvCauHinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvCauHinh.HeaderText = "Cấu hình";
+            this.dgvCauHinh.Image = global::Project_CuoiKy.Properties.Resources.icons8_gear_30;
+            this.dgvCauHinh.Name = "dgvCauHinh";
+            this.dgvCauHinh.ReadOnly = true;
+            // 
+            // dgvSua
+            // 
+            this.dgvSua.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            this.dgvSua.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvSua.HeaderText = "";
+            this.dgvSua.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
+            this.dgvSua.Name = "dgvSua";
+            this.dgvSua.ReadOnly = true;
+            this.dgvSua.Width = 16;
+            // 
+            // dgvXoa
+            // 
+            this.dgvXoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle4.NullValue")));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            this.dgvXoa.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvXoa.HeaderText = "";
+            this.dgvXoa.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
+            this.dgvXoa.Name = "dgvXoa";
+            this.dgvXoa.ReadOnly = true;
+            this.dgvXoa.Width = 16;
+            // 
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
@@ -206,7 +240,6 @@
             this.dataGridViewImageColumn1.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
-            this.dataGridViewImageColumn1.Width = 137;
             // 
             // dataGridViewImageColumn2
             // 
@@ -219,7 +252,6 @@
             this.dataGridViewImageColumn2.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
-            this.dataGridViewImageColumn2.Width = 16;
             // 
             // dataGridViewImageColumn3
             // 
@@ -232,41 +264,6 @@
             this.dataGridViewImageColumn3.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.ReadOnly = true;
-            this.dataGridViewImageColumn3.Width = 16;
-            // 
-            // dgvCauHinh
-            // 
-            this.dgvCauHinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvCauHinh.HeaderText = "Cấu hình";
-            this.dgvCauHinh.Image = global::Project_CuoiKy.Properties.Resources.icons8_gear_30;
-            this.dgvCauHinh.Name = "dgvCauHinh";
-            this.dgvCauHinh.ReadOnly = true;
-            // 
-            // dgvSua
-            // 
-            this.dgvSua.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            this.dgvSua.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvSua.HeaderText = "";
-            this.dgvSua.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
-            this.dgvSua.Name = "dgvSua";
-            this.dgvSua.ReadOnly = true;
-            this.dgvSua.Width = 16;
-            // 
-            // dgvXoa
-            // 
-            this.dgvXoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle4.NullValue")));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            this.dgvXoa.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvXoa.HeaderText = "";
-            this.dgvXoa.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
-            this.dgvXoa.Name = "dgvXoa";
-            this.dgvXoa.ReadOnly = true;
-            this.dgvXoa.Width = 16;
             // 
             // btnRefresh
             // 
@@ -357,7 +354,6 @@
             // 
             // btnThem
             // 
-            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
             this.btnThem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
             this.btnThem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
@@ -368,7 +364,7 @@
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
-            this.btnThem.Location = new System.Drawing.Point(898, 13);
+            this.btnThem.Location = new System.Drawing.Point(664, 11);
             this.btnThem.Name = "btnThem";
             this.btnThem.Padding = new System.Windows.Forms.Padding(5);
             this.btnThem.Size = new System.Drawing.Size(38, 37);

@@ -49,19 +49,18 @@
             this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongGiaTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.txtTimKiem = new CustomControls.RJControls.RJTextBox();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
-            this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBody
             // 
             this.pnlBody.Controls.Add(this.dgvHoaDon);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(0, 63);
+            this.pnlBody.Location = new System.Drawing.Point(0, 77);
+            this.pnlBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(889, 499);
+            this.pnlBody.Size = new System.Drawing.Size(1185, 615);
             this.pnlBody.TabIndex = 5;
             // 
             // dgvHoaDon
@@ -106,6 +105,7 @@
             this.dgvHoaDon.EnableHeadersVisualStyles = false;
             this.dgvHoaDon.GridColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgvHoaDon.Location = new System.Drawing.Point(0, 0);
+            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersVisible = false;
@@ -118,7 +118,7 @@
             this.dgvHoaDon.RowTemplate.ReadOnly = true;
             this.dgvHoaDon.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvHoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHoaDon.Size = new System.Drawing.Size(889, 499);
+            this.dgvHoaDon.Size = new System.Drawing.Size(1185, 615);
             this.dgvHoaDon.TabIndex = 0;
             // 
             // MaHD
@@ -240,51 +240,26 @@
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.pnlHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlHeader.Controls.Add(this.txtTimKiem);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(889, 63);
+            this.pnlHeader.Size = new System.Drawing.Size(1185, 77);
             this.pnlHeader.TabIndex = 4;
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTimKiem.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtTimKiem.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtTimKiem.BorderRadius = 15;
-            this.txtTimKiem.BorderSize = 2;
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(623, 13);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTimKiem.Multiline = false;
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.txtTimKiem.PasswordChar = false;
-            this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTimKiem.PlaceholderText = "Tìm kiếm chi tiết hóa đơn";
-            this.txtTimKiem.ReadOnly = false;
-            this.txtTimKiem.Size = new System.Drawing.Size(250, 37);
-            this.txtTimKiem.TabIndex = 1;
-            this.txtTimKiem.Texts = "";
-            this.txtTimKiem.UnderlinedStyle = false;
             // 
             // frmChiTietHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(889, 562);
+            this.ClientSize = new System.Drawing.Size(1185, 692);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmChiTietHoaDon";
             this.Text = "frmChiTietHoaDon";
             this.pnlBody.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
-            this.pnlHeader.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -294,7 +269,6 @@
         private System.Windows.Forms.Panel pnlBody;
         private System.Windows.Forms.DataGridView dgvHoaDon;
         private System.Windows.Forms.Panel pnlHeader;
-        private CustomControls.RJControls.RJTextBox txtTimKiem;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;

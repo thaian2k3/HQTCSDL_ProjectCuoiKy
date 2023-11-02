@@ -1,4 +1,5 @@
-﻿using Project_CuoiKy.Api;
+﻿using CustomControls.RJControls;
+using Project_CuoiKy.Api;
 using Project_CuoiKy.Utils;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,8 +31,8 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         private void frmHoaDon_Load(object sender, EventArgs e)
         {
             LoadData();
-
         }
+
         private void ShowFormSuaThongTin()
         {
             string maHD = helpers.DataInCol(dgvHoaDon, "MaHD");
@@ -75,6 +77,18 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         private void txtTimKiem__TextChanged(object sender, EventArgs e)
         {
             string query = $"SELECT * FROM dbo.func_TimHoaDon('{txtTimKiem.Texts}')";
+            dgvHoaDon.DataSource = api.TimKiemKhachHang(query);
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.Invoke(new EventHandler(this.frmHoaDon_Load));
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string query;
+            query = $"SELECT * FROM func_LocHoaDonTheoNgayBD_KT('{dtpNgayDau.Value}', '{dtpNgayCuoi.Value}')";
             dgvHoaDon.DataSource = api.TimKiemKhachHang(query);
         }
     }

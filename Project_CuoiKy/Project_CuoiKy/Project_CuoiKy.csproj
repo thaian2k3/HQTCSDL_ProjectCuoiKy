@@ -92,6 +92,12 @@
     <Compile Include="Forms\FormHoaDon\frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormLichSuDungMay\frmLichSuDungMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLichSuDungMay\frmLichSuDungMay.Designer.cs">
+      <DependentUpon>frmLichSuDungMay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormMay\frmCauHinhMay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,9 @@
     <Compile Include="Utils\Helpers.cs" />
     <EmbeddedResource Include="CustomControls\RJTextBox.resx">
       <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLichSuDungMay\frmLichSuDungMay.resx">
+      <DependentUpon>frmLichSuDungMay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMay\frmCauHinhMay.resx">
       <DependentUpon>frmCauHinhMay.cs</DependentUpon>

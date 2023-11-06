@@ -1,5 +1,6 @@
 ﻿using CustomControls.RJControls;
 using Project_CuoiKy.Api;
+using Project_CuoiKy.Forms.FormLichSuDungMay;
 using Project_CuoiKy.Forms.FormPhong;
 using Project_CuoiKy.Utils;
 using System;
@@ -88,6 +89,16 @@ namespace Project_CuoiKy.Forms.FormMay
                 LoadData();
             }
         }
+
+        private void ShowFormLichSuDungMay()
+        {
+           
+            frmLichSuDungMay f2 = new frmLichSuDungMay();
+            if (f2.ShowDialog() == DialogResult.OK)
+            {
+                LoadData();
+            }
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
             ShowFormThemMay();
@@ -151,6 +162,11 @@ namespace Project_CuoiKy.Forms.FormMay
         private void dgvMay_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             ShowFormCauHinhMay();
+        }
+
+        private void btnLsdm_Click(object sender, EventArgs e)
+        {
+            ShowFormLichSuDungMay();
         }
     }
 }

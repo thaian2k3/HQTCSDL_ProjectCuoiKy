@@ -50,25 +50,14 @@ namespace Project_CuoiKy.Forms.FormHoaDon
 
         private void dgvHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvHoaDon.Columns["dgvXacNhanThanhToan"].Index && dgvHoaDon.Rows[e.RowIndex].Cells["TinhTrang"].Value.ToString() != "đã thanh toán")
+            if (e.ColumnIndex == dgvHoaDon.Columns["dgvXacNhanThanhToan"].Index && dgvHoaDon.Rows[e.RowIndex].Cells["TinhTrang"].Value.ToString() != "Đã thanh toán")
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn xác nhận hóa đơn không?", "Xác nhận thanh toán", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     string maHD = dgvHoaDon.CurrentRow.Cells["MaHD"].Value.ToString();
-                    string query = $"UPDATE HoaDon SET TinhTrang = N'đã thanh toán' WHERE MaHD='{maHD}'";
+                    string query = $"UPDATE HoaDon SET TinhTrang = N'Đã thanh toán' WHERE MaHD='{maHD}'";
                     api.ExecQuery(query, "Thanh toán hóa đơn thành công");
-                    LoadData();
-                }
-            }
-            else if (e.ColumnIndex == dgvHoaDon.Columns["dgvXoaHoaDon"].Index)
-            {
-                DialogResult result = MessageBox.Show("Bạn có muốn xóa hóa đơn không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
-                {
-                    string maKH = dgvHoaDon.CurrentRow.Cells["MaHD"].Value.ToString();
-                    string query = $"DELETE from HoaDon WHERE MaKH = '{maKH}'";
-                    api.ExecQuery(query, "Xóa hóa đơn thành công");
                     LoadData();
                 }
             }

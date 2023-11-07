@@ -55,6 +55,7 @@
             this.txtGiaPhong.PasswordChar = false;
             this.txtGiaPhong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtGiaPhong.PlaceholderText = "";
+            this.txtGiaPhong.ReadOnly = false;
             this.txtGiaPhong.Size = new System.Drawing.Size(250, 31);
             this.txtGiaPhong.TabIndex = 49;
             this.txtGiaPhong.Texts = "";
@@ -77,6 +78,7 @@
             this.txtViTri.PasswordChar = false;
             this.txtViTri.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtViTri.PlaceholderText = "";
+            this.txtViTri.ReadOnly = false;
             this.txtViTri.Size = new System.Drawing.Size(250, 31);
             this.txtViTri.TabIndex = 48;
             this.txtViTri.Texts = "";
@@ -100,6 +102,7 @@
             this.txtTenPhong.PasswordChar = false;
             this.txtTenPhong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTenPhong.PlaceholderText = "";
+            this.txtTenPhong.ReadOnly = false;
             this.txtTenPhong.Size = new System.Drawing.Size(250, 31);
             this.txtTenPhong.TabIndex = 47;
             this.txtTenPhong.Texts = "";
@@ -163,7 +166,7 @@
             this.btnLuuThongTin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnLuuThongTin.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_301;
             this.btnLuuThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuThongTin.Location = new System.Drawing.Point(327, 338);
+            this.btnLuuThongTin.Location = new System.Drawing.Point(324, 338);
             this.btnLuuThongTin.Name = "btnLuuThongTin";
             this.btnLuuThongTin.Padding = new System.Windows.Forms.Padding(5);
             this.btnLuuThongTin.Size = new System.Drawing.Size(140, 45);
@@ -179,7 +182,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(797, 450);
             this.Controls.Add(this.btnLuuThongTin);
             this.Controls.Add(this.txtGiaPhong);
             this.Controls.Add(this.txtViTri);

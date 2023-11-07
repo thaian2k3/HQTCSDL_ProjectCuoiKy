@@ -10,7 +10,7 @@ namespace Project_CuoiKy
 {
     internal class ConnectDatabase
     {
-        private SqlConnection conn = new SqlConnection("Data Source=HP\\SQLEXPRESS;Initial Catalog=hqtcsdl;Integrated Security=True");
+        private SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U2CN98S\\SQLEXPRESS;Initial Catalog=HQTCSDL_Project;Integrated Security=True");
 
         public SqlConnection Conn { get => conn; set => conn = value; }
 

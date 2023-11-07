@@ -76,5 +76,10 @@ namespace Project_CuoiKy
         {
             OpenChildForm(new Forms.FormHoaDon.frmHoaDon());
         }
+
+        private void btnLinhKien_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormLinhKien.frmLinhKien());
+        }
     }
 }

@@ -98,6 +98,24 @@
     <Compile Include="Forms\FormLichSuDungMay\frmLichSuDungMay.Designer.cs">
       <DependentUpon>frmLichSuDungMay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormLinhKien\frmLinhKien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLinhKien\frmLinhKien.Designer.cs">
+      <DependentUpon>frmLinhKien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLinhKien\frmSuaThongTinLinhKien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLinhKien\frmSuaThongTinLinhKien.Designer.cs">
+      <DependentUpon>frmSuaThongTinLinhKien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLinhKien\frmThemLinhKien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLinhKien\frmThemLinhKien.Designer.cs">
+      <DependentUpon>frmThemLinhKien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormMay\frmCauHinhMay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +190,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLichSuDungMay\frmLichSuDungMay.resx">
       <DependentUpon>frmLichSuDungMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLinhKien\frmLinhKien.resx">
+      <DependentUpon>frmLinhKien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLinhKien\frmSuaThongTinLinhKien.resx">
+      <DependentUpon>frmSuaThongTinLinhKien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLinhKien\frmThemLinhKien.resx">
+      <DependentUpon>frmThemLinhKien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMay\frmCauHinhMay.resx">
       <DependentUpon>frmCauHinhMay.cs</DependentUpon>

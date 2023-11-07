@@ -70,9 +70,8 @@
             this.pnlHeader.Controls.Add(this.btnThem);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1372, 77);
+            this.pnlHeader.Size = new System.Drawing.Size(1029, 63);
             this.pnlHeader.TabIndex = 1;
             // 
             // btnRefresh
@@ -88,11 +87,10 @@
             this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(527, 12);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefresh.Location = new System.Drawing.Point(395, 10);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnRefresh.Size = new System.Drawing.Size(129, 49);
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnRefresh.Size = new System.Drawing.Size(97, 40);
             this.btnRefresh.TabIndex = 52;
             this.btnRefresh.Text = "Reset";
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -105,10 +103,9 @@
             this.lblBoLoc.AutoSize = true;
             this.lblBoLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBoLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblBoLoc.Location = new System.Drawing.Point(48, 25);
-            this.lblBoLoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBoLoc.Location = new System.Drawing.Point(36, 20);
             this.lblBoLoc.Name = "lblBoLoc";
-            this.lblBoLoc.Size = new System.Drawing.Size(72, 25);
+            this.lblBoLoc.Size = new System.Drawing.Size(59, 20);
             this.lblBoLoc.TabIndex = 49;
             this.lblBoLoc.Text = "Bộ lọc";
             // 
@@ -123,13 +120,12 @@
             this.cboViTri.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.cboViTri.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cboViTri.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboViTri.Location = new System.Drawing.Point(339, 16);
-            this.cboViTri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cboViTri.MinimumSize = new System.Drawing.Size(133, 37);
+            this.cboViTri.Location = new System.Drawing.Point(254, 13);
+            this.cboViTri.MinimumSize = new System.Drawing.Size(100, 30);
             this.cboViTri.Name = "cboViTri";
             this.cboViTri.Padding = new System.Windows.Forms.Padding(1);
             this.cboViTri.SelectedValue = null;
-            this.cboViTri.Size = new System.Drawing.Size(160, 43);
+            this.cboViTri.Size = new System.Drawing.Size(120, 35);
             this.cboViTri.TabIndex = 48;
             this.cboViTri.Texts = "";
             this.cboViTri.OnSelectedIndexChanged += new System.EventHandler(this.cboViTri_OnSelectedIndexChanged);
@@ -145,13 +141,12 @@
             this.cboTenPhong.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.cboTenPhong.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cboTenPhong.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboTenPhong.Location = new System.Drawing.Point(148, 16);
-            this.cboTenPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cboTenPhong.MinimumSize = new System.Drawing.Size(133, 37);
+            this.cboTenPhong.Location = new System.Drawing.Point(111, 13);
+            this.cboTenPhong.MinimumSize = new System.Drawing.Size(100, 30);
             this.cboTenPhong.Name = "cboTenPhong";
             this.cboTenPhong.Padding = new System.Windows.Forms.Padding(1);
             this.cboTenPhong.SelectedValue = null;
-            this.cboTenPhong.Size = new System.Drawing.Size(160, 43);
+            this.cboTenPhong.Size = new System.Drawing.Size(120, 35);
             this.cboTenPhong.TabIndex = 47;
             this.cboTenPhong.Texts = "";
             this.cboTenPhong.OnSelectedIndexChanged += new System.EventHandler(this.cboTenPhong_OnSelectedIndexChanged);
@@ -166,16 +161,16 @@
             this.txtTimKiem.BorderSize = 2;
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(1020, 16);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtTimKiem.Location = new System.Drawing.Point(764, 13);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTimKiem.Multiline = false;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(13, 10, 13, 10);
+            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.txtTimKiem.PasswordChar = false;
             this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTimKiem.PlaceholderText = "Tìm kiếm phòng";
             this.txtTimKiem.ReadOnly = false;
-            this.txtTimKiem.Size = new System.Drawing.Size(333, 46);
+            this.txtTimKiem.Size = new System.Drawing.Size(250, 37);
             this.txtTimKiem.TabIndex = 1;
             this.txtTimKiem.Texts = "";
             this.txtTimKiem.UnderlinedStyle = false;
@@ -194,11 +189,10 @@
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
-            this.btnThem.Location = new System.Drawing.Point(960, 16);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Location = new System.Drawing.Point(719, 13);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnThem.Size = new System.Drawing.Size(51, 46);
+            this.btnThem.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThem.Size = new System.Drawing.Size(38, 37);
             this.btnThem.TabIndex = 0;
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -242,8 +236,7 @@
             this.dgvPhong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhong.EnableHeadersVisualStyles = false;
             this.dgvPhong.GridColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dgvPhong.Location = new System.Drawing.Point(0, 77);
-            this.dgvPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPhong.Location = new System.Drawing.Point(0, 63);
             this.dgvPhong.Name = "dgvPhong";
             this.dgvPhong.ReadOnly = true;
             this.dgvPhong.RowHeadersVisible = false;
@@ -256,7 +249,7 @@
             this.dgvPhong.RowTemplate.ReadOnly = true;
             this.dgvPhong.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPhong.Size = new System.Drawing.Size(1372, 687);
+            this.dgvPhong.Size = new System.Drawing.Size(1029, 558);
             this.dgvPhong.TabIndex = 2;
             this.dgvPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhong_CellClick);
             this.dgvPhong.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhong_CellDoubleClick);
@@ -347,7 +340,6 @@
             this.dataGridViewImageColumn1.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -360,16 +352,14 @@
             this.dataGridViewImageColumn2.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 125;
             // 
             // frmPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1372, 764);
+            this.ClientSize = new System.Drawing.Size(1029, 621);
             this.Controls.Add(this.dgvPhong);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmPhong";
             this.Text = "frmPhong";
             this.Load += new System.EventHandler(this.frmPhong_Load);

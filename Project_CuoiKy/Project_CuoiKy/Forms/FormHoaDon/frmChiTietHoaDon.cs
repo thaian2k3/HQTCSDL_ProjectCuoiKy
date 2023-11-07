@@ -39,13 +39,13 @@ namespace Project_CuoiKy.Forms.FormHoaDon
             txtSoLuong.Texts = helpers.DataInCol(dgvChiTietHoaDon, "SoLuong");
             if (e.ColumnIndex == dgvChiTietHoaDon.Columns["dgvXoaHoaDon"].Index)
             {
-                DialogResult result = MessageBox.Show("Bạn có muốn xóa phòng không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Bạn có muốn xóa chi tiết hóa đơn không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     string maHD = helpers.DataInCol(dgvChiTietHoaDon, "MaHoaDon");
                     string maSP = helpers.DataInCol(dgvChiTietHoaDon, "MaSP");
                     string query = $"DELETE from ChiTietHoaDon WHERE MaHD = '{maHD}' AND MaSP = '{maSP}'";
-                    api.ExecQuery(query, "Xóa phòng thành công");
+                    api.ExecQuery(query, "Xóa chi tiết hóa đơn thành công");
                     LoadData();
                 }
             }
@@ -58,7 +58,7 @@ namespace Project_CuoiKy.Forms.FormHoaDon
                 string maHD = helpers.DataInCol(dgvChiTietHoaDon, "MaHoaDon");
                 string maSP = helpers.DataInCol(dgvChiTietHoaDon, "MaSP");
                 string query = $"UPDATE ChiTietHoaDon SET SoLuong = {txtSoLuong.Texts} WHERE MaHD = '{maHD}' AND MaSP = '{maSP}'";
-                api.ExecQuery(query, "Xóa phòng thành công");
+                api.ExecQuery(query, "Sửa chi tiết hóa đơn thành công");
                 LoadData();
             }
         }

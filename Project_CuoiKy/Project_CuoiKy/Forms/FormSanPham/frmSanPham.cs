@@ -188,7 +188,7 @@ namespace Project_CuoiKy.Forms.FormSanPham
         private void txtTimKiem__TextChanged(object sender, EventArgs e)
         {
             string query = $"SELECT * FROM dbo.func_TimKiemSanPham('{txtTimKiem.Texts}')";
-            dgvSanPham.DataSource = api.TimKiemKhachHang(query);
+            dgvSanPham.DataSource = api.CreateTable(query);
         }
 
         private void cboMaKH_OnSelectedIndexChanged(object sender, EventArgs e)

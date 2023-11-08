@@ -19,14 +19,17 @@ namespace Project_CuoiKy.Api
             da.Fill(dt);
             return dt;
         }
-        public bool ExecQuery(string query, string messageSuccess = "Thành công")
+        public bool ExecQuery(string query, string messageSuccess = "Thành công", bool showMessageBox = true)
         {
             try
             {
                 conn.OpenConnection();
                 SqlCommand cmd = new SqlCommand(query, conn.Conn);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show(messageSuccess, "Thông báo thành công", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                if (showMessageBox)
+                {
+                    MessageBox.Show(messageSuccess, "Thông báo thành công", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
                 return true;
             }
             catch (SqlException ex)

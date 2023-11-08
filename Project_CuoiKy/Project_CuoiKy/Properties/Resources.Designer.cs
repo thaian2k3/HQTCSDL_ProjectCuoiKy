@@ -103,6 +103,26 @@ namespace Project_CuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icons8_add_shopping_cart_35 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-shopping-cart-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_add_to_cart_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-to-cart-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_add_user_male_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-add-user-male-30", resourceCulture);
@@ -136,6 +156,16 @@ namespace Project_CuoiKy.Properties {
         public static System.Drawing.Bitmap icons8_computer_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-computer-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_create_order_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-create-order-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +263,16 @@ namespace Project_CuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icons8_receipt_approved_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-receipt-approved-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_reset_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-reset-30", resourceCulture);
@@ -256,6 +296,16 @@ namespace Project_CuoiKy.Properties {
         public static System.Drawing.Bitmap icons8_search_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-search-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_trash_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-trash-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -26,7 +26,6 @@ namespace Project_CuoiKy.Forms.FormHoaDon
             InitializeComponent();
             this.maHD = maHD;
             LoadData();
-
         }
         public void LoadData()
         {
@@ -59,6 +58,18 @@ namespace Project_CuoiKy.Forms.FormHoaDon
                 string maSP = helpers.DataInCol(dgvChiTietHoaDon, "MaSP");
                 string query = $"UPDATE ChiTietHoaDon SET SoLuong = {txtSoLuong.Texts} WHERE MaHD = '{maHD}' AND MaSP = '{maSP}'";
                 api.ExecQuery(query, "Sửa chi tiết hóa đơn thành công");
+                LoadData();
+            }
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn xác nhận hóa đơn không?", "Xác nhận thanh toán", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                string query = $"UPDATE HoaDon SET TinhTrang = N'Đã thanh toán' WHERE MaHD='{maHD}'";
+                api.ExecQuery(query, "Thanh toán hóa đơn thành công");
+                btnThanhToan.Enabled = false;
                 LoadData();
             }
         }

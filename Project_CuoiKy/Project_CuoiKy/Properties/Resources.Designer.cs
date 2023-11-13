@@ -193,6 +193,16 @@ namespace Project_CuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icons8_earbud_headphones_45 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-earbud-headphones-45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_edit_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-edit-30", resourceCulture);
@@ -256,6 +266,26 @@ namespace Project_CuoiKy.Properties {
         public static System.Drawing.Bitmap icons8_networking_manager_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8_networking_manager_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_receipt_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-receipt-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_receipt_45 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-receipt-45", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

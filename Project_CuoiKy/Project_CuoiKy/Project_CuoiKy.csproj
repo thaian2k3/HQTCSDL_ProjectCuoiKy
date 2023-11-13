@@ -365,5 +365,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-add-shopping-cart-35.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receipt-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receipt-45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-earbud-headphones-45.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

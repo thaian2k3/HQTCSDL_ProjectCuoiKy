@@ -38,7 +38,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btnRefresh = new CustomControls.RJControls.RJButton();
             this.lblBoLoc = new System.Windows.Forms.Label();
+            this.cboLoaiLK = new CustomControls.RJControls.RJComboBox();
+            this.cboTinhTrang = new CustomControls.RJControls.RJComboBox();
+            this.cboMaMay = new CustomControls.RJControls.RJComboBox();
+            this.btnThem = new CustomControls.RJControls.RJButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -54,11 +59,6 @@
             this.dgvSua = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvXoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnRefresh = new CustomControls.RJControls.RJButton();
-            this.cboLoaiLK = new CustomControls.RJControls.RJComboBox();
-            this.cboTinhTrang = new CustomControls.RJControls.RJComboBox();
-            this.cboMaMay = new CustomControls.RJControls.RJComboBox();
-            this.btnThem = new CustomControls.RJControls.RJButton();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinhKien)).BeginInit();
             this.SuspendLayout();
@@ -79,6 +79,30 @@
             this.pnlHeader.Size = new System.Drawing.Size(992, 63);
             this.pnlHeader.TabIndex = 5;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnRefresh.BorderRadius = 18;
+            this.btnRefresh.BorderSize = 2;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(582, 11);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5);
+            this.btnRefresh.Size = new System.Drawing.Size(97, 40);
+            this.btnRefresh.TabIndex = 51;
+            this.btnRefresh.Text = "Reset";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRefresh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // lblBoLoc
             // 
             this.lblBoLoc.AutoSize = true;
@@ -89,6 +113,91 @@
             this.lblBoLoc.Size = new System.Drawing.Size(59, 20);
             this.lblBoLoc.TabIndex = 46;
             this.lblBoLoc.Text = "Bộ lọc";
+            // 
+            // cboLoaiLK
+            // 
+            this.cboLoaiLK.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboLoaiLK.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboLoaiLK.BorderSize = 1;
+            this.cboLoaiLK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboLoaiLK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLoaiLK.ForeColor = System.Drawing.Color.DimGray;
+            this.cboLoaiLK.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboLoaiLK.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboLoaiLK.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboLoaiLK.Location = new System.Drawing.Point(402, 13);
+            this.cboLoaiLK.MinimumSize = new System.Drawing.Size(100, 30);
+            this.cboLoaiLK.Name = "cboLoaiLK";
+            this.cboLoaiLK.Padding = new System.Windows.Forms.Padding(1);
+            this.cboLoaiLK.SelectedValue = null;
+            this.cboLoaiLK.Size = new System.Drawing.Size(148, 35);
+            this.cboLoaiLK.TabIndex = 4;
+            this.cboLoaiLK.Texts = "";
+            this.cboLoaiLK.OnSelectedIndexChanged += new System.EventHandler(this.cboLoaiLK_OnSelectedIndexChanged);
+            // 
+            // cboTinhTrang
+            // 
+            this.cboTinhTrang.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboTinhTrang.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboTinhTrang.BorderSize = 1;
+            this.cboTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTinhTrang.ForeColor = System.Drawing.Color.DimGray;
+            this.cboTinhTrang.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboTinhTrang.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboTinhTrang.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboTinhTrang.Location = new System.Drawing.Point(259, 13);
+            this.cboTinhTrang.MinimumSize = new System.Drawing.Size(100, 30);
+            this.cboTinhTrang.Name = "cboTinhTrang";
+            this.cboTinhTrang.Padding = new System.Windows.Forms.Padding(1);
+            this.cboTinhTrang.SelectedValue = null;
+            this.cboTinhTrang.Size = new System.Drawing.Size(120, 35);
+            this.cboTinhTrang.TabIndex = 3;
+            this.cboTinhTrang.Texts = "";
+            this.cboTinhTrang.OnSelectedIndexChanged += new System.EventHandler(this.cboTinhTrang_OnSelectedIndexChanged);
+            // 
+            // cboMaMay
+            // 
+            this.cboMaMay.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboMaMay.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboMaMay.BorderSize = 1;
+            this.cboMaMay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboMaMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboMaMay.ForeColor = System.Drawing.Color.DimGray;
+            this.cboMaMay.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboMaMay.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboMaMay.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboMaMay.Location = new System.Drawing.Point(116, 13);
+            this.cboMaMay.MinimumSize = new System.Drawing.Size(100, 30);
+            this.cboMaMay.Name = "cboMaMay";
+            this.cboMaMay.Padding = new System.Windows.Forms.Padding(1);
+            this.cboMaMay.SelectedValue = null;
+            this.cboMaMay.Size = new System.Drawing.Size(120, 35);
+            this.cboMaMay.TabIndex = 2;
+            this.cboMaMay.Texts = "";
+            this.cboMaMay.OnSelectedIndexChanged += new System.EventHandler(this.cboMaMay_OnSelectedIndexChanged);
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnThem.BorderRadius = 18;
+            this.btnThem.BorderSize = 2;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
+            this.btnThem.Location = new System.Drawing.Point(706, 14);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Padding = new System.Windows.Forms.Padding(5);
+            this.btnThem.Size = new System.Drawing.Size(38, 37);
+            this.btnThem.TabIndex = 0;
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThem.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // dataGridViewImageColumn1
             // 
@@ -177,6 +286,8 @@
             this.dgvLinhKien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLinhKien.Size = new System.Drawing.Size(992, 569);
             this.dgvLinhKien.TabIndex = 6;
+            this.dgvLinhKien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinhKien_CellClick);
+            this.dgvLinhKien.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinhKien_CellClick);
             // 
             // MaLK
             // 
@@ -222,6 +333,7 @@
             // 
             // TinhTrang
             // 
+            this.TinhTrang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TinhTrang.DataPropertyName = "TinhTrang";
             this.TinhTrang.HeaderText = "TinhTrang";
             this.TinhTrang.Name = "TinhTrang";
@@ -229,6 +341,7 @@
             // 
             // ThongSo
             // 
+            this.ThongSo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ThongSo.DataPropertyName = "ThongSo";
             this.ThongSo.HeaderText = "ThongSo";
             this.ThongSo.Name = "ThongSo";
@@ -236,6 +349,7 @@
             // 
             // TenNCC
             // 
+            this.TenNCC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TenNCC.DataPropertyName = "TenNCC";
             this.TenNCC.HeaderText = "TenNCC";
             this.TenNCC.Name = "TenNCC";
@@ -275,115 +389,6 @@
             this.MaNCC.ReadOnly = true;
             this.MaNCC.Visible = false;
             this.MaNCC.Width = 137;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnRefresh.BorderRadius = 18;
-            this.btnRefresh.BorderSize = 2;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(582, 11);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5);
-            this.btnRefresh.Size = new System.Drawing.Size(97, 40);
-            this.btnRefresh.TabIndex = 51;
-            this.btnRefresh.Text = "Reset";
-            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // cboLoaiLK
-            // 
-            this.cboLoaiLK.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboLoaiLK.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboLoaiLK.BorderSize = 1;
-            this.cboLoaiLK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboLoaiLK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboLoaiLK.ForeColor = System.Drawing.Color.DimGray;
-            this.cboLoaiLK.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboLoaiLK.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cboLoaiLK.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboLoaiLK.Location = new System.Drawing.Point(402, 13);
-            this.cboLoaiLK.MinimumSize = new System.Drawing.Size(100, 30);
-            this.cboLoaiLK.Name = "cboLoaiLK";
-            this.cboLoaiLK.Padding = new System.Windows.Forms.Padding(1);
-            this.cboLoaiLK.SelectedValue = null;
-            this.cboLoaiLK.Size = new System.Drawing.Size(148, 35);
-            this.cboLoaiLK.TabIndex = 4;
-            this.cboLoaiLK.Texts = "";
-            this.cboLoaiLK.OnSelectedIndexChanged += new System.EventHandler(this.cboLoaiLK_OnSelectedIndexChanged);
-            // 
-            // cboTinhTrang
-            // 
-            this.cboTinhTrang.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboTinhTrang.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboTinhTrang.BorderSize = 1;
-            this.cboTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTinhTrang.ForeColor = System.Drawing.Color.DimGray;
-            this.cboTinhTrang.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboTinhTrang.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cboTinhTrang.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboTinhTrang.Location = new System.Drawing.Point(259, 13);
-            this.cboTinhTrang.MinimumSize = new System.Drawing.Size(100, 30);
-            this.cboTinhTrang.Name = "cboTinhTrang";
-            this.cboTinhTrang.Padding = new System.Windows.Forms.Padding(1);
-            this.cboTinhTrang.SelectedValue = null;
-            this.cboTinhTrang.Size = new System.Drawing.Size(120, 35);
-            this.cboTinhTrang.TabIndex = 3;
-            this.cboTinhTrang.Texts = "";
-            this.cboTinhTrang.OnSelectedIndexChanged += new System.EventHandler(this.cboTinhTrang_OnSelectedIndexChanged);
-            // 
-            // cboMaMay
-            // 
-            this.cboMaMay.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboMaMay.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboMaMay.BorderSize = 1;
-            this.cboMaMay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboMaMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboMaMay.ForeColor = System.Drawing.Color.DimGray;
-            this.cboMaMay.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboMaMay.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cboMaMay.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboMaMay.Location = new System.Drawing.Point(116, 13);
-            this.cboMaMay.MinimumSize = new System.Drawing.Size(100, 30);
-            this.cboMaMay.Name = "cboMaMay";
-            this.cboMaMay.Padding = new System.Windows.Forms.Padding(1);
-            this.cboMaMay.SelectedValue = null;
-            this.cboMaMay.Size = new System.Drawing.Size(120, 35);
-            this.cboMaMay.TabIndex = 2;
-            this.cboMaMay.Texts = "";
-            this.cboMaMay.OnSelectedIndexChanged += new System.EventHandler(this.cboMaMay_OnSelectedIndexChanged);
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnThem.BorderRadius = 18;
-            this.btnThem.BorderSize = 2;
-            this.btnThem.FlatAppearance.BorderSize = 0;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
-            this.btnThem.Location = new System.Drawing.Point(706, 14);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(5);
-            this.btnThem.Size = new System.Drawing.Size(38, 37);
-            this.btnThem.TabIndex = 0;
-            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThem.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // frmLinhKien
             // 

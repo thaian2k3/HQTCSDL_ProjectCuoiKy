@@ -8,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -18,14 +19,15 @@ namespace Project_CuoiKy.Forms.FormLinhKien
     {
         private ApiService api = new ApiService();
         private Helpers helpers = new Helpers();
+
         private string maLK;
         private string maMay;
         private string maNhaCC;
         private string loaiLinhKien;
         private string tenHang;
-        private string model;
         private string tinhTrang;
         private string thongSo;
+        private string model;
         public frmSuaThongTinLinhKien()
         {
             InitializeComponent();
@@ -34,31 +36,21 @@ namespace Project_CuoiKy.Forms.FormLinhKien
         {
             InitializeComponent();
             this.maLK = maLK;
-            txtModel.Texts = maNCC;
-            txtTenHang.Texts = tenHang;
-            txtThongSo.Texts = thongSo;
-            txtTinhTrang.Texts = tinhTrang;
+            this.model = txtModel.Texts = model;
+            this.tenHang = txtTenHang.Texts = tenHang;
+            this.thongSo = txtThongSo.Texts = thongSo;
+            this.tinhTrang = txtTinhTrang.Texts = tinhTrang;
+            this.loaiLinhKien = loaiLK;
+            this.maNhaCC = maNCC;
+            this.maMay = maMay;
+
+            LoadComboBox();
             /// không biết đổ dữ liệu vào 2 cái này sao hết máy ông, help
             /*GanGiaTriChoCBO(cboNhaCC, maNCC);
             GanGiaTriChoCBO(cboMaMay, maMay);*/
-            cboLoaiLK.SelectedItem = loaiLK;
+            //cboLoaiLK.SelectedValue = loaiLK;
         }
-        private void GanGiaTriChoCBO(RJComboBox ComboBox1, string value)
-        {
-            int Selected = 1;
-            int count = ComboBox1.Items.Count;
-            for (int i = 0; (i <= (count - 1)); i++)
-            {
-                ComboBox1.SelectedIndex = i;
-                if ((string)(ComboBox1.SelectedValue) == value)
-                {
-                    Selected = i;
-                }
-
-            }
-
-            ComboBox1.SelectedIndex = Selected;
-        }
+        
         private void btnSua_Click(object sender, EventArgs e)
         {
             string maMay = cboMaMay.SelectedValue.ToString();
@@ -72,14 +64,19 @@ namespace Project_CuoiKy.Forms.FormLinhKien
             this.DialogResult = api.ExecQuery(query, "Sửa linh kiện thành công") ? DialogResult.OK : DialogResult.None;
         }
 
-        private void frmSuaThongTinLinhKien_Load(object sender, EventArgs e)
+        private void LoadComboBox()
         {
             string query = "Select MaMay from May";
             cboMaMay = helpers.CboData(query, cboMaMay, "MaMay");
-            cboMaMay.Texts = "Chọn mã máy";
+            cboMaMay.SelectedValue = this.maMay;
+
             string query2 = "Select MaNCC from NhaCungCap";
             cboNhaCC = helpers.CboData(query2, cboNhaCC, "MaNCC");
-            cboNhaCC.Texts = "Chọn mã nhà cung cấp";
+            cboNhaCC.SelectedValue = this.maNhaCC;
+
+            string query3 = "Select LoaiLK from LinhKien";
+            cboLoaiLK = helpers.CboData(query3, cboLoaiLK, "LoaiLK");
+            cboLoaiLK.SelectedValue = this.loaiLinhKien;
         }
     }
 }

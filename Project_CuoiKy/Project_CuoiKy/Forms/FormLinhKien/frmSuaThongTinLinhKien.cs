@@ -55,7 +55,7 @@ namespace Project_CuoiKy.Forms.FormLinhKien
         {
             string maMay = cboMaMay.SelectedValue.ToString();
             string maNCC = cboNhaCC.SelectedValue.ToString();
-            string loaiLK = cboLoaiLK.SelectedItem.ToString();
+            string loaiLK = cboLoaiLK.SelectedValue.ToString();
             string tenHang = txtTenHang.Texts;
             string model = txtModel.Texts;
             string tinhTrang = txtTinhTrang.Texts;

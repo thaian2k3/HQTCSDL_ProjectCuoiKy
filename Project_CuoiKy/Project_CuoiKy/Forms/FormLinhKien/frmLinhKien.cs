@@ -39,13 +39,13 @@ namespace Project_CuoiKy.Forms.FormLinhKien
             cboLoaiLK = helpers.CboData("select distinct LoaiLK from LinhKien", cboLoaiLK, "LoaiLK");
             cboLoaiLK.Texts = "Loại linh kiện";
         }
-        private void FilterMay(RJComboBox cboMaPhong, RJComboBox cboTinhTrang, RJComboBox cboViTri)
+        private void FilterMay(RJComboBox cboMaMay, RJComboBox cboTinhTrang, RJComboBox cboLoaiLK)
         {
             string query = "select * from V_ThongTinLinhKien";
             List<string> subQueryList = new List<string>();
             if (cboMaMay.SelectedValue != null)
             {
-                subQueryList.Add($"MaMay={cboMaPhong.SelectedValue}");
+                subQueryList.Add($"MaMay={cboMaMay.SelectedValue}");
             }
             if (cboTinhTrang.SelectedValue != null)
             {
@@ -106,7 +106,7 @@ namespace Project_CuoiKy.Forms.FormLinhKien
                 if (result == DialogResult.Yes)
                 {
                     string maLK = helpers.DataInCol(dgvLinhKien, "MaLK");
-                    string query = $"DELETE from May WHERE MaMay = '{maLK}'";
+                    string query = $"DELETE from LinhKien WHERE MaLK = '{maLK}'";
                     api.ExecQuery(query, "Xóa linh kiện thành công");
                     LoadData();
                 }

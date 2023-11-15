@@ -33,27 +33,22 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
         }
         private void LoadComboBox()
         {
-            
             cboTinhTrang = helpers.CboData("Select distinct TinhTrang from ChiTietPhieuBaoTri", cboTinhTrang, "TinhTrang");
-            cboTinhTrang.Texts = "Tình trạng(Dang bao tri/hoan thanh)";
+            cboTinhTrang.Texts = "  ";
         }
-        private void label4_Click(object sender, EventArgs e)
-        {
-        }
+       
         private void frmSuaChiTietPhieuBaoTri_Load(object sender, EventArgs e)
         {
             txtMaPhieu.Texts = MaPhieu;
             txtMaLK.Texts = MaLK;
             LoadComboBox();
+            //this.MaximizeBox = false;
         }
         public frmSuaChiTietPhieuBaoTri(string MaLK, string MaPhieu)
         {
             InitializeComponent();
             this.MaLK = MaLK;
             this.MaPhieu = MaPhieu;
-        }
-        public void LoadData()
-        {
         }
     }
 }

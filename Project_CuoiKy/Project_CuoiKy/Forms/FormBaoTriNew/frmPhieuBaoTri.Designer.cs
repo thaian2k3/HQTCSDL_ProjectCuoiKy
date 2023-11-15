@@ -40,11 +40,7 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.btnThemPheuBaoTri = new CustomControls.RJControls.RJButton();
-            this.btnRefresh = new CustomControls.RJControls.RJButton();
-            this.btnTim = new CustomControls.RJControls.RJButton();
-            this.lblBoLoc = new System.Windows.Forms.Label();
-            this.txtTimKiem = new CustomControls.RJControls.RJTextBox();
+            this.lblphieubaotri = new System.Windows.Forms.Label();
             this.pnlBody = new System.Windows.Forms.Panel();
             this.dgvBaoTri = new System.Windows.Forms.DataGridView();
             this.MaPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +50,9 @@
             this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnThemPheuBaoTri = new CustomControls.RJControls.RJButton();
+            this.btnRefresh = new CustomControls.RJControls.RJButton();
+            this.txtTimKiem = new CustomControls.RJControls.RJTextBox();
             this.pnlHeader.SuspendLayout();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoTri)).BeginInit();
@@ -91,8 +90,7 @@
             this.pnlHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlHeader.Controls.Add(this.btnThemPheuBaoTri);
             this.pnlHeader.Controls.Add(this.btnRefresh);
-            this.pnlHeader.Controls.Add(this.btnTim);
-            this.pnlHeader.Controls.Add(this.lblBoLoc);
+            this.pnlHeader.Controls.Add(this.lblphieubaotri);
             this.pnlHeader.Controls.Add(this.txtTimKiem);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
@@ -100,114 +98,18 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1355, 94);
             this.pnlHeader.TabIndex = 4;
-            this.pnlHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHeader_Paint);
             // 
-            // btnThemPheuBaoTri
+            // lblphieubaotri
             // 
-            this.btnThemPheuBaoTri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThemPheuBaoTri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThemPheuBaoTri.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnThemPheuBaoTri.BorderRadius = 18;
-            this.btnThemPheuBaoTri.BorderSize = 2;
-            this.btnThemPheuBaoTri.FlatAppearance.BorderSize = 0;
-            this.btnThemPheuBaoTri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemPheuBaoTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemPheuBaoTri.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThemPheuBaoTri.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
-            this.btnThemPheuBaoTri.Location = new System.Drawing.Point(1234, 17);
-            this.btnThemPheuBaoTri.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThemPheuBaoTri.Name = "btnThemPheuBaoTri";
-            this.btnThemPheuBaoTri.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnThemPheuBaoTri.Size = new System.Drawing.Size(92, 57);
-            this.btnThemPheuBaoTri.TabIndex = 64;
-            this.btnThemPheuBaoTri.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemPheuBaoTri.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThemPheuBaoTri.UseVisualStyleBackColor = false;
-            this.btnThemPheuBaoTri.Click += new System.EventHandler(this.rjButton1_Click);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnRefresh.BorderRadius = 18;
-            this.btnRefresh.BorderSize = 2;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(1085, 16);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnRefresh.Size = new System.Drawing.Size(129, 57);
-            this.btnRefresh.TabIndex = 62;
-            this.btnRefresh.Text = "Reset";
-            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // btnTim
-            // 
-            this.btnTim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnTim.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnTim.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnTim.BorderRadius = 25;
-            this.btnTim.BorderSize = 1;
-            this.btnTim.FlatAppearance.BorderSize = 0;
-            this.btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnTim.Image = global::Project_CuoiKy.Properties.Resources.icons8_search_30;
-            this.btnTim.Location = new System.Drawing.Point(757, 17);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(5);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Padding = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.btnTim.Size = new System.Drawing.Size(60, 50);
-            this.btnTim.TabIndex = 58;
-            this.btnTim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTim.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnTim.UseVisualStyleBackColor = false;
-            // 
-            // lblBoLoc
-            // 
-            this.lblBoLoc.AutoSize = true;
-            this.lblBoLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBoLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblBoLoc.Location = new System.Drawing.Point(13, 18);
-            this.lblBoLoc.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblBoLoc.Name = "lblBoLoc";
-            this.lblBoLoc.Size = new System.Drawing.Size(212, 38);
-            this.lblBoLoc.TabIndex = 47;
-            this.lblBoLoc.Text = "Phiếu bảo trì";
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTimKiem.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtTimKiem.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtTimKiem.BorderRadius = 15;
-            this.txtTimKiem.BorderSize = 2;
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(291, 14);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.txtTimKiem.Multiline = false;
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(17, 12, 17, 12);
-            this.txtTimKiem.PasswordChar = false;
-            this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTimKiem.PlaceholderText = "Tìm kiếm";
-            this.txtTimKiem.ReadOnly = false;
-            this.txtTimKiem.Size = new System.Drawing.Size(444, 50);
-            this.txtTimKiem.TabIndex = 1;
-            this.txtTimKiem.Texts = "";
-            this.txtTimKiem.UnderlinedStyle = false;
-            this.txtTimKiem._TextChanged += new System.EventHandler(this.txtTimKiem__TextChanged);
+            this.lblphieubaotri.AutoSize = true;
+            this.lblphieubaotri.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblphieubaotri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.lblphieubaotri.Location = new System.Drawing.Point(13, 18);
+            this.lblphieubaotri.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblphieubaotri.Name = "lblphieubaotri";
+            this.lblphieubaotri.Size = new System.Drawing.Size(212, 38);
+            this.lblphieubaotri.TabIndex = 47;
+            this.lblphieubaotri.Text = "Phiếu bảo trì";
             // 
             // pnlBody
             // 
@@ -221,9 +123,11 @@
             // 
             // dgvBaoTri
             // 
-            this.dgvBaoTri.AllowDrop = true;
             this.dgvBaoTri.AllowUserToAddRows = false;
             this.dgvBaoTri.AllowUserToDeleteRows = false;
+            this.dgvBaoTri.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvBaoTri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.dgvBaoTri.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvBaoTri.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -254,6 +158,7 @@
             this.dgvBaoTri.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvBaoTri.EnableHeadersVisualStyles = false;
             this.dgvBaoTri.GridColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dgvBaoTri.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dgvBaoTri.Location = new System.Drawing.Point(0, 94);
             this.dgvBaoTri.Margin = new System.Windows.Forms.Padding(4);
             this.dgvBaoTri.Name = "dgvBaoTri";
@@ -269,11 +174,8 @@
             this.dgvBaoTri.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBaoTri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBaoTri.Size = new System.Drawing.Size(1355, 546);
-            this.dgvBaoTri.TabIndex = 0;
+            this.dgvBaoTri.TabIndex = 4;
             this.dgvBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBaoTri_CellClick);
-            this.dgvBaoTri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBaoTri_CellContentClick);
-            this.dgvBaoTri.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBaoTri_CellContentDoubleClick_1);
-            this.dgvBaoTri.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvBaoTri_CellMouseDoubleClick);
             // 
             // MaPhieu
             // 
@@ -357,6 +259,80 @@
             this.dataGridViewImageColumn4.ReadOnly = true;
             this.dataGridViewImageColumn4.Width = 125;
             // 
+            // btnThemPheuBaoTri
+            // 
+            this.btnThemPheuBaoTri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemPheuBaoTri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThemPheuBaoTri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThemPheuBaoTri.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnThemPheuBaoTri.BorderRadius = 18;
+            this.btnThemPheuBaoTri.BorderSize = 2;
+            this.btnThemPheuBaoTri.FlatAppearance.BorderSize = 0;
+            this.btnThemPheuBaoTri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemPheuBaoTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemPheuBaoTri.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThemPheuBaoTri.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
+            this.btnThemPheuBaoTri.Location = new System.Drawing.Point(1234, 17);
+            this.btnThemPheuBaoTri.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemPheuBaoTri.Name = "btnThemPheuBaoTri";
+            this.btnThemPheuBaoTri.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnThemPheuBaoTri.Size = new System.Drawing.Size(92, 57);
+            this.btnThemPheuBaoTri.TabIndex = 64;
+            this.btnThemPheuBaoTri.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemPheuBaoTri.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThemPheuBaoTri.UseVisualStyleBackColor = false;
+            this.btnThemPheuBaoTri.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnRefresh.BorderRadius = 18;
+            this.btnRefresh.BorderSize = 2;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(1085, 16);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnRefresh.Size = new System.Drawing.Size(129, 57);
+            this.btnRefresh.TabIndex = 62;
+            this.btnRefresh.Text = "Reset";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRefresh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTimKiem.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtTimKiem.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtTimKiem.BorderRadius = 15;
+            this.txtTimKiem.BorderSize = 2;
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTimKiem.Location = new System.Drawing.Point(291, 14);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtTimKiem.Multiline = false;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(17, 12, 17, 12);
+            this.txtTimKiem.PasswordChar = false;
+            this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTimKiem.PlaceholderText = "Tìm kiếm";
+            this.txtTimKiem.ReadOnly = false;
+            this.txtTimKiem.Size = new System.Drawing.Size(444, 50);
+            this.txtTimKiem.TabIndex = 1;
+            this.txtTimKiem.Texts = "";
+            this.txtTimKiem.UnderlinedStyle = false;
+            this.txtTimKiem._TextChanged += new System.EventHandler(this.txtTimKiem__TextChanged);
+            // 
             // frmPhieuBaoTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -383,8 +359,7 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private System.Windows.Forms.Panel pnlHeader;
         private CustomControls.RJControls.RJButton btnRefresh;
-        private CustomControls.RJControls.RJButton btnTim;
-        private System.Windows.Forms.Label lblBoLoc;
+        private System.Windows.Forms.Label lblphieubaotri;
         private CustomControls.RJControls.RJTextBox txtTimKiem;
         private System.Windows.Forms.Panel pnlBody;
         private System.Windows.Forms.DataGridView dgvBaoTri;

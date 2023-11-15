@@ -46,54 +46,13 @@ namespace Project_CuoiKy.Forms.FormBaoTri
                LoadData();
             }
         }
-        //private void ShowFormViewPhieuBaoTri()
-        //{
-        //    //frmSuaChiTietPhieuBaoTri
-        //    string MaLK = helpers.DataInCol(dgvChiTietBaoTri, "MaLK");
-        //    Forms.FormBaoTri.frmSuaChiTietPhieuBaoTri f2 = new Forms.FormBaoTri.frmSuaChiTietPhieuBaoTri(MaLK);
-        //    if (f2.ShowDialog() == DialogResult.OK)
-        //    {
-        //        LoadData();
-        //    }
-        //frmSuaChiTietPhieuBaoTri
-        ////}
-        //private void ShowFrmSuaChTietPhieuBaoTri()
-        //{
-        //    //string MaPhieu = helpers.DataInCol(dgvViewBaoTri, "MaPhieu");
-        //    //Forms.FormBaoTri.frmViewChiTietBaotri f2 = new Forms.FormBaoTri.frmViewChiTietBaotri(MaPhieu);
-        //    string MaLK = helpers.DataInCol(dgvChiTietBaoTri, "MaLK");
-        //    Forms.frmSuaChiTietPhieuBaoTri f1 = new Forms.frmSuaChiTietPhieuBaoTri(MaLK);
-        //    frmThemPhieuBaoTri f1 = new frmThemPhieuBaoTri();
-        //    if (f1.ShowDialog() == DialogResult.OK)
-        //    {
-        //        LoadData();
-        //    }
-        //}
-
         private void btnThem_Click(object sender, EventArgs e)
         {
-            ShowFrmThemPhieuBaoTri();
-        }
-
-        private void ShowFrmThemPhieuBaoTri()
-        {   
-            //string MaPhieu = helpers.DataInCol(dgvChiTietBaoTri, "MaPhieuBT");
             frmThemPhieuBaoTri f2 = new frmThemPhieuBaoTri(MaPhieu);
             if (f2.ShowDialog() == DialogResult.OK)
             {
                 LoadData();
             }
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
- 
-
-        private void dgvChiTietBaoTri_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void dgvChiTietBaoTri_CellClick(object sender, DataGridViewCellEventArgs e)

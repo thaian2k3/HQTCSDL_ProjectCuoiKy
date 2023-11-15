@@ -35,7 +35,7 @@
             this.pnlBody = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThanhToan = new CustomControls.RJControls.RJButton();
-            this.dgvChiTietHoaDon = new System.Windows.Forms.DataGridView();
+            this.dgvChiTietBaoTri = new System.Windows.Forms.DataGridView();
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,27 +52,29 @@
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.pnlBody.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHoaDon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).BeginInit();
             this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBody
             // 
             this.pnlBody.Controls.Add(this.panel1);
-            this.pnlBody.Controls.Add(this.dgvChiTietHoaDon);
+            this.pnlBody.Controls.Add(this.dgvChiTietBaoTri);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(0, 63);
+            this.pnlBody.Location = new System.Drawing.Point(0, 77);
+            this.pnlBody.Margin = new System.Windows.Forms.Padding(4);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(889, 561);
+            this.pnlBody.Size = new System.Drawing.Size(1185, 691);
             this.pnlBody.TabIndex = 5;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnThanhToan);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 472);
+            this.panel1.Location = new System.Drawing.Point(0, 581);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(889, 89);
+            this.panel1.Size = new System.Drawing.Size(1185, 110);
             this.panel1.TabIndex = 1;
             // 
             // btnThanhToan
@@ -89,10 +91,11 @@
             this.btnThanhToan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnThanhToan.Image = global::Project_CuoiKy.Properties.Resources.icons8_receipt_approved_30;
             this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThanhToan.Location = new System.Drawing.Point(731, 24);
+            this.btnThanhToan.Location = new System.Drawing.Point(975, 30);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(5);
-            this.btnThanhToan.Size = new System.Drawing.Size(130, 40);
+            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnThanhToan.Size = new System.Drawing.Size(173, 49);
             this.btnThanhToan.TabIndex = 55;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -100,13 +103,13 @@
             this.btnThanhToan.UseVisualStyleBackColor = false;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
-            // dgvChiTietHoaDon
+            // dgvChiTietBaoTri
             // 
-            this.dgvChiTietHoaDon.AllowUserToAddRows = false;
-            this.dgvChiTietHoaDon.AllowUserToDeleteRows = false;
-            this.dgvChiTietHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.dgvChiTietHoaDon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvChiTietHoaDon.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvChiTietBaoTri.AllowUserToAddRows = false;
+            this.dgvChiTietBaoTri.AllowUserToDeleteRows = false;
+            this.dgvChiTietBaoTri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.dgvChiTietBaoTri.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvChiTietBaoTri.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,10 +117,10 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvChiTietHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvChiTietHoaDon.ColumnHeadersHeight = 40;
-            this.dgvChiTietHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvChiTietHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvChiTietBaoTri.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvChiTietBaoTri.ColumnHeadersHeight = 40;
+            this.dgvChiTietBaoTri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvChiTietBaoTri.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSP,
             this.DonGia,
             this.SoLuong,
@@ -136,26 +139,28 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvChiTietHoaDon.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvChiTietHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvChiTietHoaDon.EnableHeadersVisualStyles = false;
-            this.dgvChiTietHoaDon.GridColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dgvChiTietHoaDon.Location = new System.Drawing.Point(0, 0);
-            this.dgvChiTietHoaDon.Name = "dgvChiTietHoaDon";
-            this.dgvChiTietHoaDon.ReadOnly = true;
-            this.dgvChiTietHoaDon.RowHeadersVisible = false;
-            this.dgvChiTietHoaDon.RowHeadersWidth = 51;
+            this.dgvChiTietBaoTri.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvChiTietBaoTri.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvChiTietBaoTri.EnableHeadersVisualStyles = false;
+            this.dgvChiTietBaoTri.GridColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dgvChiTietBaoTri.Location = new System.Drawing.Point(0, 0);
+            this.dgvChiTietBaoTri.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvChiTietBaoTri.Name = "dgvChiTietBaoTri";
+            this.dgvChiTietBaoTri.ReadOnly = true;
+            this.dgvChiTietBaoTri.RowHeadersVisible = false;
+            this.dgvChiTietBaoTri.RowHeadersWidth = 51;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            this.dgvChiTietHoaDon.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvChiTietHoaDon.RowTemplate.DividerHeight = 1;
-            this.dgvChiTietHoaDon.RowTemplate.Height = 35;
-            this.dgvChiTietHoaDon.RowTemplate.ReadOnly = true;
-            this.dgvChiTietHoaDon.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvChiTietHoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvChiTietHoaDon.Size = new System.Drawing.Size(889, 561);
-            this.dgvChiTietHoaDon.TabIndex = 0;
-            this.dgvChiTietHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietHoaDon_CellClick);
+            this.dgvChiTietBaoTri.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvChiTietBaoTri.RowTemplate.DividerHeight = 1;
+            this.dgvChiTietBaoTri.RowTemplate.Height = 35;
+            this.dgvChiTietBaoTri.RowTemplate.ReadOnly = true;
+            this.dgvChiTietBaoTri.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvChiTietBaoTri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvChiTietBaoTri.Size = new System.Drawing.Size(1185, 691);
+            this.dgvChiTietBaoTri.TabIndex = 0;
+            this.dgvChiTietBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietHoaDon_CellClick);
+            this.dgvChiTietBaoTri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietHoaDon_CellContentClick);
             // 
             // MaSP
             // 
@@ -266,8 +271,9 @@
             this.pnlHeader.Controls.Add(this.lblSoLuong);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(889, 63);
+            this.pnlHeader.Size = new System.Drawing.Size(1185, 77);
             this.pnlHeader.TabIndex = 4;
             // 
             // btnSua
@@ -283,10 +289,11 @@
             this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnSua.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(289, 10);
+            this.btnSua.Location = new System.Drawing.Point(385, 12);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Padding = new System.Windows.Forms.Padding(5);
-            this.btnSua.Size = new System.Drawing.Size(84, 40);
+            this.btnSua.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnSua.Size = new System.Drawing.Size(112, 49);
             this.btnSua.TabIndex = 53;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -303,16 +310,16 @@
             this.txtSoLuong.BorderSize = 2;
             this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSoLuong.Location = new System.Drawing.Point(95, 15);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoLuong.Location = new System.Drawing.Point(127, 18);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(5);
             this.txtSoLuong.Multiline = false;
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.txtSoLuong.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
             this.txtSoLuong.PasswordChar = false;
             this.txtSoLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtSoLuong.PlaceholderText = "Số lượng sản phẩm";
             this.txtSoLuong.ReadOnly = false;
-            this.txtSoLuong.Size = new System.Drawing.Size(188, 29);
+            this.txtSoLuong.Size = new System.Drawing.Size(251, 35);
             this.txtSoLuong.TabIndex = 1;
             this.txtSoLuong.Texts = "";
             this.txtSoLuong.UnderlinedStyle = false;
@@ -322,27 +329,27 @@
             this.lblSoLuong.AutoSize = true;
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblSoLuong.Location = new System.Drawing.Point(8, 24);
-            this.lblSoLuong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSoLuong.Location = new System.Drawing.Point(11, 30);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(80, 20);
+            this.lblSoLuong.Size = new System.Drawing.Size(98, 25);
             this.lblSoLuong.TabIndex = 0;
             this.lblSoLuong.Text = "Số lượng";
             // 
             // frmChiTietHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(889, 624);
+            this.ClientSize = new System.Drawing.Size(1185, 768);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmChiTietHoaDon";
             this.Text = "frmChiTietHoaDon";
+            this.Load += new System.EventHandler(this.frmChiTietHoaDon_Load);
             this.pnlBody.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).EndInit();
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.ResumeLayout(false);
@@ -352,7 +359,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlBody;
-        private System.Windows.Forms.DataGridView dgvChiTietHoaDon;
+        private System.Windows.Forms.DataGridView dgvChiTietBaoTri;
         private System.Windows.Forms.Panel pnlHeader;
         private CustomControls.RJControls.RJTextBox txtSoLuong;
         private System.Windows.Forms.Label lblSoLuong;

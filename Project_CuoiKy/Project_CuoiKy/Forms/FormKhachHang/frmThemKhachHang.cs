@@ -25,5 +25,9 @@ namespace Project_CuoiKy.Forms.FormPhong
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
         }
 
+        private void frmThemKhachHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_CuoiKy.Forms.FormBaoTri;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,9 @@ namespace Project_CuoiKy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new frmPhieuBaoTri());
+            //Application.Run(new MainForm());
+
         }
     }
 }

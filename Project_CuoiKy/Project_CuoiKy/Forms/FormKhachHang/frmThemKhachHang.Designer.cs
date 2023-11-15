@@ -52,10 +52,11 @@
             this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_user_male_30;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(160, 342);
+            this.btnThem.Location = new System.Drawing.Point(213, 421);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(5);
-            this.btnThem.Size = new System.Drawing.Size(96, 40);
+            this.btnThem.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnThem.Size = new System.Drawing.Size(128, 49);
             this.btnThem.TabIndex = 34;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -68,9 +69,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label2.Location = new System.Drawing.Point(89, 179);
+            this.label2.Location = new System.Drawing.Point(119, 220);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 20);
+            this.label2.Size = new System.Drawing.Size(154, 25);
             this.label2.TabIndex = 29;
             this.label2.Text = "Tên khách hàng";
             // 
@@ -79,9 +81,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label4.Location = new System.Drawing.Point(117, 53);
+            this.label4.Location = new System.Drawing.Point(156, 65);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 25);
+            this.label4.Size = new System.Drawing.Size(245, 31);
             this.label4.TabIndex = 14;
             this.label4.Text = "Thêm khách hàng";
             // 
@@ -90,9 +93,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label1.Location = new System.Drawing.Point(90, 105);
+            this.label1.Location = new System.Drawing.Point(120, 129);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.Size = new System.Drawing.Size(126, 25);
             this.label1.TabIndex = 28;
             this.label1.Text = "Số điện thoại";
             // 
@@ -105,15 +109,16 @@
             this.txtMatKhau.BorderSize = 2;
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMatKhau.Location = new System.Drawing.Point(90, 272);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMatKhau.Location = new System.Drawing.Point(120, 335);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtMatKhau.Multiline = false;
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtMatKhau.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtMatKhau.PasswordChar = false;
             this.txtMatKhau.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMatKhau.PlaceholderText = "";
-            this.txtMatKhau.Size = new System.Drawing.Size(250, 31);
+            this.txtMatKhau.ReadOnly = false;
+            this.txtMatKhau.Size = new System.Drawing.Size(333, 39);
             this.txtMatKhau.TabIndex = 33;
             this.txtMatKhau.Texts = "";
             this.txtMatKhau.UnderlinedStyle = false;
@@ -127,15 +132,16 @@
             this.txtTenKH.BorderSize = 2;
             this.txtTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTenKH.Location = new System.Drawing.Point(90, 203);
-            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenKH.Location = new System.Drawing.Point(120, 250);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtTenKH.Multiline = false;
             this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTenKH.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtTenKH.PasswordChar = false;
             this.txtTenKH.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTenKH.PlaceholderText = "";
-            this.txtTenKH.Size = new System.Drawing.Size(250, 31);
+            this.txtTenKH.ReadOnly = false;
+            this.txtTenKH.Size = new System.Drawing.Size(333, 39);
             this.txtTenKH.TabIndex = 32;
             this.txtTenKH.Texts = "";
             this.txtTenKH.UnderlinedStyle = false;
@@ -150,15 +156,16 @@
             this.txtMaKH.CausesValidation = false;
             this.txtMaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMaKH.Location = new System.Drawing.Point(90, 129);
-            this.txtMaKH.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaKH.Location = new System.Drawing.Point(120, 159);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtMaKH.Multiline = false;
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtMaKH.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtMaKH.PasswordChar = false;
             this.txtMaKH.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMaKH.PlaceholderText = "";
-            this.txtMaKH.Size = new System.Drawing.Size(250, 31);
+            this.txtMaKH.ReadOnly = false;
+            this.txtMaKH.Size = new System.Drawing.Size(333, 39);
             this.txtMaKH.TabIndex = 31;
             this.txtMaKH.Texts = "";
             this.txtMaKH.UnderlinedStyle = false;
@@ -168,18 +175,19 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label3.Location = new System.Drawing.Point(90, 248);
+            this.label3.Location = new System.Drawing.Point(120, 305);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 20);
+            this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 30;
             this.label3.Text = "Mật khẩu";
             // 
             // frmThemKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(434, 461);
+            this.ClientSize = new System.Drawing.Size(579, 567);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTenKH);
@@ -188,9 +196,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmThemKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmThemKhachHang";
+            this.Load += new System.EventHandler(this.frmThemKhachHang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

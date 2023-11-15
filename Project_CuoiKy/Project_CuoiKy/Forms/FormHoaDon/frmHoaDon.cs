@@ -80,5 +80,10 @@ namespace Project_CuoiKy.Forms.FormHoaDon
             query = $"SELECT * FROM func_LocHoaDonTheoNgayBD_KT('{dtpNgayDau.Value}', '{dtpNgayCuoi.Value}')";
             dgvHoaDon.DataSource = api.TimKiemKhachHang(query);
         }
+
+        private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

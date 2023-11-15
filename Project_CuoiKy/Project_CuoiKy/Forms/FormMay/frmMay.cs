@@ -168,5 +168,15 @@ namespace Project_CuoiKy.Forms.FormMay
         {
             ShowFormLichSuDungMay();
         }
+
+        private void pnlHeader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvMay_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

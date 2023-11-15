@@ -54,5 +54,15 @@ namespace Project_CuoiKy.Forms.FormSanPham
             string query = $"EXEC [SuaThongTinSanPham] {maSP}, N'{txtTenSanPham.Texts}', N'{cboLoaiSP.SelectedValue}', {cboMaNCC.SelectedValue}, {int.Parse(txtSoLuong.Texts)}, {double.Parse(donGia)}";
             this.DialogResult = api.ExecQuery(query, "Sửa sản phẩm thành công") ? DialogResult.OK : DialogResult.None;
         }
+
+        private void cboLoaiSP_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboMaNCC_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -189,6 +189,7 @@
             this.txtSoTien.TabIndex = 66;
             this.txtSoTien.Texts = "";
             this.txtSoTien.UnderlinedStyle = false;
+            this.txtSoTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTien_KeyPress);
             // 
             // btnHoanTat
             // 

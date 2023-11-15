@@ -27,17 +27,17 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
         }
         private void btnHoanTat_Click(object sender, EventArgs e)
         {
-            //string sotien  = txtSoTien.Texts.Trim() == "" ? "0" : txtSoTien.Texts;
+            string sotien  = txtSoTien.Texts.Trim() == "" ? "0" : txtSoTien.Texts;
             string malk    = txtMaLK.Texts.Trim() == "" ? "0" :   txtMaLK.Texts;
             string maphieu = txtMaPhieu.Texts.Trim() == "" ? "0" : txtMaPhieu.Texts;//int.Parse(txtMaPhieu.Texts)
             string query= "";
             if (cboTinhTrang.Texts == TinhTrangCu)               
             {
-                 query = $"EXEC proc_CapNhatChiTietBaoTri {int.Parse(malk)},{int.Parse(maphieu)}, {int.Parse(txtSoTien.Texts)}, N'{TinhTrangCu}', N'{txtGhiChu.Texts}'";
+                 query = $"EXEC proc_CapNhatChiTietBaoTri {int.Parse(malk)},{int.Parse(maphieu)}, {int.Parse(sotien)}, N'{TinhTrangCu}', N'{txtGhiChu.Texts}'";
             }
             else
             {
-             query = $"EXEC proc_CapNhatChiTietBaoTri {int.Parse(malk)},{int.Parse(maphieu)}, {int.Parse(txtSoTien.Texts)}, N'{cboTinhTrang.SelectedValue}', N'{txtGhiChu.Texts}'"; 
+             query = $"EXEC proc_CapNhatChiTietBaoTri {int.Parse(malk)},{int.Parse(maphieu)}, {int.Parse(sotien)}, N'{cboTinhTrang.SelectedValue}', N'{txtGhiChu.Texts}'"; 
             }
             bool result = api.ExecQuery(query, "Sửa  thành công");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
@@ -56,6 +56,7 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
             txtSoTien.Texts = SoTienCu;//result = Convert.ToInt32(double.Parse(strNumber));
             txtGhiChu.Texts = GhiChuCu;
             LoadComboBox();
+            txtSoTien.KeyPress += txtSoTien_KeyPress;
             //this.MaximizeBox = false;
         }
         public frmSuaChiTietPhieuBaoTri(string MaLK, string MaPhieu,string SoTien, string TinhTrang, string GhiChu)
@@ -66,6 +67,16 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
             this.SoTienCu = SoTien;
             this.TinhTrangCu = TinhTrang;
             this.GhiChuCu= GhiChu;
+        }
+
+        private void txtSoTien_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Kiểm tra xem ký tự có phải là số hay không, hoặc có phải là ký tự chấp nhận được (ví dụ: backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Nếu không phải số, không cho phép ký tự được nhập vào TextBox
+                e.Handled = true;
+            }
         }
     }
 }

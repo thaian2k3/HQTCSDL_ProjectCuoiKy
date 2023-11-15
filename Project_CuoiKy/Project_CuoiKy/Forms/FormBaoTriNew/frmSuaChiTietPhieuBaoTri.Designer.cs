@@ -102,6 +102,7 @@
             this.txtSoTien.TabIndex = 86;
             this.txtSoTien.Texts = "";
             this.txtSoTien.UnderlinedStyle = false;
+            this.txtSoTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTien_KeyPress);
             // 
             // label3
             // 

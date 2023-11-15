@@ -76,7 +76,7 @@ namespace Project_CuoiKy.Forms.FormHoaDon
 
         private void frmChiTietHoaDon_Load(object sender, EventArgs e)
         {
-
+             
         }
 
         private void dgvChiTietHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)

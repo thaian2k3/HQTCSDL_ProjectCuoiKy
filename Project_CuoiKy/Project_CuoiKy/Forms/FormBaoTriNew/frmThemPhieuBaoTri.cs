@@ -33,6 +33,7 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         private void frmThemPhieuBaoTri_Load(object sender, EventArgs e)
         {
             txtMaPhieu.Texts = MaPhieu;
+            txtTinhTrang.Texts = "Dang bao tri";
             LoadComboBox();
         }
         private void btnHoanTat_Click(object sender, EventArgs e)
@@ -44,7 +45,9 @@ namespace Project_CuoiKy.Forms.FormBaoTri
                 return;
             }
             string SoTien = txtSoTien.Texts.Trim() == "" ? "0" : txtSoTien.Texts;
-            string query = $"EXEC proc_ThemChiTietBaoTri {cboMaLK.SelectedValue},{int.Parse(txtMaPhieu.Texts)}, {int.Parse(SoTien)}, N'{cboTinhTrang.SelectedValue}', N'{txtGhiChu.Texts}'";
+
+            string tinhtrang= txtTinhTrang.Texts;
+            string query = $"EXEC proc_ThemChiTietBaoTri {cboMaLK.SelectedValue},{int.Parse(txtMaPhieu.Texts)}, {int.Parse(SoTien)}, N'{tinhtrang}', N'{txtGhiChu.Texts}'";
             bool result = api.ExecQuery(query, "Thêm  thành công");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
         }
@@ -52,8 +55,6 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         {
             cboMaLK = helpers.CboData("Select distinct MaLK from LinhKien", cboMaLK, "MaLK");
             cboMaLK.Texts = "   ";
-            cboTinhTrang = helpers.CboData("Select distinct TinhTrang from ChiTietPhieuBaoTri", cboTinhTrang, "TinhTrang");
-            cboTinhTrang.Texts = "   ";
         }
     }
 }

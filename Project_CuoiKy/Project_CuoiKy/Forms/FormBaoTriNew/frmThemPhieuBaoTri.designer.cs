@@ -38,8 +38,8 @@
             this.txtGhiChu = new CustomControls.RJControls.RJTextBox();
             this.txtSoTien = new CustomControls.RJControls.RJTextBox();
             this.btnHoanTat = new CustomControls.RJControls.RJButton();
-            this.cboTinhTrang = new CustomControls.RJControls.RJComboBox();
             this.txtMaPhieu = new CustomControls.RJControls.RJTextBox();
+            this.txtTinhTrang = new CustomControls.RJControls.RJTextBox();
             this.SuspendLayout();
             // 
             // label3
@@ -216,28 +216,6 @@
             this.btnHoanTat.UseVisualStyleBackColor = false;
             this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
-            // cboTinhTrang
-            // 
-            this.cboTinhTrang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboTinhTrang.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboTinhTrang.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboTinhTrang.BorderSize = 1;
-            this.cboTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cboTinhTrang.ForeColor = System.Drawing.Color.DimGray;
-            this.cboTinhTrang.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboTinhTrang.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cboTinhTrang.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboTinhTrang.Location = new System.Drawing.Point(263, 328);
-            this.cboTinhTrang.Margin = new System.Windows.Forms.Padding(4);
-            this.cboTinhTrang.MinimumSize = new System.Drawing.Size(267, 37);
-            this.cboTinhTrang.Name = "cboTinhTrang";
-            this.cboTinhTrang.Padding = new System.Windows.Forms.Padding(1);
-            this.cboTinhTrang.SelectedValue = null;
-            this.cboTinhTrang.Size = new System.Drawing.Size(357, 37);
-            this.cboTinhTrang.TabIndex = 81;
-            this.cboTinhTrang.Texts = "";
-            // 
             // txtMaPhieu
             // 
             this.txtMaPhieu.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -262,14 +240,38 @@
             this.txtMaPhieu.Texts = "";
             this.txtMaPhieu.UnderlinedStyle = false;
             // 
+            // txtTinhTrang
+            // 
+            this.txtTinhTrang.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTinhTrang.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTinhTrang.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtTinhTrang.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtTinhTrang.BorderRadius = 15;
+            this.txtTinhTrang.BorderSize = 2;
+            this.txtTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTinhTrang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTinhTrang.Location = new System.Drawing.Point(258, 324);
+            this.txtTinhTrang.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTinhTrang.Multiline = false;
+            this.txtTinhTrang.Name = "txtTinhTrang";
+            this.txtTinhTrang.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.txtTinhTrang.PasswordChar = false;
+            this.txtTinhTrang.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTinhTrang.PlaceholderText = "";
+            this.txtTinhTrang.ReadOnly = true;
+            this.txtTinhTrang.Size = new System.Drawing.Size(369, 39);
+            this.txtTinhTrang.TabIndex = 83;
+            this.txtTinhTrang.Texts = "";
+            this.txtTinhTrang.UnderlinedStyle = false;
+            // 
             // frmThemPhieuBaoTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(924, 728);
+            this.Controls.Add(this.txtTinhTrang);
             this.Controls.Add(this.txtMaPhieu);
-            this.Controls.Add(this.cboTinhTrang);
             this.Controls.Add(this.cboMaLK);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtGhiChu);
@@ -300,7 +302,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private CustomControls.RJControls.RJComboBox cboMaLK;
-        private CustomControls.RJControls.RJComboBox cboTinhTrang;
         private CustomControls.RJControls.RJTextBox txtMaPhieu;
+        private CustomControls.RJControls.RJTextBox txtTinhTrang;
     }
 }

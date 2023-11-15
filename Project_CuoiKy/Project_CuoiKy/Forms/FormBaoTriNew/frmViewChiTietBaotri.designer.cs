@@ -33,6 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlBody = new System.Windows.Forms.Panel();
             this.dgvChiTietBaoTri = new System.Windows.Forms.DataGridView();
+            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btnRefresh = new CustomControls.RJControls.RJButton();
+            this.btnThem = new CustomControls.RJControls.RJButton();
+            this.lblBoLoc = new System.Windows.Forms.Label();
             this.MaLK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaPhieuBT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,11 +46,8 @@
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTienBaoTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.change = new System.Windows.Forms.DataGridViewButtonColumn();
             this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.btnRefresh = new CustomControls.RJControls.RJButton();
-            this.btnThem = new CustomControls.RJControls.RJButton();
-            this.lblBoLoc = new System.Windows.Forms.Label();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).BeginInit();
             this.pnlHeader.SuspendLayout();
@@ -89,6 +90,7 @@
             this.Model,
             this.NgayTao,
             this.TongTienBaoTri,
+            this.change,
             this.delete});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -119,99 +121,6 @@
             this.dgvChiTietBaoTri.Size = new System.Drawing.Size(1426, 373);
             this.dgvChiTietBaoTri.TabIndex = 0;
             this.dgvChiTietBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietBaoTri_CellClick);
-            this.dgvChiTietBaoTri.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietBaoTri_CellContentDoubleClick);
-            // 
-            // MaLK
-            // 
-            this.MaLK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaLK.DataPropertyName = "MaLK";
-            this.MaLK.HeaderText = "Mã LK";
-            this.MaLK.MinimumWidth = 6;
-            this.MaLK.Name = "MaLK";
-            this.MaLK.ReadOnly = true;
-            // 
-            // MaPhieuBT
-            // 
-            this.MaPhieuBT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaPhieuBT.DataPropertyName = "MaPhieu";
-            this.MaPhieuBT.HeaderText = "Mã Phiếu";
-            this.MaPhieuBT.MinimumWidth = 6;
-            this.MaPhieuBT.Name = "MaPhieuBT";
-            this.MaPhieuBT.ReadOnly = true;
-            // 
-            // SoTien
-            // 
-            this.SoTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SoTien.DataPropertyName = "SoTien";
-            this.SoTien.HeaderText = "Số tiền";
-            this.SoTien.MinimumWidth = 6;
-            this.SoTien.Name = "SoTien";
-            this.SoTien.ReadOnly = true;
-            // 
-            // TinhTrang
-            // 
-            this.TinhTrang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TinhTrang.DataPropertyName = "TinhTrang";
-            this.TinhTrang.HeaderText = "Tình trạng";
-            this.TinhTrang.MinimumWidth = 6;
-            this.TinhTrang.Name = "TinhTrang";
-            this.TinhTrang.ReadOnly = true;
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "Ghi chú";
-            this.GhiChu.MinimumWidth = 6;
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.ReadOnly = true;
-            // 
-            // LoaiLK
-            // 
-            this.LoaiLK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.LoaiLK.DataPropertyName = "LoaiLK";
-            this.LoaiLK.HeaderText = "Loại linh kiện";
-            this.LoaiLK.MinimumWidth = 6;
-            this.LoaiLK.Name = "LoaiLK";
-            this.LoaiLK.ReadOnly = true;
-            // 
-            // Model
-            // 
-            this.Model.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Model.DataPropertyName = "Model";
-            this.Model.HeaderText = "Model";
-            this.Model.MinimumWidth = 6;
-            this.Model.Name = "Model";
-            this.Model.ReadOnly = true;
-            // 
-            // NgayTao
-            // 
-            this.NgayTao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgayTao.DataPropertyName = "NgayTao";
-            this.NgayTao.HeaderText = "Ngày tạo";
-            this.NgayTao.MinimumWidth = 6;
-            this.NgayTao.Name = "NgayTao";
-            this.NgayTao.ReadOnly = true;
-            // 
-            // TongTienBaoTri
-            // 
-            this.TongTienBaoTri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TongTienBaoTri.DataPropertyName = "TongTienBaoTri";
-            this.TongTienBaoTri.HeaderText = "Tổng tiền bảo trì";
-            this.TongTienBaoTri.MinimumWidth = 6;
-            this.TongTienBaoTri.Name = "TongTienBaoTri";
-            this.TongTienBaoTri.ReadOnly = true;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.delete.DataPropertyName = "delete";
-            this.delete.HeaderText = "Xóa";
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            this.delete.Text = "Xóa";
-            this.delete.Width = 60;
             // 
             // pnlHeader
             // 
@@ -289,6 +198,113 @@
             this.lblBoLoc.TabIndex = 48;
             this.lblBoLoc.Text = "Xem chi tiết phiếu bảo trì";
             // 
+            // MaLK
+            // 
+            this.MaLK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaLK.DataPropertyName = "MaLK";
+            this.MaLK.HeaderText = "Mã LK";
+            this.MaLK.MinimumWidth = 6;
+            this.MaLK.Name = "MaLK";
+            this.MaLK.ReadOnly = true;
+            // 
+            // MaPhieuBT
+            // 
+            this.MaPhieuBT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaPhieuBT.DataPropertyName = "MaPhieu";
+            this.MaPhieuBT.HeaderText = "Mã Phiếu";
+            this.MaPhieuBT.MinimumWidth = 6;
+            this.MaPhieuBT.Name = "MaPhieuBT";
+            this.MaPhieuBT.ReadOnly = true;
+            // 
+            // SoTien
+            // 
+            this.SoTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SoTien.DataPropertyName = "SoTien";
+            this.SoTien.HeaderText = "Số tiền";
+            this.SoTien.MinimumWidth = 6;
+            this.SoTien.Name = "SoTien";
+            this.SoTien.ReadOnly = true;
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TinhTrang.DataPropertyName = "TinhTrang";
+            this.TinhTrang.HeaderText = "Tình trạng";
+            this.TinhTrang.MinimumWidth = 6;
+            this.TinhTrang.Name = "TinhTrang";
+            this.TinhTrang.ReadOnly = true;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi chú";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.ReadOnly = true;
+            // 
+            // LoaiLK
+            // 
+            this.LoaiLK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.LoaiLK.DataPropertyName = "LoaiLK";
+            this.LoaiLK.HeaderText = "Loại linh kiện";
+            this.LoaiLK.MinimumWidth = 6;
+            this.LoaiLK.Name = "LoaiLK";
+            this.LoaiLK.ReadOnly = true;
+            // 
+            // Model
+            // 
+            this.Model.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Model.DataPropertyName = "Model";
+            this.Model.HeaderText = "Model";
+            this.Model.MinimumWidth = 6;
+            this.Model.Name = "Model";
+            this.Model.ReadOnly = true;
+            // 
+            // NgayTao
+            // 
+            this.NgayTao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgayTao.DataPropertyName = "NgayTao";
+            this.NgayTao.HeaderText = "Ngày tạo";
+            this.NgayTao.MinimumWidth = 6;
+            this.NgayTao.Name = "NgayTao";
+            this.NgayTao.ReadOnly = true;
+            this.NgayTao.Visible = false;
+            // 
+            // TongTienBaoTri
+            // 
+            this.TongTienBaoTri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TongTienBaoTri.DataPropertyName = "TongTienBaoTri";
+            this.TongTienBaoTri.HeaderText = "Tổng tiền bảo trì";
+            this.TongTienBaoTri.MinimumWidth = 6;
+            this.TongTienBaoTri.Name = "TongTienBaoTri";
+            this.TongTienBaoTri.ReadOnly = true;
+            this.TongTienBaoTri.Visible = false;
+            // 
+            // change
+            // 
+            this.change.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.change.DataPropertyName = "change";
+            this.change.HeaderText = "Sửa";
+            this.change.MinimumWidth = 6;
+            this.change.Name = "change";
+            this.change.ReadOnly = true;
+            this.change.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.change.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.change.Text = "Sửa";
+            this.change.Width = 83;
+            // 
+            // delete
+            // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.delete.DataPropertyName = "delete";
+            this.delete.HeaderText = "Xóa";
+            this.delete.MinimumWidth = 6;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Text = "Xóa";
+            this.delete.Width = 60;
+            // 
             // frmViewChiTietBaotri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -324,6 +340,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTao;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBaoTri;
+        private System.Windows.Forms.DataGridViewButtonColumn change;
         private System.Windows.Forms.DataGridViewButtonColumn delete;
     }
 }

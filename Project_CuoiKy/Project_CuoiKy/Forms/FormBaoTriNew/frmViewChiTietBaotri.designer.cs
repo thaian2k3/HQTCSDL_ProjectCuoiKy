@@ -46,8 +46,8 @@
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTienBaoTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.change = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.change = new System.Windows.Forms.DataGridViewImageColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).BeginInit();
             this.pnlHeader.SuspendLayout();
@@ -286,12 +286,12 @@
             this.change.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.change.DataPropertyName = "change";
             this.change.HeaderText = "Sửa";
+            this.change.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
             this.change.MinimumWidth = 6;
             this.change.Name = "change";
             this.change.ReadOnly = true;
             this.change.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.change.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.change.Text = "Sửa";
             this.change.Width = 83;
             // 
             // delete
@@ -299,10 +299,11 @@
             this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.delete.DataPropertyName = "delete";
             this.delete.HeaderText = "Xóa";
+            this.delete.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
             this.delete.MinimumWidth = 6;
             this.delete.Name = "delete";
             this.delete.ReadOnly = true;
-            this.delete.Text = "Xóa";
+            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.delete.Width = 60;
             // 
             // frmViewChiTietBaotri
@@ -340,7 +341,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTao;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBaoTri;
-        private System.Windows.Forms.DataGridViewButtonColumn change;
-        private System.Windows.Forms.DataGridViewButtonColumn delete;
+        private System.Windows.Forms.DataGridViewImageColumn change;
+        private System.Windows.Forms.DataGridViewImageColumn delete;
     }
 }

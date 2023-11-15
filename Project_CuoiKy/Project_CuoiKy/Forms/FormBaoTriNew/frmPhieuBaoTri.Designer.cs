@@ -33,26 +33,27 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPhieuBaoTri));
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btnThemPheuBaoTri = new CustomControls.RJControls.RJButton();
+            this.btnRefresh = new CustomControls.RJControls.RJButton();
             this.lblphieubaotri = new System.Windows.Forms.Label();
+            this.txtTimKiem = new CustomControls.RJControls.RJTextBox();
             this.pnlBody = new System.Windows.Forms.Panel();
             this.dgvBaoTri = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.MaPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTienBaoTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.changes = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnThemPheuBaoTri = new CustomControls.RJControls.RJButton();
-            this.btnRefresh = new CustomControls.RJControls.RJButton();
-            this.txtTimKiem = new CustomControls.RJControls.RJTextBox();
+            this.changes = new System.Windows.Forms.DataGridViewImageColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlHeader.SuspendLayout();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoTri)).BeginInit();
@@ -99,6 +100,56 @@
             this.pnlHeader.Size = new System.Drawing.Size(1355, 94);
             this.pnlHeader.TabIndex = 4;
             // 
+            // btnThemPheuBaoTri
+            // 
+            this.btnThemPheuBaoTri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemPheuBaoTri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThemPheuBaoTri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnThemPheuBaoTri.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnThemPheuBaoTri.BorderRadius = 18;
+            this.btnThemPheuBaoTri.BorderSize = 2;
+            this.btnThemPheuBaoTri.FlatAppearance.BorderSize = 0;
+            this.btnThemPheuBaoTri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemPheuBaoTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemPheuBaoTri.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThemPheuBaoTri.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
+            this.btnThemPheuBaoTri.Location = new System.Drawing.Point(1234, 17);
+            this.btnThemPheuBaoTri.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemPheuBaoTri.Name = "btnThemPheuBaoTri";
+            this.btnThemPheuBaoTri.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnThemPheuBaoTri.Size = new System.Drawing.Size(92, 57);
+            this.btnThemPheuBaoTri.TabIndex = 64;
+            this.btnThemPheuBaoTri.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemPheuBaoTri.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThemPheuBaoTri.UseVisualStyleBackColor = false;
+            this.btnThemPheuBaoTri.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnRefresh.BorderRadius = 18;
+            this.btnRefresh.BorderSize = 2;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(1085, 16);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnRefresh.Size = new System.Drawing.Size(129, 57);
+            this.btnRefresh.TabIndex = 62;
+            this.btnRefresh.Text = "Reset";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRefresh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // lblphieubaotri
             // 
             this.lblphieubaotri.AutoSize = true;
@@ -110,6 +161,30 @@
             this.lblphieubaotri.Size = new System.Drawing.Size(212, 38);
             this.lblphieubaotri.TabIndex = 47;
             this.lblphieubaotri.Text = "Phiếu bảo trì";
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTimKiem.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtTimKiem.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtTimKiem.BorderRadius = 15;
+            this.txtTimKiem.BorderSize = 2;
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTimKiem.Location = new System.Drawing.Point(291, 14);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtTimKiem.Multiline = false;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(17, 12, 17, 12);
+            this.txtTimKiem.PasswordChar = false;
+            this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTimKiem.PlaceholderText = "Tìm kiếm";
+            this.txtTimKiem.ReadOnly = false;
+            this.txtTimKiem.Size = new System.Drawing.Size(444, 50);
+            this.txtTimKiem.TabIndex = 1;
+            this.txtTimKiem.Texts = "";
+            this.txtTimKiem.UnderlinedStyle = false;
+            this.txtTimKiem._TextChanged += new System.EventHandler(this.txtTimKiem__TextChanged);
             // 
             // pnlBody
             // 
@@ -177,6 +252,34 @@
             this.dgvBaoTri.TabIndex = 4;
             this.dgvBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBaoTri_CellClick);
             // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.NullValue = null;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            this.dataGridViewImageColumn3.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::Project_CuoiKy.Properties.Resources.icons8_check_dollar_30;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
+            this.dataGridViewImageColumn3.Width = 125;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.NullValue = null;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            this.dataGridViewImageColumn4.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
+            this.dataGridViewImageColumn4.MinimumWidth = 6;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.ReadOnly = true;
+            this.dataGridViewImageColumn4.Width = 125;
+            // 
             // MaPhieu
             // 
             this.MaPhieu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -210,14 +313,15 @@
             // 
             this.changes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle5.NullValue")));
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
             this.changes.DefaultCellStyle = dataGridViewCellStyle5;
             this.changes.HeaderText = "Sửa";
+            this.changes.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_301;
             this.changes.MinimumWidth = 6;
             this.changes.Name = "changes";
             this.changes.ReadOnly = true;
             this.changes.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.changes.Text = "Sửa";
             this.changes.Width = 60;
             // 
             // delete
@@ -225,113 +329,12 @@
             this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.delete.DataPropertyName = "delete";
             this.delete.HeaderText = "Xóa";
+            this.delete.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
             this.delete.MinimumWidth = 6;
             this.delete.Name = "delete";
             this.delete.ReadOnly = true;
-            this.delete.Text = "Xóa";
+            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.delete.Width = 60;
-            // 
-            // dataGridViewImageColumn3
-            // 
-            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.NullValue = null;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            this.dataGridViewImageColumn3.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::Project_CuoiKy.Properties.Resources.icons8_check_dollar_30;
-            this.dataGridViewImageColumn3.MinimumWidth = 6;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.ReadOnly = true;
-            this.dataGridViewImageColumn3.Width = 125;
-            // 
-            // dataGridViewImageColumn4
-            // 
-            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.NullValue = null;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
-            this.dataGridViewImageColumn4.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
-            this.dataGridViewImageColumn4.MinimumWidth = 6;
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.ReadOnly = true;
-            this.dataGridViewImageColumn4.Width = 125;
-            // 
-            // btnThemPheuBaoTri
-            // 
-            this.btnThemPheuBaoTri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemPheuBaoTri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThemPheuBaoTri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnThemPheuBaoTri.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnThemPheuBaoTri.BorderRadius = 18;
-            this.btnThemPheuBaoTri.BorderSize = 2;
-            this.btnThemPheuBaoTri.FlatAppearance.BorderSize = 0;
-            this.btnThemPheuBaoTri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemPheuBaoTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemPheuBaoTri.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThemPheuBaoTri.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
-            this.btnThemPheuBaoTri.Location = new System.Drawing.Point(1234, 17);
-            this.btnThemPheuBaoTri.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThemPheuBaoTri.Name = "btnThemPheuBaoTri";
-            this.btnThemPheuBaoTri.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnThemPheuBaoTri.Size = new System.Drawing.Size(92, 57);
-            this.btnThemPheuBaoTri.TabIndex = 64;
-            this.btnThemPheuBaoTri.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemPheuBaoTri.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThemPheuBaoTri.UseVisualStyleBackColor = false;
-            this.btnThemPheuBaoTri.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnRefresh.BorderRadius = 18;
-            this.btnRefresh.BorderSize = 2;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(1085, 16);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnRefresh.Size = new System.Drawing.Size(129, 57);
-            this.btnRefresh.TabIndex = 62;
-            this.btnRefresh.Text = "Reset";
-            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTimKiem.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtTimKiem.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtTimKiem.BorderRadius = 15;
-            this.txtTimKiem.BorderSize = 2;
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(291, 14);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.txtTimKiem.Multiline = false;
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(17, 12, 17, 12);
-            this.txtTimKiem.PasswordChar = false;
-            this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTimKiem.PlaceholderText = "Tìm kiếm";
-            this.txtTimKiem.ReadOnly = false;
-            this.txtTimKiem.Size = new System.Drawing.Size(444, 50);
-            this.txtTimKiem.TabIndex = 1;
-            this.txtTimKiem.Texts = "";
-            this.txtTimKiem.UnderlinedStyle = false;
-            this.txtTimKiem._TextChanged += new System.EventHandler(this.txtTimKiem__TextChanged);
             // 
             // frmPhieuBaoTri
             // 
@@ -367,7 +370,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPhieu;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTao;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBaoTri;
-        private System.Windows.Forms.DataGridViewButtonColumn changes;
-        private System.Windows.Forms.DataGridViewButtonColumn delete;
+        private System.Windows.Forms.DataGridViewImageColumn changes;
+        private System.Windows.Forms.DataGridViewImageColumn delete;
     }
 }

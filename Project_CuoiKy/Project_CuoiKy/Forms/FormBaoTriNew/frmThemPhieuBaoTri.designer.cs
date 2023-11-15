@@ -184,7 +184,7 @@
             this.txtSoTien.PasswordChar = false;
             this.txtSoTien.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtSoTien.PlaceholderText = "";
-            this.txtSoTien.ReadOnly = false;
+            this.txtSoTien.ReadOnly = true;
             this.txtSoTien.Size = new System.Drawing.Size(369, 39);
             this.txtSoTien.TabIndex = 66;
             this.txtSoTien.Texts = "";

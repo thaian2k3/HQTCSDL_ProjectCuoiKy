@@ -23,6 +23,8 @@ namespace Project_CuoiKy.Forms.FormLinhKien
         public frmLinhKien()
         {
             InitializeComponent();
+
+            btnThem.Visible = ACCOUNT.Role == "ADMIN";
         }
 
         private void LoadData()
@@ -96,11 +98,11 @@ namespace Project_CuoiKy.Forms.FormLinhKien
 
         private void dgvLinhKien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvLinhKien.Columns["dgvSua"].Index)
+            if (e.ColumnIndex == dgvLinhKien.Columns["dgvSua"].Index && ACCOUNT.Role == "ADMIN")
             {
                 ShowFormSuaThongTinLinhKien();
             }
-            else if (e.ColumnIndex == dgvLinhKien.Columns["dgvXoa"].Index)
+            else if (e.ColumnIndex == dgvLinhKien.Columns["dgvXoa"].Index && ACCOUNT.Role == "ADMIN")
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn xóa linh kiện không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)

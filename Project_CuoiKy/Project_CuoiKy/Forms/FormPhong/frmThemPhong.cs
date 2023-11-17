@@ -18,6 +18,8 @@ namespace Project_CuoiKy.Forms.FormPhong
         {
             InitializeComponent();
             txtGiaPhong.Texts = "0";
+
+            btnThem.Visible = ACCOUNT.Role == "ADMIN";
         }
 
         private void btnThem_Click(object sender, EventArgs e)

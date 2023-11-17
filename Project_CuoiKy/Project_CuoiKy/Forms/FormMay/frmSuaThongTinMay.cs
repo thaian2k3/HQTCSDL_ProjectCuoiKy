@@ -18,23 +18,32 @@ namespace Project_CuoiKy.Forms.FormMay
         private Helpers helpers = new Helpers();
         private bool isLoading = true;
         private string maMay;
+        private string maPhong;
 
         public frmSuaThongTinMay()
         {
             InitializeComponent();
+
+            btnLuuThongTin.Visible = ACCOUNT.Role == "ADMIN";
         }
 
-        public frmSuaThongTinMay(string maMay)
+        public frmSuaThongTinMay(string maMay, string maPhong)
         {
             InitializeComponent();
             this.maMay = maMay;
+            this.maPhong = maPhong;
         }
 
         private void frmSuaThongTinMay_Load(object sender, EventArgs e)
         {
             string query = "Select MaPhong from Phong";
             cboMaPhong = helpers.CboData(query, cboMaPhong, "MaPhong");
-            cboMaPhong.Texts = "Chọn mã phòng";
+            cboMaPhong.SelectedValue = maPhong;
+            DataTable dt = api.CreateTable($"SELECT * FROM Phong WHERE MaPhong = {maPhong}");
+            DataRow row = dt.Rows[0];
+            txtTenPhong.Texts = row["TenPhong"].ToString();
+            txtViTri.Texts = row["ViTri"].ToString();
+            txtGiaPhong.Texts = row["GiaPhong"].ToString();
             this.isLoading = false;
         }
 

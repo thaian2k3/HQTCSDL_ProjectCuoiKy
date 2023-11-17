@@ -23,6 +23,8 @@ namespace Project_CuoiKy.Forms.FormMay
         public frmMay()
         {
             InitializeComponent();
+
+            btnThem.Visible = ACCOUNT.Role == "ADMIN";
         }
         private void LoadData()
         {
@@ -74,7 +76,9 @@ namespace Project_CuoiKy.Forms.FormMay
         private void ShowFormSuaThongTinMay()
         {
             string maMay = helpers.DataInCol(dgvMay, "MaMay");
-            frmSuaThongTinMay f2 = new frmSuaThongTinMay(maMay);
+            string maPhong = helpers.DataInCol(dgvMay, "MaPhong");
+            frmSuaThongTinMay f2 = new frmSuaThongTinMay(maMay, maPhong);
+
             if (f2.ShowDialog() == DialogResult.OK)
             {
                 LoadData();
@@ -106,7 +110,7 @@ namespace Project_CuoiKy.Forms.FormMay
 
         private void dgvMay_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvMay.Columns["dgvSua"].Index)
+            if (e.ColumnIndex == dgvMay.Columns["dgvSua"].Index  && ACCOUNT.Role == "ADMIN") 
             {
                 ShowFormSuaThongTinMay();
             }
@@ -114,7 +118,7 @@ namespace Project_CuoiKy.Forms.FormMay
             {
                 ShowFormCauHinhMay();
             }
-            else if (e.ColumnIndex == dgvMay.Columns["dgvXoa"].Index)
+            else if (e.ColumnIndex == dgvMay.Columns["dgvXoa"].Index && ACCOUNT.Role == "ADMIN")
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn xóa máy không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)

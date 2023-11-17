@@ -22,6 +22,8 @@ namespace Project_CuoiKy.Forms.FormPhong
         public frmSuaPhong()
         {
             InitializeComponent();
+
+            btnLuuThongTin.Visible = ACCOUNT.Role == "ADMIN";
         }
 
         public frmSuaPhong(string maPhong, string tenPhong, string viTri, string giaPhong)

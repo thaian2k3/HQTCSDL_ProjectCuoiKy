@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ACCOUNT.cs" />
     <Compile Include="Api\ApiService.cs" />
     <Compile Include="ConnectDatabase.cs" />
     <Compile Include="CustomControls\MenuColorTable.cs" />
@@ -80,6 +81,12 @@
     </Compile>
     <Compile Include="CustomControls\RJToggleButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDangNhap\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDangNhap\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormHoaDon\frmChiTietHoaDon.cs">
       <SubType>Form</SubType>
@@ -206,6 +213,9 @@
     <Compile Include="Utils\Helpers.cs" />
     <EmbeddedResource Include="CustomControls\RJTextBox.resx">
       <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDangNhap\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLichSuDungMay\frmLichSuDungMay.resx">
       <DependentUpon>frmLichSuDungMay.cs</DependentUpon>

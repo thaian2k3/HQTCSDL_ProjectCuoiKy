@@ -21,6 +21,8 @@ namespace Project_CuoiKy.Forms.FormPhong
         public frmPhong()
         {
             InitializeComponent();
+
+            btnThem.Visible = ACCOUNT.Role == "ADMIN";
         }
         private void LoadData()
         {
@@ -88,16 +90,20 @@ namespace Project_CuoiKy.Forms.FormPhong
 
         private void dgvPhong_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (ACCOUNT.Role != "ADMIN")
+            {
+                return;
+            }
             ShowFormSuaPhong();
         }
 
         private void dgvPhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvPhong.Columns["dgvSua"].Index)
+            if (e.ColumnIndex == dgvPhong.Columns["dgvSua"].Index && ACCOUNT.Role == "ADMIN")
             {
                 ShowFormSuaPhong();
             }
-            else if (e.ColumnIndex == dgvPhong.Columns["dgvXoa"].Index)
+            else if (e.ColumnIndex == dgvPhong.Columns["dgvXoa"].Index && ACCOUNT.Role == "ADMIN")
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn xóa phòng không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)

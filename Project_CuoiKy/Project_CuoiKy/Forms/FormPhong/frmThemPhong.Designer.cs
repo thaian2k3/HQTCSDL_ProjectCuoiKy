@@ -47,7 +47,7 @@
             this.txtGiaPhong.BorderSize = 2;
             this.txtGiaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaPhong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtGiaPhong.Location = new System.Drawing.Point(276, 280);
+            this.txtGiaPhong.Location = new System.Drawing.Point(154, 285);
             this.txtGiaPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtGiaPhong.Multiline = false;
             this.txtGiaPhong.Name = "txtGiaPhong";
@@ -55,6 +55,7 @@
             this.txtGiaPhong.PasswordChar = false;
             this.txtGiaPhong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtGiaPhong.PlaceholderText = "";
+            this.txtGiaPhong.ReadOnly = false;
             this.txtGiaPhong.Size = new System.Drawing.Size(250, 31);
             this.txtGiaPhong.TabIndex = 41;
             this.txtGiaPhong.Texts = "";
@@ -69,7 +70,7 @@
             this.txtViTri.BorderSize = 2;
             this.txtViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtViTri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtViTri.Location = new System.Drawing.Point(276, 211);
+            this.txtViTri.Location = new System.Drawing.Point(154, 216);
             this.txtViTri.Margin = new System.Windows.Forms.Padding(4);
             this.txtViTri.Multiline = false;
             this.txtViTri.Name = "txtViTri";
@@ -77,6 +78,7 @@
             this.txtViTri.PasswordChar = false;
             this.txtViTri.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtViTri.PlaceholderText = "";
+            this.txtViTri.ReadOnly = false;
             this.txtViTri.Size = new System.Drawing.Size(250, 31);
             this.txtViTri.TabIndex = 40;
             this.txtViTri.Texts = "";
@@ -92,7 +94,7 @@
             this.txtTenPhong.CausesValidation = false;
             this.txtTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenPhong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTenPhong.Location = new System.Drawing.Point(276, 137);
+            this.txtTenPhong.Location = new System.Drawing.Point(154, 142);
             this.txtTenPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenPhong.Multiline = false;
             this.txtTenPhong.Name = "txtTenPhong";
@@ -100,6 +102,7 @@
             this.txtTenPhong.PasswordChar = false;
             this.txtTenPhong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTenPhong.PlaceholderText = "";
+            this.txtTenPhong.ReadOnly = false;
             this.txtTenPhong.Size = new System.Drawing.Size(250, 31);
             this.txtTenPhong.TabIndex = 39;
             this.txtTenPhong.Texts = "";
@@ -110,7 +113,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label3.Location = new System.Drawing.Point(276, 256);
+            this.label3.Location = new System.Drawing.Point(154, 261);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 20);
             this.label3.TabIndex = 38;
@@ -121,7 +124,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label2.Location = new System.Drawing.Point(275, 187);
+            this.label2.Location = new System.Drawing.Point(153, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 20);
             this.label2.TabIndex = 37;
@@ -132,7 +135,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label1.Location = new System.Drawing.Point(276, 113);
+            this.label1.Location = new System.Drawing.Point(154, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 36;
@@ -143,7 +146,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label4.Location = new System.Drawing.Point(341, 64);
+            this.label4.Location = new System.Drawing.Point(219, 69);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 25);
             this.label4.TabIndex = 35;
@@ -163,7 +166,7 @@
             this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_user_male_30;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(355, 350);
+            this.btnThem.Location = new System.Drawing.Point(224, 354);
             this.btnThem.Name = "btnThem";
             this.btnThem.Padding = new System.Windows.Forms.Padding(5);
             this.btnThem.Size = new System.Drawing.Size(96, 40);
@@ -179,7 +182,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(809, 450);
+            this.ClientSize = new System.Drawing.Size(545, 450);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txtGiaPhong);
             this.Controls.Add(this.txtViTri);

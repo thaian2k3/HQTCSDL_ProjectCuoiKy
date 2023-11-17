@@ -29,6 +29,8 @@ namespace Project_CuoiKy.Forms.FormSanPham
 
             btnXoaHoaDon.Enabled = !(maHD is null);
             btnXuatHoaDon.Enabled = !(maHD is null);
+
+            btnThem.Visible = ACCOUNT.Role == "ADMIN";
         }
 
         private void LoadData()

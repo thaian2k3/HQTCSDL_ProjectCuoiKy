@@ -31,6 +31,8 @@ namespace Project_CuoiKy.Forms.FormLinhKien
         public frmSuaThongTinLinhKien()
         {
             InitializeComponent();
+
+            btnSua.Visible = ACCOUNT.Role == "ADMIN";
         }
         public frmSuaThongTinLinhKien(string maLK, string maMay, string maNCC, string loaiLK, string tenHang, string model, string tinhTrang, string thongSo)
         {

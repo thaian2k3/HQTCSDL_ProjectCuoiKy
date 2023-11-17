@@ -20,6 +20,8 @@ namespace Project_CuoiKy.Forms.FormMay
         public frmThemMay()
         {
             InitializeComponent();
+
+            btnThem.Visible = ACCOUNT.Role == "ADMIN";
         }
 
         private void btnThem_Click(object sender, EventArgs e)

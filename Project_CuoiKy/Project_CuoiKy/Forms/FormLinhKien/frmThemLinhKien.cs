@@ -21,6 +21,8 @@ namespace Project_CuoiKy.Forms.FormLinhKien
         public frmThemLinhKien()
         {
             InitializeComponent();
+
+            btnThem.Visible = ACCOUNT.Role == "ADMIN";
         }
   
         private void btnThem_Click(object sender, EventArgs e)

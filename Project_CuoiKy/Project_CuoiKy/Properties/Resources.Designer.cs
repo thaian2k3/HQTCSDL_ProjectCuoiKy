@@ -253,6 +253,26 @@ namespace Project_CuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icons8_maintenance_35 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maintenance-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_maintenance_45 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maintenance-45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_menu_45 {
             get {
                 object obj = ResourceManager.GetObject("icons8_menu_45", resourceCulture);

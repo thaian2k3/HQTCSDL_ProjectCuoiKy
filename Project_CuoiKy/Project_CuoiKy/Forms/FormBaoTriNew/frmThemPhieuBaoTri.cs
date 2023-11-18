@@ -23,13 +23,12 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         private Helpers helpers = new Helpers();
         private string MaPhieu;
 
-
-        
-
         public frmThemPhieuBaoTri(string MaPhieu)
         {
             InitializeComponent();    
             this.MaPhieu = MaPhieu;
+
+            btnHoanTat.Visible = ACCOUNT.Role.ToUpper() == "ADMIN";
            // this.FormBorderStyle = FormBorderStyle.FixedSingle; //ko cho thay doi kich thuoc
             //this.MaximizeBox = false;
         }

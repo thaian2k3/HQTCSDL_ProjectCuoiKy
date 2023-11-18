@@ -21,6 +21,8 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         public frmPhieuBaoTri()
         {
             InitializeComponent();
+
+            btnThemPheuBaoTri.Visible = ACCOUNT.Role.ToUpper() == "ADMIN";
         }
         private void LoadData()
         {
@@ -43,7 +45,7 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string query = $"EXEC proc_ThemPhieuBaoTri  ";
+            string query = $"EXEC proc_ThemPhieuBaoTri";
             bool result = api.ExecQuery(query, "Thêm  thành công");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
             LoadData();
@@ -61,11 +63,11 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         private void dgvBaoTri_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             
-                if (e.ColumnIndex == dgvBaoTri.Columns["changes"].Index)
+                if (e.ColumnIndex == dgvBaoTri.Columns["changes"].Index && ACCOUNT.Role.ToUpper() == "ADMIN")
                 {
                     ShowFormViewPhieuBaoTri();
                 }
-                else if (e.ColumnIndex == dgvBaoTri.Columns["delete"].Index)
+                else if (e.ColumnIndex == dgvBaoTri.Columns["delete"].Index && ACCOUNT.Role.ToUpper() == "ADMIN")
                 {
                     DialogResult result = MessageBox.Show("Bạn có muốn xóa không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)

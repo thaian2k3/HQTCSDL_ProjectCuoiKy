@@ -22,11 +22,13 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         {
             string query = $"SELECT * FROM V_XuatPhieuBaoTri  WHERE MaPhieu={MaPhieu}";
             dgvChiTietBaoTri.DataSource = api.CreateTable(query);
+
         }
         public frmViewChiTietBaotri(string MaPhieu)
         {
             InitializeComponent();
             this.MaPhieu = MaPhieu;
+            btnThem.Visible = ACCOUNT.Role.ToUpper() == "ADMIN";
             LoadData();
         }
 

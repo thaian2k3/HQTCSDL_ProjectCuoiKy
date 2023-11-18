@@ -91,5 +91,10 @@ namespace Project_CuoiKy
         {
             Application.Exit();
         }
+
+        private void btnBaoTri_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormBaoTri.frmPhieuBaoTri());
+        }
     }
 }

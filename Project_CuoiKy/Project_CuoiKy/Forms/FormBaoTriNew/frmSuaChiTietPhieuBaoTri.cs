@@ -24,6 +24,8 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
         public frmSuaChiTietPhieuBaoTri()
         {
             InitializeComponent();
+
+            btnHoanTat.Visible = ACCOUNT.Role.ToUpper() == "ADMIN";
         }
         private void btnHoanTat_Click(object sender, EventArgs e)
         {

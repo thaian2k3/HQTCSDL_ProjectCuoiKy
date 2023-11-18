@@ -14,6 +14,6 @@ namespace Project_CuoiKy
 
         public static string Username { get => username; set => username = value; }
         public static string Password { get => password; set => password = value; }
-        public static string Role { get => role; set => role = value; }
+        public static string Role { get => role.ToUpper(); set => role = value.ToUpper(); }
     }
 }

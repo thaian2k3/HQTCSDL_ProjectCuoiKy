@@ -86,5 +86,10 @@ namespace Project_CuoiKy
         {
             OpenChildForm(new Forms.FormSanPham.frmSanPham());
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

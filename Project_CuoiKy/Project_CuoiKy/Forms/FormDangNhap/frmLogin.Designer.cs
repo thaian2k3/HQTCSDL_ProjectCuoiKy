@@ -43,6 +43,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPasswordRegister = new CustomControls.RJControls.RJTextBox();
             this.txtUsernameRegister = new CustomControls.RJControls.RJTextBox();
+            this.optAdmin = new CustomControls.RJControls.RJRadioButton();
+            this.optStaff = new CustomControls.RJControls.RJRadioButton();
             this.tabControlLogin.SuspendLayout();
             this.tabDangNhap.SuspendLayout();
             this.tabDangKy.SuspendLayout();
@@ -55,7 +57,7 @@
             this.tabControlLogin.Location = new System.Drawing.Point(12, 12);
             this.tabControlLogin.Name = "tabControlLogin";
             this.tabControlLogin.SelectedIndex = 0;
-            this.tabControlLogin.Size = new System.Drawing.Size(567, 398);
+            this.tabControlLogin.Size = new System.Drawing.Size(567, 448);
             this.tabControlLogin.TabIndex = 5;
             // 
             // tabDangNhap
@@ -69,7 +71,7 @@
             this.tabDangNhap.Location = new System.Drawing.Point(4, 22);
             this.tabDangNhap.Name = "tabDangNhap";
             this.tabDangNhap.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDangNhap.Size = new System.Drawing.Size(559, 372);
+            this.tabDangNhap.Size = new System.Drawing.Size(559, 422);
             this.tabDangNhap.TabIndex = 0;
             this.tabDangNhap.Text = "Đăng nhập";
             this.tabDangNhap.ToolTipText = "Đăng nhập";
@@ -86,7 +88,7 @@
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(202, 244);
+            this.btnDangNhap.Location = new System.Drawing.Point(204, 257);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(150, 40);
             this.btnDangNhap.TabIndex = 9;
@@ -163,6 +165,9 @@
             // 
             // tabDangKy
             // 
+            this.tabDangKy.BackColor = System.Drawing.Color.White;
+            this.tabDangKy.Controls.Add(this.optStaff);
+            this.tabDangKy.Controls.Add(this.optAdmin);
             this.tabDangKy.Controls.Add(this.label3);
             this.tabDangKy.Controls.Add(this.txtConfirmPasswordRegister);
             this.tabDangKy.Controls.Add(this.btnDangKy);
@@ -174,11 +179,10 @@
             this.tabDangKy.Location = new System.Drawing.Point(4, 22);
             this.tabDangKy.Name = "tabDangKy";
             this.tabDangKy.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDangKy.Size = new System.Drawing.Size(559, 372);
+            this.tabDangKy.Size = new System.Drawing.Size(559, 422);
             this.tabDangKy.TabIndex = 1;
             this.tabDangKy.Text = "Đăng ký";
             this.tabDangKy.ToolTipText = "Đăng ký";
-            this.tabDangKy.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -224,7 +228,7 @@
             this.btnDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangKy.ForeColor = System.Drawing.Color.White;
-            this.btnDangKy.Location = new System.Drawing.Point(205, 277);
+            this.btnDangKy.Location = new System.Drawing.Point(204, 335);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(150, 40);
             this.btnDangKy.TabIndex = 14;
@@ -299,11 +303,43 @@
             this.txtUsernameRegister.Texts = "";
             this.txtUsernameRegister.UnderlinedStyle = false;
             // 
+            // optAdmin
+            // 
+            this.optAdmin.AutoSize = true;
+            this.optAdmin.BackColor = System.Drawing.Color.White;
+            this.optAdmin.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.optAdmin.Location = new System.Drawing.Point(291, 279);
+            this.optAdmin.MinimumSize = new System.Drawing.Size(0, 21);
+            this.optAdmin.Name = "optAdmin";
+            this.optAdmin.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.optAdmin.Size = new System.Drawing.Size(78, 21);
+            this.optAdmin.TabIndex = 17;
+            this.optAdmin.Text = "ADMIN";
+            this.optAdmin.UnCheckedColor = System.Drawing.Color.Gray;
+            this.optAdmin.UseVisualStyleBackColor = false;
+            // 
+            // optStaff
+            // 
+            this.optStaff.AutoSize = true;
+            this.optStaff.BackColor = System.Drawing.Color.White;
+            this.optStaff.Checked = true;
+            this.optStaff.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.optStaff.Location = new System.Drawing.Point(187, 279);
+            this.optStaff.MinimumSize = new System.Drawing.Size(0, 21);
+            this.optStaff.Name = "optStaff";
+            this.optStaff.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.optStaff.Size = new System.Drawing.Size(78, 21);
+            this.optStaff.TabIndex = 18;
+            this.optStaff.TabStop = true;
+            this.optStaff.Text = "STAFF";
+            this.optStaff.UnCheckedColor = System.Drawing.Color.Gray;
+            this.optStaff.UseVisualStyleBackColor = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 420);
+            this.ClientSize = new System.Drawing.Size(585, 460);
             this.Controls.Add(this.tabControlLogin);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -335,5 +371,7 @@
         private System.Windows.Forms.Label label2;
         private CustomControls.RJControls.RJTextBox txtPasswordRegister;
         private CustomControls.RJControls.RJTextBox txtUsernameRegister;
+        private CustomControls.RJControls.RJRadioButton optStaff;
+        private CustomControls.RJControls.RJRadioButton optAdmin;
     }
 }

@@ -82,6 +82,12 @@
     <Compile Include="CustomControls\RJToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\FormDangNhap\frmCheckAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDangNhap\frmCheckAdmin.Designer.cs">
+      <DependentUpon>frmCheckAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormDangNhap\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     <Compile Include="Utils\Helpers.cs" />
     <EmbeddedResource Include="CustomControls\RJTextBox.resx">
       <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDangNhap\frmCheckAdmin.resx">
+      <DependentUpon>frmCheckAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDangNhap\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

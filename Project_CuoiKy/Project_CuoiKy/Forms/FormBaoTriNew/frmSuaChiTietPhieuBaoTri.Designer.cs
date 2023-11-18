@@ -37,17 +37,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnHoanTat = new CustomControls.RJControls.RJButton();
-            this.cboTinhTrang = new CustomControls.RJControls.RJComboBox();
             this.txtMaLK = new CustomControls.RJControls.RJTextBox();
             this.txtMaPhieu = new CustomControls.RJControls.RJTextBox();
+            this.cboTinhTrang = new CustomControls.RJControls.RJComboBox();
             this.SuspendLayout();
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label6.Location = new System.Drawing.Point(364, 88);
+            this.label6.Location = new System.Drawing.Point(353, 88);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 25);
@@ -56,6 +57,7 @@
             // 
             // txtGhiChu
             // 
+            this.txtGhiChu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtGhiChu.BackColor = System.Drawing.SystemColors.Window;
             this.txtGhiChu.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.txtGhiChu.BorderFocusColor = System.Drawing.Color.HotPink;
@@ -79,6 +81,7 @@
             // 
             // txtSoTien
             // 
+            this.txtSoTien.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSoTien.BackColor = System.Drawing.SystemColors.Window;
             this.txtSoTien.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.txtSoTien.BorderFocusColor = System.Drawing.Color.HotPink;
@@ -99,9 +102,11 @@
             this.txtSoTien.TabIndex = 86;
             this.txtSoTien.Texts = "";
             this.txtSoTien.UnderlinedStyle = false;
+            this.txtSoTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTien_KeyPress);
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -114,6 +119,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -126,6 +132,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -138,6 +145,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -150,6 +158,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -159,11 +168,10 @@
             this.label4.Size = new System.Drawing.Size(250, 31);
             this.label4.TabIndex = 79;
             this.label4.Text = "Sửa chi tiết bảo trì";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnHoanTat
             // 
-            this.btnHoanTat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHoanTat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHoanTat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
             this.btnHoanTat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
             this.btnHoanTat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
@@ -187,29 +195,9 @@
             this.btnHoanTat.UseVisualStyleBackColor = false;
             this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
-            // cboTinhTrang
-            // 
-            this.cboTinhTrang.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboTinhTrang.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboTinhTrang.BorderSize = 1;
-            this.cboTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cboTinhTrang.ForeColor = System.Drawing.Color.DimGray;
-            this.cboTinhTrang.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cboTinhTrang.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cboTinhTrang.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboTinhTrang.Location = new System.Drawing.Point(349, 306);
-            this.cboTinhTrang.Margin = new System.Windows.Forms.Padding(4);
-            this.cboTinhTrang.MinimumSize = new System.Drawing.Size(267, 37);
-            this.cboTinhTrang.Name = "cboTinhTrang";
-            this.cboTinhTrang.Padding = new System.Windows.Forms.Padding(1);
-            this.cboTinhTrang.SelectedValue = null;
-            this.cboTinhTrang.Size = new System.Drawing.Size(357, 37);
-            this.cboTinhTrang.TabIndex = 93;
-            this.cboTinhTrang.Texts = "";
-            // 
             // txtMaLK
             // 
+            this.txtMaLK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaLK.BackColor = System.Drawing.SystemColors.Window;
             this.txtMaLK.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.txtMaLK.BorderFocusColor = System.Drawing.Color.HotPink;
@@ -233,6 +221,7 @@
             // 
             // txtMaPhieu
             // 
+            this.txtMaPhieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaPhieu.BackColor = System.Drawing.SystemColors.Window;
             this.txtMaPhieu.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.txtMaPhieu.BorderFocusColor = System.Drawing.Color.HotPink;
@@ -254,15 +243,37 @@
             this.txtMaPhieu.Texts = "";
             this.txtMaPhieu.UnderlinedStyle = false;
             // 
+            // cboTinhTrang
+            // 
+            this.cboTinhTrang.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboTinhTrang.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboTinhTrang.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboTinhTrang.BorderSize = 1;
+            this.cboTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cboTinhTrang.ForeColor = System.Drawing.Color.DimGray;
+            this.cboTinhTrang.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cboTinhTrang.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboTinhTrang.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboTinhTrang.Location = new System.Drawing.Point(344, 315);
+            this.cboTinhTrang.Margin = new System.Windows.Forms.Padding(4);
+            this.cboTinhTrang.MinimumSize = new System.Drawing.Size(267, 37);
+            this.cboTinhTrang.Name = "cboTinhTrang";
+            this.cboTinhTrang.Padding = new System.Windows.Forms.Padding(1);
+            this.cboTinhTrang.SelectedValue = null;
+            this.cboTinhTrang.Size = new System.Drawing.Size(357, 37);
+            this.cboTinhTrang.TabIndex = 96;
+            this.cboTinhTrang.Texts = "";
+            // 
             // frmSuaChiTietPhieuBaoTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(1043, 652);
+            this.Controls.Add(this.cboTinhTrang);
             this.Controls.Add(this.txtMaPhieu);
             this.Controls.Add(this.txtMaLK);
-            this.Controls.Add(this.cboTinhTrang);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtGhiChu);
             this.Controls.Add(this.txtSoTien);
@@ -290,8 +301,8 @@
         private CustomControls.RJControls.RJButton btnHoanTat;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private CustomControls.RJControls.RJComboBox cboTinhTrang;
         private CustomControls.RJControls.RJTextBox txtMaLK;
         private CustomControls.RJControls.RJTextBox txtMaPhieu;
+        private CustomControls.RJControls.RJComboBox cboTinhTrang;
     }
 }

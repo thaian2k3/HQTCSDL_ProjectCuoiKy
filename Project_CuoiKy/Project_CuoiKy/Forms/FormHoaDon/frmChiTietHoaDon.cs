@@ -30,19 +30,19 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         public void LoadData()
         {
             string query = $"SELECT * FROM func_InChiTietHoaDon({maHD})";
-            dgvChiTietHoaDon.DataSource = api.CreateTable(query);
+            dgvChiTietBaoTri.DataSource = api.CreateTable(query);
         }
 
         private void dgvChiTietHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtSoLuong.Texts = helpers.DataInCol(dgvChiTietHoaDon, "SoLuong");
-            if (e.ColumnIndex == dgvChiTietHoaDon.Columns["dgvXoaHoaDon"].Index)
+            txtSoLuong.Texts = helpers.DataInCol(dgvChiTietBaoTri, "SoLuong");
+            if (e.ColumnIndex == dgvChiTietBaoTri.Columns["dgvXoaHoaDon"].Index)
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn xóa chi tiết hóa đơn không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
-                    string maHD = helpers.DataInCol(dgvChiTietHoaDon, "MaHoaDon");
-                    string maSP = helpers.DataInCol(dgvChiTietHoaDon, "MaSP");
+                    string maHD = helpers.DataInCol(dgvChiTietBaoTri, "MaHoaDon");
+                    string maSP = helpers.DataInCol(dgvChiTietBaoTri, "MaSP");
                     string query = $"DELETE from ChiTietHoaDon WHERE MaHD = '{maHD}' AND MaSP = '{maSP}'";
                     api.ExecQuery(query, "Xóa chi tiết hóa đơn thành công");
                     LoadData();
@@ -54,8 +54,8 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         {
             if (txtSoLuong.Texts.Length > 0)
             {
-                string maHD = helpers.DataInCol(dgvChiTietHoaDon, "MaHoaDon");
-                string maSP = helpers.DataInCol(dgvChiTietHoaDon, "MaSP");
+                string maHD = helpers.DataInCol(dgvChiTietBaoTri, "MaHoaDon");
+                string maSP = helpers.DataInCol(dgvChiTietBaoTri, "MaSP");
                 string query = $"UPDATE ChiTietHoaDon SET SoLuong = {txtSoLuong.Texts} WHERE MaHD = '{maHD}' AND MaSP = '{maSP}'";
                 api.ExecQuery(query, "Sửa chi tiết hóa đơn thành công");
                 LoadData();
@@ -72,6 +72,16 @@ namespace Project_CuoiKy.Forms.FormHoaDon
                 btnThanhToan.Enabled = false;
                 LoadData();
             }
+        }
+
+        private void frmChiTietHoaDon_Load(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void dgvChiTietHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

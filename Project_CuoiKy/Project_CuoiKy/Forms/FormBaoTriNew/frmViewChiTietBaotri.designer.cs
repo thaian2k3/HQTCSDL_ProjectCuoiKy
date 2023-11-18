@@ -34,9 +34,9 @@
             this.pnlBody = new System.Windows.Forms.Panel();
             this.dgvChiTietBaoTri = new System.Windows.Forms.DataGridView();
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.lblBoLoc = new System.Windows.Forms.Label();
             this.btnRefresh = new CustomControls.RJControls.RJButton();
             this.btnThem = new CustomControls.RJControls.RJButton();
+            this.lblBoLoc = new System.Windows.Forms.Label();
             this.MaLK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaPhieuBT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +46,8 @@
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTienBaoTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.change = new System.Windows.Forms.DataGridViewImageColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).BeginInit();
             this.pnlHeader.SuspendLayout();
@@ -89,6 +90,7 @@
             this.Model,
             this.NgayTao,
             this.TongTienBaoTri,
+            this.change,
             this.delete});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -119,8 +121,6 @@
             this.dgvChiTietBaoTri.Size = new System.Drawing.Size(1426, 373);
             this.dgvChiTietBaoTri.TabIndex = 0;
             this.dgvChiTietBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietBaoTri_CellClick);
-            this.dgvChiTietBaoTri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietBaoTri_CellContentClick);
-            this.dgvChiTietBaoTri.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietBaoTri_CellContentDoubleClick);
             // 
             // pnlHeader
             // 
@@ -136,20 +136,9 @@
             this.pnlHeader.Size = new System.Drawing.Size(1426, 77);
             this.pnlHeader.TabIndex = 6;
             // 
-            // lblBoLoc
-            // 
-            this.lblBoLoc.AutoSize = true;
-            this.lblBoLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBoLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblBoLoc.Location = new System.Drawing.Point(109, 23);
-            this.lblBoLoc.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblBoLoc.Name = "lblBoLoc";
-            this.lblBoLoc.Size = new System.Drawing.Size(400, 38);
-            this.lblBoLoc.TabIndex = 48;
-            this.lblBoLoc.Text = "Xem chi tiết phiếu bảo trì";
-            // 
             // btnRefresh
             // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
             this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
             this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
@@ -175,6 +164,7 @@
             // 
             // btnThem
             // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
             this.btnThem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
             this.btnThem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
@@ -195,6 +185,18 @@
             this.btnThem.TextColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // lblBoLoc
+            // 
+            this.lblBoLoc.AutoSize = true;
+            this.lblBoLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBoLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.lblBoLoc.Location = new System.Drawing.Point(109, 23);
+            this.lblBoLoc.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblBoLoc.Name = "lblBoLoc";
+            this.lblBoLoc.Size = new System.Drawing.Size(400, 38);
+            this.lblBoLoc.TabIndex = 48;
+            this.lblBoLoc.Text = "Xem chi tiết phiếu bảo trì";
             // 
             // MaLK
             // 
@@ -267,6 +269,7 @@
             this.NgayTao.MinimumWidth = 6;
             this.NgayTao.Name = "NgayTao";
             this.NgayTao.ReadOnly = true;
+            this.NgayTao.Visible = false;
             // 
             // TongTienBaoTri
             // 
@@ -276,16 +279,31 @@
             this.TongTienBaoTri.MinimumWidth = 6;
             this.TongTienBaoTri.Name = "TongTienBaoTri";
             this.TongTienBaoTri.ReadOnly = true;
+            this.TongTienBaoTri.Visible = false;
+            // 
+            // change
+            // 
+            this.change.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.change.DataPropertyName = "change";
+            this.change.HeaderText = "Sửa";
+            this.change.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
+            this.change.MinimumWidth = 6;
+            this.change.Name = "change";
+            this.change.ReadOnly = true;
+            this.change.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.change.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.change.Width = 83;
             // 
             // delete
             // 
             this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.delete.DataPropertyName = "delete";
             this.delete.HeaderText = "Xóa";
+            this.delete.Image = global::Project_CuoiKy.Properties.Resources.icons8_delete_30;
             this.delete.MinimumWidth = 6;
             this.delete.Name = "delete";
             this.delete.ReadOnly = true;
-            this.delete.Text = "Xóa";
+            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.delete.Width = 60;
             // 
             // frmViewChiTietBaotri
@@ -323,6 +341,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTao;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBaoTri;
-        private System.Windows.Forms.DataGridViewButtonColumn delete;
+        private System.Windows.Forms.DataGridViewImageColumn change;
+        private System.Windows.Forms.DataGridViewImageColumn delete;
     }
 }

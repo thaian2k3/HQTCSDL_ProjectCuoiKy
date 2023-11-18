@@ -35,65 +35,13 @@ namespace Project_CuoiKy.Forms.FormBaoTri
             LoadData();
         }
 
-        private void dgvChiTietBaoTri_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //double clickon cell dgv View sem phieu bao tri
-            string MaLK = helpers.DataInCol(dgvChiTietBaoTri, "MaLK");
-            string MaPhieu= helpers.DataInCol(dgvChiTietBaoTri, "MaPhieuBT");
-            frmSuaChiTietPhieuBaoTri f = new frmSuaChiTietPhieuBaoTri(MaLK,MaPhieu);
-            if (f.ShowDialog() == DialogResult.OK)
-            {
-               LoadData();
-            }
-        }
-        //private void ShowFormViewPhieuBaoTri()
-        //{
-        //    //frmSuaChiTietPhieuBaoTri
-        //    string MaLK = helpers.DataInCol(dgvChiTietBaoTri, "MaLK");
-        //    Forms.FormBaoTri.frmSuaChiTietPhieuBaoTri f2 = new Forms.FormBaoTri.frmSuaChiTietPhieuBaoTri(MaLK);
-        //    if (f2.ShowDialog() == DialogResult.OK)
-        //    {
-        //        LoadData();
-        //    }
-        //frmSuaChiTietPhieuBaoTri
-        ////}
-        //private void ShowFrmSuaChTietPhieuBaoTri()
-        //{
-        //    //string MaPhieu = helpers.DataInCol(dgvViewBaoTri, "MaPhieu");
-        //    //Forms.FormBaoTri.frmViewChiTietBaotri f2 = new Forms.FormBaoTri.frmViewChiTietBaotri(MaPhieu);
-        //    string MaLK = helpers.DataInCol(dgvChiTietBaoTri, "MaLK");
-        //    Forms.frmSuaChiTietPhieuBaoTri f1 = new Forms.frmSuaChiTietPhieuBaoTri(MaLK);
-        //    frmThemPhieuBaoTri f1 = new frmThemPhieuBaoTri();
-        //    if (f1.ShowDialog() == DialogResult.OK)
-        //    {
-        //        LoadData();
-        //    }
-        //}
-
         private void btnThem_Click(object sender, EventArgs e)
         {
-            ShowFrmThemPhieuBaoTri();
-        }
-
-        private void ShowFrmThemPhieuBaoTri()
-        {   
-            //string MaPhieu = helpers.DataInCol(dgvChiTietBaoTri, "MaPhieuBT");
             frmThemPhieuBaoTri f2 = new frmThemPhieuBaoTri(MaPhieu);
             if (f2.ShowDialog() == DialogResult.OK)
             {
                 LoadData();
             }
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
- 
-
-        private void dgvChiTietBaoTri_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void dgvChiTietBaoTri_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -106,6 +54,19 @@ namespace Project_CuoiKy.Forms.FormBaoTri
                     string MaLK = helpers.DataInCol(dgvChiTietBaoTri, "MaLK");
                     string query = $"DELETE from ChiTietPhieuBaoTri WHERE MaLK = '{MaLK}'";
                     api.ExecQuery(query, "Xóa thành công");
+                    LoadData();
+                }
+            }
+            else if (e.ColumnIndex == dgvChiTietBaoTri.Columns["change"].Index)
+            {
+                string MaLK = helpers.DataInCol(dgvChiTietBaoTri, "MaLK");
+                string MaPhieu = helpers.DataInCol(dgvChiTietBaoTri, "MaPhieuBT");
+                string SoTien = helpers.DataInCol(dgvChiTietBaoTri, "SoTien");
+                string TinhTrang = helpers.DataInCol(dgvChiTietBaoTri, "TinhTrang");
+                string GhiChu = helpers.DataInCol(dgvChiTietBaoTri, "GhiChu");
+                frmSuaChiTietPhieuBaoTri f = new frmSuaChiTietPhieuBaoTri(MaLK, MaPhieu, SoTien, TinhTrang, GhiChu);//,TinhTrang,GhiChu
+                if (f.ShowDialog() == DialogResult.OK)
+                {
                     LoadData();
                 }
             }

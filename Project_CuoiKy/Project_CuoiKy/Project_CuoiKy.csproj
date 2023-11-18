@@ -82,6 +82,30 @@
     <Compile Include="CustomControls\RJToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmSuaChiTietPhieuBaoTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmSuaChiTietPhieuBaoTri.Designer.cs">
+      <DependentUpon>frmSuaChiTietPhieuBaoTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmViewChiTietBaotri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmViewChiTietBaotri.designer.cs">
+      <DependentUpon>frmViewChiTietBaotri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmPhieuBaoTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmPhieuBaoTri.Designer.cs">
+      <DependentUpon>frmPhieuBaoTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmThemPhieuBaoTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmThemPhieuBaoTri.designer.cs">
+      <DependentUpon>frmThemPhieuBaoTri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormDangNhap\frmCheckAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +243,18 @@
     <Compile Include="Utils\Helpers.cs" />
     <EmbeddedResource Include="CustomControls\RJTextBox.resx">
       <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBaoTriNew\frmSuaChiTietPhieuBaoTri.resx">
+      <DependentUpon>frmSuaChiTietPhieuBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBaoTriNew\frmViewChiTietBaotri.resx">
+      <DependentUpon>frmViewChiTietBaotri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBaoTriNew\frmPhieuBaoTri.resx">
+      <DependentUpon>frmPhieuBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBaoTriNew\frmThemPhieuBaoTri.resx">
+      <DependentUpon>frmThemPhieuBaoTri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDangNhap\frmCheckAdmin.resx">
       <DependentUpon>frmCheckAdmin.cs</DependentUpon>

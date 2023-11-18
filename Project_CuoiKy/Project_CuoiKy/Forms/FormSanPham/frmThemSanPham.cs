@@ -42,5 +42,15 @@ namespace Project_CuoiKy.Forms.FormSanPham
         {
             LoadComboBox();
         }
+
+        private void cboLoaiSP_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboMaNCC_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

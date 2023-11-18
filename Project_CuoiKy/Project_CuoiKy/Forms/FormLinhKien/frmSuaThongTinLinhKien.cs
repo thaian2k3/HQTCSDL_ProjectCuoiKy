@@ -47,15 +47,20 @@ namespace Project_CuoiKy.Forms.FormLinhKien
             this.maMay = maMay;
 
             LoadComboBox();
-            /// không biết đổ dữ liệu vào 2 cái này sao hết máy ông, help
-            /*GanGiaTriChoCBO(cboNhaCC, maNCC);
-            GanGiaTriChoCBO(cboMaMay, maMay);*/
-            //cboLoaiLK.SelectedValue = loaiLK;
         }
         
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string maMay = cboMaMay.SelectedValue.ToString();
+            string maMay;
+            if (cboMaMay.SelectedValue != null)
+            {
+                maMay = cboMaMay.SelectedValue.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Chọn máy dùng linh kiện");
+                return;
+            }
             string maNCC = cboNhaCC.SelectedValue.ToString();
             string loaiLK = cboLoaiLK.SelectedValue.ToString();
             string tenHang = txtTenHang.Texts;
@@ -70,7 +75,14 @@ namespace Project_CuoiKy.Forms.FormLinhKien
         {
             string query = "Select MaMay from May";
             cboMaMay = helpers.CboData(query, cboMaMay, "MaMay");
-            cboMaMay.SelectedValue = this.maMay;
+            if (this.maMay != "")
+            {
+                cboMaMay.SelectedValue = this.maMay;
+            }
+            else
+            {
+                cboMaMay.Texts = "Mã máy";
+            }
 
             string query2 = "Select MaNCC from NhaCungCap";
             cboNhaCC = helpers.CboData(query2, cboNhaCC, "MaNCC");

@@ -35,9 +35,8 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         private void frmThemPhieuBaoTri_Load(object sender, EventArgs e)
         {
             txtMaPhieu.Texts = MaPhieu;
-            txtTinhTrang.Texts = "Dang bao tri";
             LoadComboBox();
-            txtSoTien.KeyPress += txtSoTien_KeyPress;
+            //txtSoTien.KeyPress += txtSoTien_KeyPress;
         }
         private void btnHoanTat_Click(object sender, EventArgs e)
         {
@@ -49,25 +48,24 @@ namespace Project_CuoiKy.Forms.FormBaoTri
             }
             string SoTien = txtSoTien.Texts.Trim() == "" ? "0" : txtSoTien.Texts;
 
-            string tinhtrang = txtTinhTrang.Texts;
-            string query = $"EXEC proc_ThemChiTietBaoTri {cboMaLK.SelectedValue},{int.Parse(txtMaPhieu.Texts)}, {int.Parse(SoTien)}, N'{tinhtrang}', N'{txtGhiChu.Texts}'";
+            string query = $"EXEC proc_ThemChiTietBaoTri {cboMaLK.SelectedValue},{int.Parse(txtMaPhieu.Texts)}, {int.Parse(SoTien)}, N'Đang bảo trì', N'{txtGhiChu.Texts}'";
             bool result = api.ExecQuery(query, "Thêm  thành công");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
         }
         private void LoadComboBox()
         {
             cboMaLK = helpers.CboData("Select distinct MaLK from LinhKien", cboMaLK, "MaLK");
-            cboMaLK.Texts = "   ";
+            cboMaLK.Texts = "Chọn mã linh kiện";
         }
 
-        private void txtSoTien_KeyPress(object sender, KeyPressEventArgs e)
-        {            
-                // Kiểm tra xem ký tự có phải là số hay không, hoặc có phải là ký tự chấp nhận được (ví dụ: backspace)
-                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-                {
-                    // Nếu không phải số, không cho phép ký tự được nhập vào TextBox
-                    e.Handled = true;
-                }  
-        }
+        //private void txtSoTien_KeyPress(object sender, KeyPressEventArgs e)
+        //{            
+        //        // Kiểm tra xem ký tự có phải là số hay không, hoặc có phải là ký tự chấp nhận được (ví dụ: backspace)
+        //        if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+        //        {
+        //            // Nếu không phải số, không cho phép ký tự được nhập vào TextBox
+        //            e.Handled = false;
+        //        }  
+        //}
     }
 }

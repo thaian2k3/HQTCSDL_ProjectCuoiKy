@@ -222,13 +222,15 @@ namespace Project_CuoiKy.Forms.FormSanPham
             
             txtMaHD.Texts = "";
             txtTenKH.Texts = "";
-            string queryTimHD = $"DELETE from HoaDon WHERE MaHD = '{maHD}'";
-            string queryXoaCTHD = $"DELETE from ChiTietHoaDon where MaHD = '{maHD}'";
+            string query = $"EXEC proc_XoaHoaDon {maHD}";
+            //string queryTimHD = $"DELETE from HoaDon WHERE MaHD = '{maHD}'";
+            //string queryXoaCTHD = $"DELETE from ChiTietHoaDon where MaHD = '{maHD}'";
 
-            api.ExecQuery(queryXoaCTHD, "", false);
+            //api.ExecQuery(queryXoaCTHD, "", false);
+
+            api.ExecQuery(query, "Xóa hoá đơn thành công");
             LoadDataCart(maHD);
 
-            api.ExecQuery(queryTimHD, "Xóa hoá đơn thành công");
             this.maHD = null;
             btnXoaHoaDon.Enabled = false;
             btnTaoHoaDon.Enabled = true;

@@ -36,6 +36,8 @@
             this.txtPassword = new CustomControls.RJControls.RJTextBox();
             this.txtUsername = new CustomControls.RJControls.RJTextBox();
             this.tabDangKy = new System.Windows.Forms.TabPage();
+            this.optStaff = new CustomControls.RJControls.RJRadioButton();
+            this.optAdmin = new CustomControls.RJControls.RJRadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtConfirmPasswordRegister = new CustomControls.RJControls.RJTextBox();
             this.btnDangKy = new CustomControls.RJControls.RJButton();
@@ -43,8 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPasswordRegister = new CustomControls.RJControls.RJTextBox();
             this.txtUsernameRegister = new CustomControls.RJControls.RJTextBox();
-            this.optAdmin = new CustomControls.RJControls.RJRadioButton();
-            this.optStaff = new CustomControls.RJControls.RJRadioButton();
             this.tabControlLogin.SuspendLayout();
             this.tabDangNhap.SuspendLayout();
             this.tabDangKy.SuspendLayout();
@@ -184,6 +184,38 @@
             this.tabDangKy.Text = "Đăng ký";
             this.tabDangKy.ToolTipText = "Đăng ký";
             // 
+            // optStaff
+            // 
+            this.optStaff.AutoSize = true;
+            this.optStaff.BackColor = System.Drawing.Color.White;
+            this.optStaff.Checked = true;
+            this.optStaff.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.optStaff.Location = new System.Drawing.Point(187, 279);
+            this.optStaff.MinimumSize = new System.Drawing.Size(0, 21);
+            this.optStaff.Name = "optStaff";
+            this.optStaff.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.optStaff.Size = new System.Drawing.Size(78, 21);
+            this.optStaff.TabIndex = 18;
+            this.optStaff.TabStop = true;
+            this.optStaff.Text = "STAFF";
+            this.optStaff.UnCheckedColor = System.Drawing.Color.Gray;
+            this.optStaff.UseVisualStyleBackColor = false;
+            // 
+            // optAdmin
+            // 
+            this.optAdmin.AutoSize = true;
+            this.optAdmin.BackColor = System.Drawing.Color.White;
+            this.optAdmin.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.optAdmin.Location = new System.Drawing.Point(291, 279);
+            this.optAdmin.MinimumSize = new System.Drawing.Size(0, 21);
+            this.optAdmin.Name = "optAdmin";
+            this.optAdmin.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.optAdmin.Size = new System.Drawing.Size(78, 21);
+            this.optAdmin.TabIndex = 17;
+            this.optAdmin.Text = "ADMIN";
+            this.optAdmin.UnCheckedColor = System.Drawing.Color.Gray;
+            this.optAdmin.UseVisualStyleBackColor = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -296,44 +328,12 @@
             this.txtUsernameRegister.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtUsernameRegister.PasswordChar = false;
             this.txtUsernameRegister.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtUsernameRegister.PlaceholderText = "Tài khoản";
+            this.txtUsernameRegister.PlaceholderText = "Tài khoản ";
             this.txtUsernameRegister.ReadOnly = false;
             this.txtUsernameRegister.Size = new System.Drawing.Size(250, 31);
             this.txtUsernameRegister.TabIndex = 10;
             this.txtUsernameRegister.Texts = "";
             this.txtUsernameRegister.UnderlinedStyle = false;
-            // 
-            // optAdmin
-            // 
-            this.optAdmin.AutoSize = true;
-            this.optAdmin.BackColor = System.Drawing.Color.White;
-            this.optAdmin.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.optAdmin.Location = new System.Drawing.Point(291, 279);
-            this.optAdmin.MinimumSize = new System.Drawing.Size(0, 21);
-            this.optAdmin.Name = "optAdmin";
-            this.optAdmin.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.optAdmin.Size = new System.Drawing.Size(78, 21);
-            this.optAdmin.TabIndex = 17;
-            this.optAdmin.Text = "ADMIN";
-            this.optAdmin.UnCheckedColor = System.Drawing.Color.Gray;
-            this.optAdmin.UseVisualStyleBackColor = false;
-            // 
-            // optStaff
-            // 
-            this.optStaff.AutoSize = true;
-            this.optStaff.BackColor = System.Drawing.Color.White;
-            this.optStaff.Checked = true;
-            this.optStaff.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.optStaff.Location = new System.Drawing.Point(187, 279);
-            this.optStaff.MinimumSize = new System.Drawing.Size(0, 21);
-            this.optStaff.Name = "optStaff";
-            this.optStaff.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.optStaff.Size = new System.Drawing.Size(78, 21);
-            this.optStaff.TabIndex = 18;
-            this.optStaff.TabStop = true;
-            this.optStaff.Text = "STAFF";
-            this.optStaff.UnCheckedColor = System.Drawing.Color.Gray;
-            this.optStaff.UseVisualStyleBackColor = false;
             // 
             // frmLogin
             // 

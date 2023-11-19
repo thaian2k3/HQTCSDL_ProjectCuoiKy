@@ -92,7 +92,7 @@
             this.txtPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtPassword.PasswordChar = true;
             this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.PlaceholderText = "Mật khẩu admin";
+            this.txtPassword.PlaceholderText = "Mật khẩu sa";
             this.txtPassword.ReadOnly = false;
             this.txtPassword.Size = new System.Drawing.Size(250, 31);
             this.txtPassword.TabIndex = 11;
@@ -115,7 +115,7 @@
             this.txtUsername.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtUsername.PasswordChar = false;
             this.txtUsername.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtUsername.PlaceholderText = "Tài khoản admin";
+            this.txtUsername.PlaceholderText = "Tài khoản sa";
             this.txtUsername.ReadOnly = false;
             this.txtUsername.Size = new System.Drawing.Size(250, 31);
             this.txtUsername.TabIndex = 10;

@@ -22,9 +22,8 @@ namespace Project_CuoiKy.Forms.FormDangNhap
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             bool isValidAccount = bool.Parse(apiAdmin.FuncScalarAdmin($"select dbo.func_CheckLogin('{txtUsername.Texts}', '{txtPassword.Texts}')"));
-            bool isRoleAdmin = apiAdmin.FuncScalarAdmin($"select dbo.func_GetRoleByUsername('{txtUsername.Texts}')").Equals("ADMIN");
 
-            if (isValidAccount && isRoleAdmin)
+            if (isValidAccount && txtUsername.Texts.Equals("sa"))
             {
                 this.DialogResult = DialogResult.OK;
                 MessageBox.Show("Xác nhận tài khoản ADMIN thành công", "Thông báo thành công", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);

@@ -31,7 +31,8 @@ namespace Project_CuoiKy.Forms.FormDangNhap
                 ACCOUNT.Username = txtUsername.Texts;
                 ACCOUNT.Password = txtPassword.Texts;
                 // Gán thuộc tính role trong ACCOUNT
-                ACCOUNT.Role = apiAdmin.FuncScalarAdmin($"select dbo.func_GetRoleByUsername('{txtUsername.Texts}')");
+                ACCOUNT.Role = txtUsername.Texts.Equals("sa") ? "ADMIN" : apiAdmin.FuncScalarAdmin($"select dbo.func_GetRoleByUsername('{txtUsername.Texts}')");
+               
                 //Show main form
                 MainForm mainForm = new MainForm();
                 mainForm.Show();
@@ -41,6 +42,9 @@ namespace Project_CuoiKy.Forms.FormDangNhap
             {
                 MessageBox.Show("Sai username hoặc password", "Thông báo lỗi", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
             }
+            txtConfirmPasswordRegister.Texts = "";
+            txtPasswordRegister.Texts = "";
+            txtUsernameRegister.Texts = "";
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)

@@ -132,7 +132,7 @@
             this.txtGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGhiChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtGhiChu.Location = new System.Drawing.Point(196, 342);
-            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4);
             this.txtGhiChu.Multiline = false;
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -161,7 +161,7 @@
             this.btnHoanTat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHoanTat.Location = new System.Drawing.Point(279, 421);
             this.btnHoanTat.Name = "btnHoanTat";
-            this.btnHoanTat.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnHoanTat.Padding = new System.Windows.Forms.Padding(5);
             this.btnHoanTat.Size = new System.Drawing.Size(111, 40);
             this.btnHoanTat.TabIndex = 60;
             this.btnHoanTat.Text = "Hoàn tất";
@@ -181,7 +181,7 @@
             this.txtMaPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaPhieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMaPhieu.Location = new System.Drawing.Point(196, 205);
-            this.txtMaPhieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaPhieu.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaPhieu.Multiline = false;
             this.txtMaPhieu.Name = "txtMaPhieu";
             this.txtMaPhieu.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -217,6 +217,7 @@
             this.txtSoTien.TabIndex = 84;
             this.txtSoTien.Texts = "";
             this.txtSoTien.UnderlinedStyle = false;
+            this.txtSoTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTien_KeyPress);
             // 
             // frmThemPhieuBaoTri
             // 
@@ -234,7 +235,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnHoanTat);
             this.Controls.Add(this.label4);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmThemPhieuBaoTri";
             this.Text = "frmThemPhieuBaoTri";
             this.Load += new System.EventHandler(this.frmThemPhieuBaoTri_Load);

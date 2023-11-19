@@ -83,5 +83,15 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         {
 
         }
+
+        private void txtSoLuong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Kiểm tra xem ký tự có phải là số hay không, hoặc có phải là ký tự chấp nhận được (ví dụ: backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Nếu không phải số, không cho phép ký tự được nhập vào TextBox
+                e.Handled = true;
+            }
+        }
     }
 }

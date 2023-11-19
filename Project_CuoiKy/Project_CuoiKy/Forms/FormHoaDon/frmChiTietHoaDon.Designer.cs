@@ -61,20 +61,18 @@
             this.pnlBody.Controls.Add(this.panel1);
             this.pnlBody.Controls.Add(this.dgvChiTietBaoTri);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(0, 77);
-            this.pnlBody.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlBody.Location = new System.Drawing.Point(0, 63);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(1185, 691);
+            this.pnlBody.Size = new System.Drawing.Size(889, 561);
             this.pnlBody.TabIndex = 5;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnThanhToan);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 581);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(0, 472);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1185, 110);
+            this.panel1.Size = new System.Drawing.Size(889, 89);
             this.panel1.TabIndex = 1;
             // 
             // btnThanhToan
@@ -91,11 +89,10 @@
             this.btnThanhToan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnThanhToan.Image = global::Project_CuoiKy.Properties.Resources.icons8_receipt_approved_30;
             this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThanhToan.Location = new System.Drawing.Point(975, 30);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThanhToan.Location = new System.Drawing.Point(731, 24);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnThanhToan.Size = new System.Drawing.Size(173, 49);
+            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThanhToan.Size = new System.Drawing.Size(130, 40);
             this.btnThanhToan.TabIndex = 55;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -144,7 +141,6 @@
             this.dgvChiTietBaoTri.EnableHeadersVisualStyles = false;
             this.dgvChiTietBaoTri.GridColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgvChiTietBaoTri.Location = new System.Drawing.Point(0, 0);
-            this.dgvChiTietBaoTri.Margin = new System.Windows.Forms.Padding(4);
             this.dgvChiTietBaoTri.Name = "dgvChiTietBaoTri";
             this.dgvChiTietBaoTri.ReadOnly = true;
             this.dgvChiTietBaoTri.RowHeadersVisible = false;
@@ -157,7 +153,7 @@
             this.dgvChiTietBaoTri.RowTemplate.ReadOnly = true;
             this.dgvChiTietBaoTri.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvChiTietBaoTri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvChiTietBaoTri.Size = new System.Drawing.Size(1185, 691);
+            this.dgvChiTietBaoTri.Size = new System.Drawing.Size(889, 561);
             this.dgvChiTietBaoTri.TabIndex = 0;
             this.dgvChiTietBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietHoaDon_CellClick);
             this.dgvChiTietBaoTri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietHoaDon_CellContentClick);
@@ -271,9 +267,8 @@
             this.pnlHeader.Controls.Add(this.lblSoLuong);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1185, 77);
+            this.pnlHeader.Size = new System.Drawing.Size(889, 63);
             this.pnlHeader.TabIndex = 4;
             // 
             // btnSua
@@ -289,11 +284,10 @@
             this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnSua.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(385, 12);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSua.Location = new System.Drawing.Point(289, 10);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnSua.Size = new System.Drawing.Size(112, 49);
+            this.btnSua.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSua.Size = new System.Drawing.Size(84, 40);
             this.btnSua.TabIndex = 53;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -310,40 +304,42 @@
             this.txtSoLuong.BorderSize = 2;
             this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSoLuong.Location = new System.Drawing.Point(127, 18);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(5);
+            this.txtSoLuong.Location = new System.Drawing.Point(95, 15);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSoLuong.Multiline = false;
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.txtSoLuong.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.txtSoLuong.PasswordChar = false;
             this.txtSoLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtSoLuong.PlaceholderText = "Số lượng sản phẩm";
             this.txtSoLuong.ReadOnly = false;
-            this.txtSoLuong.Size = new System.Drawing.Size(251, 35);
+            this.txtSoLuong.Size = new System.Drawing.Size(188, 29);
             this.txtSoLuong.TabIndex = 1;
             this.txtSoLuong.Texts = "";
             this.txtSoLuong.UnderlinedStyle = false;
+            this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
             // lblSoLuong
             // 
             this.lblSoLuong.AutoSize = true;
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblSoLuong.Location = new System.Drawing.Point(11, 30);
+            this.lblSoLuong.Location = new System.Drawing.Point(9, 19);
+            this.lblSoLuong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(98, 25);
+            this.lblSoLuong.Size = new System.Drawing.Size(80, 20);
             this.lblSoLuong.TabIndex = 0;
             this.lblSoLuong.Text = "Số lượng";
             // 
             // frmChiTietHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(1185, 768);
+            this.ClientSize = new System.Drawing.Size(889, 624);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmChiTietHoaDon";
             this.Text = "frmChiTietHoaDon";
             this.Load += new System.EventHandler(this.frmChiTietHoaDon_Load);

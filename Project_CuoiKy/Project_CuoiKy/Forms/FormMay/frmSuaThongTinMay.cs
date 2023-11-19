@@ -66,5 +66,15 @@ namespace Project_CuoiKy.Forms.FormMay
             string query = $"EXEC proc_SuaMay {maMay}, {maPhong}";
             this.DialogResult = api.ExecQuery(query, "Lưu thông tin thành công") ? DialogResult.OK : DialogResult.None;
         }
+
+        private void txtGiaPhong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Kiểm tra xem ký tự có phải là số hay không, hoặc có phải là ký tự chấp nhận được (ví dụ: backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Nếu không phải số, không cho phép ký tự được nhập vào TextBox
+                e.Handled = true;
+            }
+        }
     }
 }

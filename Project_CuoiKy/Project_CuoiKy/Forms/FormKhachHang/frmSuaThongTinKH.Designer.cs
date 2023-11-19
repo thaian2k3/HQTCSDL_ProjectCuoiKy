@@ -124,6 +124,7 @@
             this.txtMatKhau.PasswordChar = false;
             this.txtMatKhau.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMatKhau.PlaceholderText = "";
+            this.txtMatKhau.ReadOnly = false;
             this.txtMatKhau.Size = new System.Drawing.Size(250, 31);
             this.txtMatKhau.TabIndex = 26;
             this.txtMatKhau.Texts = "";
@@ -146,6 +147,7 @@
             this.txtTenKH.PasswordChar = false;
             this.txtTenKH.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTenKH.PlaceholderText = "";
+            this.txtTenKH.ReadOnly = false;
             this.txtTenKH.Size = new System.Drawing.Size(250, 31);
             this.txtTenKH.TabIndex = 25;
             this.txtTenKH.Texts = "";
@@ -169,10 +171,12 @@
             this.txtMaKH.PasswordChar = false;
             this.txtMaKH.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMaKH.PlaceholderText = "";
+            this.txtMaKH.ReadOnly = false;
             this.txtMaKH.Size = new System.Drawing.Size(250, 31);
             this.txtMaKH.TabIndex = 24;
             this.txtMaKH.Texts = "";
             this.txtMaKH.UnderlinedStyle = false;
+            this.txtMaKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaKH_KeyPress);
             // 
             // frmSuaThongTinKH
             // 

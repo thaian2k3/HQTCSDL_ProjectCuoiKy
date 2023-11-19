@@ -22,6 +22,7 @@ namespace Project_CuoiKy
             InitializeComponent();
 
             OpenChildForm(new frmSanPham());
+            lblAccount.Text = $"Welcome back {ACCOUNT.Username} [{ACCOUNT.Role}]";
         }
         private void OpenChildForm(Form childForm)
         {

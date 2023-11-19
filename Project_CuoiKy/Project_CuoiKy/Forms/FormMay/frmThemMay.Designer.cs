@@ -117,6 +117,7 @@
             this.txtGiaPhong.TabIndex = 57;
             this.txtGiaPhong.Texts = "";
             this.txtGiaPhong.UnderlinedStyle = false;
+            this.txtGiaPhong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaPhong_KeyPress);
             // 
             // txtViTri
             // 

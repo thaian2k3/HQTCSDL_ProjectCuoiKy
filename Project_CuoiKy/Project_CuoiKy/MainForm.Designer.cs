@@ -45,8 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLogout = new CustomControls.RJControls.RJButton();
-            this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.pnlChildForm = new System.Windows.Forms.Panel();
+            this.lblAccount = new System.Windows.Forms.Label();
             this.pnlSidebar.SuspendLayout();
             this.pnlSubmenuPhong.SuspendLayout();
             this.pnlSubmenuKhachHang.SuspendLayout();
@@ -354,8 +354,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.panel2.Controls.Add(this.lblAccount);
             this.panel2.Controls.Add(this.btnLogout);
-            this.panel2.Controls.Add(this.rjButton5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
@@ -386,29 +386,6 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // rjButton5
-            // 
-            this.rjButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.rjButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.rjButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(174)))), ((int)(((byte)(214)))));
-            this.rjButton5.BorderRadius = 25;
-            this.rjButton5.BorderSize = 1;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton5.Image = global::Project_CuoiKy.Properties.Resources.icons8_user_45;
-            this.rjButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton5.Location = new System.Drawing.Point(600, 12);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(127, 55);
-            this.rjButton5.TabIndex = 0;
-            this.rjButton5.Text = "Tài khoản";
-            this.rjButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton5.UseVisualStyleBackColor = false;
-            // 
             // pnlChildForm
             // 
             this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -416,6 +393,16 @@
             this.pnlChildForm.Name = "pnlChildForm";
             this.pnlChildForm.Size = new System.Drawing.Size(866, 781);
             this.pnlChildForm.TabIndex = 4;
+            // 
+            // lblAccount
+            // 
+            this.lblAccount.AutoSize = true;
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.lblAccount.Location = new System.Drawing.Point(612, 28);
+            this.lblAccount.Name = "lblAccount";
+            this.lblAccount.Size = new System.Drawing.Size(0, 20);
+            this.lblAccount.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -437,6 +424,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -451,7 +439,6 @@
         private CustomControls.RJControls.RJButton btnMenu;
         private System.Windows.Forms.Label label1;
         private CustomControls.RJControls.RJButton btnLogout;
-        private CustomControls.RJControls.RJButton rjButton5;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.Panel pnlChildForm;
         private System.Windows.Forms.Panel pnlSubmenuKhachHang;
@@ -462,6 +449,7 @@
         private CustomControls.RJControls.RJButton btnDanhSachMay;
         private CustomControls.RJControls.RJButton btnLinhKien;
         private CustomControls.RJControls.RJButton btnBaoTri;
+        private System.Windows.Forms.Label lblAccount;
     }
 }
 

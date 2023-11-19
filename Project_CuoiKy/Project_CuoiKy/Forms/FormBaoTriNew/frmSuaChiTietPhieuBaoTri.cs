@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Project_CuoiKy.Forms.FormBaoTriNew
 {
@@ -24,7 +25,6 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
         public frmSuaChiTietPhieuBaoTri()
         {
             InitializeComponent();
-
             btnHoanTat.Visible = ACCOUNT.Role.ToUpper() == "ADMIN";
         }
         private void btnHoanTat_Click(object sender, EventArgs e)
@@ -33,9 +33,15 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
             string malk    = txtMaLK.Texts.Trim() == "" ? "0" :   txtMaLK.Texts;
             string maphieu = txtMaPhieu.Texts.Trim() == "" ? "0" : txtMaPhieu.Texts;//int.Parse(txtMaPhieu.Texts)
             string query= "";
-            if (cboTinhTrang.Texts == TinhTrangCu)               
+            if (cboTinhTrang.Texts == "" || cboTinhTrang.Texts == null)
             {
-                 query = $"EXEC proc_CapNhatChiTietBaoTri {int.Parse(malk)},{int.Parse(maphieu)}, {int.Parse(sotien)}, N'{TinhTrangCu}', N'{txtGhiChu.Texts}'";
+                MessageBox.Show("Thiếu tình trạng!", "Lỗi");
+                return;
+            }
+            
+            else if (cboTinhTrang.Texts == TinhTrangCu)
+            {
+                query = $"EXEC proc_CapNhatChiTietBaoTri {int.Parse(malk)},{int.Parse(maphieu)}, {int.Parse(sotien)}, N'{TinhTrangCu}', N'{txtGhiChu.Texts}'";
             }
             else
             {
@@ -46,7 +52,9 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
         }
         private void LoadComboBox()
         {
-            cboTinhTrang = helpers.CboData("Select distinct TinhTrang from ChiTietPhieuBaoTri", cboTinhTrang, "TinhTrang");
+            //cboTinhTrang = helpers.CboData("Select distinct TinhTrang from ChiTietPhieuBaoTri", cboTinhTrang, "TinhTrang");
+            cboTinhTrang.Items.Add("Đang bảo trì");
+            cboTinhTrang.Items.Add("Hoàn thành");
             cboTinhTrang.Texts = TinhTrangCu;
         }
        
@@ -57,7 +65,7 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
             SoTienCu = SoTienCu.Replace(".0000", "");
             txtSoTien.Texts = SoTienCu;//result = Convert.ToInt32(double.Parse(strNumber));
             txtGhiChu.Texts = GhiChuCu;
-            LoadComboBox();
+            LoadComboBox();            
             txtSoTien.KeyPress += txtSoTien_KeyPress;
             //this.MaximizeBox = false;
         }
@@ -81,6 +89,5 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
             }
         }
 
-      
     }
 }

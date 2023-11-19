@@ -57,9 +57,10 @@
             // 
             this.pnlBody.Controls.Add(this.dgvChiTietBaoTri);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(0, 63);
+            this.pnlBody.Location = new System.Drawing.Point(0, 77);
+            this.pnlBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(1070, 488);
+            this.pnlBody.Size = new System.Drawing.Size(1427, 601);
             this.pnlBody.TabIndex = 7;
             // 
             // dgvChiTietBaoTri
@@ -104,6 +105,7 @@
             this.dgvChiTietBaoTri.EnableHeadersVisualStyles = false;
             this.dgvChiTietBaoTri.GridColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgvChiTietBaoTri.Location = new System.Drawing.Point(0, 0);
+            this.dgvChiTietBaoTri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvChiTietBaoTri.Name = "dgvChiTietBaoTri";
             this.dgvChiTietBaoTri.ReadOnly = true;
             this.dgvChiTietBaoTri.RowHeadersVisible = false;
@@ -116,7 +118,7 @@
             this.dgvChiTietBaoTri.RowTemplate.ReadOnly = true;
             this.dgvChiTietBaoTri.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvChiTietBaoTri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvChiTietBaoTri.Size = new System.Drawing.Size(1070, 488);
+            this.dgvChiTietBaoTri.Size = new System.Drawing.Size(1427, 601);
             this.dgvChiTietBaoTri.TabIndex = 0;
             this.dgvChiTietBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietBaoTri_CellClick);
             // 
@@ -214,7 +216,7 @@
             this.change.ReadOnly = true;
             this.change.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.change.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.change.Width = 72;
+            this.change.Width = 83;
             // 
             // delete
             // 
@@ -226,7 +228,7 @@
             this.delete.Name = "delete";
             this.delete.ReadOnly = true;
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete.Width = 53;
+            this.delete.Width = 60;
             // 
             // pnlHeader
             // 
@@ -237,8 +239,9 @@
             this.pnlHeader.Controls.Add(this.lblBoLoc);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1070, 63);
+            this.pnlHeader.Size = new System.Drawing.Size(1427, 77);
             this.pnlHeader.TabIndex = 6;
             // 
             // btnRefresh
@@ -255,10 +258,11 @@
             this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(816, 10);
+            this.btnRefresh.Location = new System.Drawing.Point(1089, 12);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnRefresh.Size = new System.Drawing.Size(97, 40);
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnRefresh.Size = new System.Drawing.Size(129, 49);
             this.btnRefresh.TabIndex = 63;
             this.btnRefresh.Text = "Reset";
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -279,10 +283,11 @@
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
-            this.btnThem.Location = new System.Drawing.Point(956, 10);
+            this.btnThem.Location = new System.Drawing.Point(1276, 12);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnThem.Size = new System.Drawing.Size(93, 40);
+            this.btnThem.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnThem.Size = new System.Drawing.Size(124, 49);
             this.btnThem.TabIndex = 64;
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -294,22 +299,23 @@
             this.lblBoLoc.AutoSize = true;
             this.lblBoLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBoLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblBoLoc.Location = new System.Drawing.Point(82, 19);
-            this.lblBoLoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBoLoc.Location = new System.Drawing.Point(109, 23);
+            this.lblBoLoc.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblBoLoc.Name = "lblBoLoc";
-            this.lblBoLoc.Size = new System.Drawing.Size(336, 31);
+            this.lblBoLoc.Size = new System.Drawing.Size(400, 38);
             this.lblBoLoc.TabIndex = 48;
             this.lblBoLoc.Text = "Xem chi tiết phiếu bảo trì";
             // 
             // frmViewChiTietBaotri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 551);
+            this.ClientSize = new System.Drawing.Size(1427, 678);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmViewChiTietBaotri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBaotri";
             this.Load += new System.EventHandler(this.frmChiTietBaotri_Load);
             this.pnlBody.ResumeLayout(false);

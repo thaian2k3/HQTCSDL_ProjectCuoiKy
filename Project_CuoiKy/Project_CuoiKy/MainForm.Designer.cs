@@ -28,33 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnlSidebar = new System.Windows.Forms.Panel();
-            this.pnlSubmenuPhong = new System.Windows.Forms.Panel();
-            this.pnlSubmenuKhachHang = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlChildForm = new System.Windows.Forms.Panel();
-            this.btnLogout = new CustomControls.RJControls.RJButton();
-            this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.btnBaoTri = new CustomControls.RJControls.RJButton();
             this.btnLinhKien = new CustomControls.RJControls.RJButton();
             this.btnHoaDon = new CustomControls.RJControls.RJButton();
+            this.pnlSubmenuPhong = new System.Windows.Forms.Panel();
             this.btnDanhSachMay = new CustomControls.RJControls.RJButton();
             this.btnThongTinPhong = new CustomControls.RJControls.RJButton();
             this.btnPhong = new CustomControls.RJControls.RJButton();
+            this.pnlSubmenuKhachHang = new System.Windows.Forms.Panel();
             this.btnXemChiTietKH = new CustomControls.RJControls.RJButton();
             this.btnTaiKhoan = new CustomControls.RJControls.RJButton();
             this.btnMenu = new CustomControls.RJControls.RJButton();
-            this.btnHome = new CustomControls.RJControls.RJButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLogout = new CustomControls.RJControls.RJButton();
+            this.rjButton5 = new CustomControls.RJControls.RJButton();
+            this.pnlChildForm = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.pnlSubmenuPhong.SuspendLayout();
             this.pnlSubmenuKhachHang.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSidebar
@@ -68,125 +66,12 @@
             this.pnlSidebar.Controls.Add(this.pnlSubmenuKhachHang);
             this.pnlSidebar.Controls.Add(this.btnTaiKhoan);
             this.pnlSidebar.Controls.Add(this.btnMenu);
-            this.pnlSidebar.Controls.Add(this.btnHome);
             this.pnlSidebar.Controls.Add(this.panel3);
             this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(220, 860);
             this.pnlSidebar.TabIndex = 0;
-            // 
-            // pnlSubmenuPhong
-            // 
-            this.pnlSubmenuPhong.AutoSize = true;
-            this.pnlSubmenuPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
-            this.pnlSubmenuPhong.Controls.Add(this.btnDanhSachMay);
-            this.pnlSubmenuPhong.Controls.Add(this.btnThongTinPhong);
-            this.pnlSubmenuPhong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubmenuPhong.Location = new System.Drawing.Point(0, 473);
-            this.pnlSubmenuPhong.Name = "pnlSubmenuPhong";
-            this.pnlSubmenuPhong.Size = new System.Drawing.Size(220, 100);
-            this.pnlSubmenuPhong.TabIndex = 0;
-            this.pnlSubmenuPhong.Visible = false;
-            // 
-            // pnlSubmenuKhachHang
-            // 
-            this.pnlSubmenuKhachHang.AutoSize = true;
-            this.pnlSubmenuKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(70)))), ((int)(((byte)(79)))));
-            this.pnlSubmenuKhachHang.Controls.Add(this.btnXemChiTietKH);
-            this.pnlSubmenuKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubmenuKhachHang.Location = new System.Drawing.Point(0, 343);
-            this.pnlSubmenuKhachHang.Name = "pnlSubmenuKhachHang";
-            this.pnlSubmenuKhachHang.Size = new System.Drawing.Size(220, 50);
-            this.pnlSubmenuKhachHang.TabIndex = 0;
-            this.pnlSubmenuKhachHang.Visible = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.rjCircularPictureBox1);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(220, 103);
-            this.panel3.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.label1.Location = new System.Drawing.Point(82, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CCORE HADP";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.panel2.Controls.Add(this.btnLogout);
-            this.panel2.Controls.Add(this.rjButton5);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(220, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(866, 79);
-            this.panel2.TabIndex = 1;
-            // 
-            // pnlChildForm
-            // 
-            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChildForm.Location = new System.Drawing.Point(220, 79);
-            this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(866, 781);
-            this.pnlChildForm.TabIndex = 4;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.btnLogout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.btnLogout.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(174)))), ((int)(((byte)(214)))));
-            this.btnLogout.BorderRadius = 25;
-            this.btnLogout.BorderSize = 1;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnLogout.Image = global::Project_CuoiKy.Properties.Resources.icons8_logout_45;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(747, 12);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(95, 55);
-            this.btnLogout.TabIndex = 1;
-            this.btnLogout.Text = "Thoát";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogout.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // rjButton5
-            // 
-            this.rjButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.rjButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.rjButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(174)))), ((int)(((byte)(214)))));
-            this.rjButton5.BorderRadius = 25;
-            this.rjButton5.BorderSize = 1;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton5.Image = global::Project_CuoiKy.Properties.Resources.icons8_user_45;
-            this.rjButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton5.Location = new System.Drawing.Point(600, 12);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(127, 55);
-            this.rjButton5.TabIndex = 0;
-            this.rjButton5.Text = "Tài khoản";
-            this.rjButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.rjButton5.UseVisualStyleBackColor = false;
             // 
             // btnBaoTri
             // 
@@ -202,7 +87,7 @@
             this.btnBaoTri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnBaoTri.Image = global::Project_CuoiKy.Properties.Resources.icons8_maintenance_45;
             this.btnBaoTri.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoTri.Location = new System.Drawing.Point(0, 751);
+            this.btnBaoTri.Location = new System.Drawing.Point(0, 671);
             this.btnBaoTri.Margin = new System.Windows.Forms.Padding(4);
             this.btnBaoTri.Name = "btnBaoTri";
             this.btnBaoTri.Size = new System.Drawing.Size(220, 98);
@@ -226,7 +111,7 @@
             this.btnLinhKien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnLinhKien.Image = global::Project_CuoiKy.Properties.Resources.icons8_earbud_headphones_45;
             this.btnLinhKien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLinhKien.Location = new System.Drawing.Point(0, 653);
+            this.btnLinhKien.Location = new System.Drawing.Point(0, 573);
             this.btnLinhKien.Margin = new System.Windows.Forms.Padding(4);
             this.btnLinhKien.Name = "btnLinhKien";
             this.btnLinhKien.Size = new System.Drawing.Size(220, 98);
@@ -250,7 +135,7 @@
             this.btnHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnHoaDon.Image = global::Project_CuoiKy.Properties.Resources.icons8_receipt_45;
             this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoaDon.Location = new System.Drawing.Point(0, 573);
+            this.btnHoaDon.Location = new System.Drawing.Point(0, 493);
             this.btnHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(220, 80);
@@ -259,6 +144,19 @@
             this.btnHoaDon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnHoaDon.UseVisualStyleBackColor = false;
             this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
+            // 
+            // pnlSubmenuPhong
+            // 
+            this.pnlSubmenuPhong.AutoSize = true;
+            this.pnlSubmenuPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.pnlSubmenuPhong.Controls.Add(this.btnDanhSachMay);
+            this.pnlSubmenuPhong.Controls.Add(this.btnThongTinPhong);
+            this.pnlSubmenuPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSubmenuPhong.Location = new System.Drawing.Point(0, 393);
+            this.pnlSubmenuPhong.Name = "pnlSubmenuPhong";
+            this.pnlSubmenuPhong.Size = new System.Drawing.Size(220, 100);
+            this.pnlSubmenuPhong.TabIndex = 0;
+            this.pnlSubmenuPhong.Visible = false;
             // 
             // btnDanhSachMay
             // 
@@ -324,7 +222,7 @@
             this.btnPhong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnPhong.Image = global::Project_CuoiKy.Properties.Resources.icons8_room_45__1_;
             this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhong.Location = new System.Drawing.Point(0, 393);
+            this.btnPhong.Location = new System.Drawing.Point(0, 313);
             this.btnPhong.Name = "btnPhong";
             this.btnPhong.Size = new System.Drawing.Size(220, 80);
             this.btnPhong.TabIndex = 4;
@@ -332,6 +230,18 @@
             this.btnPhong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnPhong.UseVisualStyleBackColor = false;
             this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
+            // 
+            // pnlSubmenuKhachHang
+            // 
+            this.pnlSubmenuKhachHang.AutoSize = true;
+            this.pnlSubmenuKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(70)))), ((int)(((byte)(79)))));
+            this.pnlSubmenuKhachHang.Controls.Add(this.btnXemChiTietKH);
+            this.pnlSubmenuKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSubmenuKhachHang.Location = new System.Drawing.Point(0, 263);
+            this.pnlSubmenuKhachHang.Name = "pnlSubmenuKhachHang";
+            this.pnlSubmenuKhachHang.Size = new System.Drawing.Size(220, 50);
+            this.pnlSubmenuKhachHang.TabIndex = 0;
+            this.pnlSubmenuKhachHang.Visible = false;
             // 
             // btnXemChiTietKH
             // 
@@ -371,7 +281,7 @@
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnTaiKhoan.Image = global::Project_CuoiKy.Properties.Resources.icons8_user_account_45;
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 263);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 183);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTaiKhoan.Size = new System.Drawing.Size(220, 80);
@@ -395,7 +305,7 @@
             this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.btnMenu.Image = global::Project_CuoiKy.Properties.Resources.icons8_menu_45;
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Location = new System.Drawing.Point(0, 183);
+            this.btnMenu.Location = new System.Drawing.Point(0, 103);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(220, 80);
             this.btnMenu.TabIndex = 2;
@@ -404,27 +314,15 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // btnHome
+            // panel3
             // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.btnHome.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.btnHome.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnHome.BorderRadius = 0;
-            this.btnHome.BorderSize = 0;
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 103);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 80);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.Text = "Home";
-            this.btnHome.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnHome.UseVisualStyleBackColor = false;
+            this.panel3.Controls.Add(this.rjCircularPictureBox1);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(220, 103);
+            this.panel3.TabIndex = 0;
             // 
             // rjCircularPictureBox1
             // 
@@ -441,6 +339,83 @@
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox1.TabIndex = 1;
             this.rjCircularPictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.label1.Location = new System.Drawing.Point(82, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "CCORE HADP";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.panel2.Controls.Add(this.btnLogout);
+            this.panel2.Controls.Add(this.rjButton5);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(220, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(866, 79);
+            this.panel2.TabIndex = 1;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.btnLogout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.btnLogout.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(174)))), ((int)(((byte)(214)))));
+            this.btnLogout.BorderRadius = 25;
+            this.btnLogout.BorderSize = 1;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnLogout.Image = global::Project_CuoiKy.Properties.Resources.icons8_logout_45;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(747, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(95, 55);
+            this.btnLogout.TabIndex = 1;
+            this.btnLogout.Text = "Thoát";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogout.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // rjButton5
+            // 
+            this.rjButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rjButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.rjButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.rjButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(174)))), ((int)(((byte)(214)))));
+            this.rjButton5.BorderRadius = 25;
+            this.rjButton5.BorderSize = 1;
+            this.rjButton5.FlatAppearance.BorderSize = 0;
+            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.rjButton5.Image = global::Project_CuoiKy.Properties.Resources.icons8_user_45;
+            this.rjButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton5.Location = new System.Drawing.Point(600, 12);
+            this.rjButton5.Name = "rjButton5";
+            this.rjButton5.Size = new System.Drawing.Size(127, 55);
+            this.rjButton5.TabIndex = 0;
+            this.rjButton5.Text = "Tài khoản";
+            this.rjButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.rjButton5.UseVisualStyleBackColor = false;
+            // 
+            // pnlChildForm
+            // 
+            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildForm.Location = new System.Drawing.Point(220, 79);
+            this.pnlChildForm.Name = "pnlChildForm";
+            this.pnlChildForm.Size = new System.Drawing.Size(866, 781);
+            this.pnlChildForm.TabIndex = 4;
             // 
             // MainForm
             // 
@@ -460,8 +435,8 @@
             this.pnlSubmenuKhachHang.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -469,7 +444,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlSidebar;
-        private CustomControls.RJControls.RJButton btnHome;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private CustomControls.RJControls.RJButton btnPhong;

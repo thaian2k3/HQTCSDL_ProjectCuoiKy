@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_CuoiKy.Forms.FormSanPham;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,8 @@ namespace Project_CuoiKy
         public MainForm()
         {
             InitializeComponent();
+
+            OpenChildForm(new frmSanPham());
         }
         private void OpenChildForm(Form childForm)
         {

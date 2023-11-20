@@ -72,7 +72,7 @@ namespace Project_CuoiKy.Forms.FormSanPham
             {
                 return;
             }
-            frmChiTietHoaDon f2 = new frmChiTietHoaDon(maHD);
+            frmChiTietHoaDon f2 = new frmChiTietHoaDon(maHD, false);
             if (f2.ShowDialog() == DialogResult.OK)
             {
                 LoadData();
@@ -248,7 +248,10 @@ namespace Project_CuoiKy.Forms.FormSanPham
                 {
                     // Thêm sản phẩm vào giỏ hàng với số lượng tương ứng
                     string maSP = helpers.DataInCol(dgvCart, "MaSPCart");
+                    string oldQuantity = helpers.DataInCol(dgvCart, "SoLuongCart");
+                    string queryOldSoLuong = $"Update SanPham set SoLuongConLai = SoLuongConLai + {oldQuantity} where MaSP = {maSP}";
                     string query = $"Update ChiTietHoaDon set SoLuong = {quantity} where MaSP = {maSP} and MaHD = {maHD}";
+                    api.ExecQuery(queryOldSoLuong, "", false);
                     api.ExecQuery(query, "Sửa số lượng thành công", false);
                     LoadDataCart(maHD);
                     LoadData();

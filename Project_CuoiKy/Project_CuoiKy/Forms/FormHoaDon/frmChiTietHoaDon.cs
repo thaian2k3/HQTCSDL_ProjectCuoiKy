@@ -17,20 +17,24 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         private Api.ApiService api = new Api.ApiService();
         private Helpers helpers = new Helpers();
         private string maHD;
+        bool isPaid;
         public frmChiTietHoaDon()
         {
             InitializeComponent();
         }
-        public frmChiTietHoaDon(string maHD)
+        public frmChiTietHoaDon(string maHD, bool isPaid)
         {
             InitializeComponent();
             this.maHD = maHD;
+            this.isPaid = isPaid;
             LoadData();
         }
         public void LoadData()
         {
             string query = $"SELECT * FROM func_InChiTietHoaDon({maHD})";
             dgvChiTietBaoTri.DataSource = api.CreateTable(query);
+
+            btnThanhToan.Enabled = !isPaid;
         }
 
         private void dgvChiTietHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -68,9 +72,11 @@ namespace Project_CuoiKy.Forms.FormHoaDon
             if (result == DialogResult.Yes)
             {
                 string query = $"UPDATE HoaDon SET TinhTrang = N'Đã thanh toán' WHERE MaHD='{maHD}'";
-                api.ExecQuery(query, "Thanh toán hóa đơn thành công");
+                this.DialogResult = api.ExecQuery(query, "Thanh toán hóa đơn thành công") ? DialogResult.OK : DialogResult.None;
                 btnThanhToan.Enabled = false;
                 LoadData();
+
+                
             }
         }
 

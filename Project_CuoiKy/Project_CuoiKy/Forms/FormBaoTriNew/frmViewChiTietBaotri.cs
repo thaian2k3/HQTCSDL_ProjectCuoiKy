@@ -78,5 +78,16 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         {
             this.Invoke(new EventHandler(this.frmChiTietBaotri_Load));
         }
+
+        private void btnInThongTin_Click(object sender, EventArgs e)
+        {
+            string query = $"SELECT * FROM V_XuatPhieuBaoTri WHERE MaPhieu={MaPhieu}";
+
+            rptChiTietBaoTri r = new rptChiTietBaoTri();
+            r.SetDataSource(api.CreateTable(query));
+            frmBaoCaoChiTietBaoTri f = new frmBaoCaoChiTietBaoTri();
+            f.crysInChiTietBaoTri.ReportSource= r;
+            f.ShowDialog();
+        }
     }
 }

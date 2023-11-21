@@ -33,9 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,6 +88,25 @@
     <Compile Include="CustomControls\RJToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="dsHoaDon.cs">
+      <DependentUpon>dsHoaDon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsHoaDon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsHoaDon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsKhachHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsKhachHang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmBaoCaoChiTietBaoTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBaoTriNew\frmBaoCaoChiTietBaoTri.Designer.cs">
+      <DependentUpon>frmBaoCaoChiTietBaoTri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormBaoTriNew\frmSuaChiTietPhieuBaoTri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +131,12 @@
     <Compile Include="Forms\FormBaoTriNew\frmThemPhieuBaoTri.designer.cs">
       <DependentUpon>frmThemPhieuBaoTri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormBaoTriNew\rptChiTietBaoTri.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptChiTietBaoTri.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\FormDangNhap\frmCheckAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +149,12 @@
     <Compile Include="Forms\FormDangNhap\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormHoaDon\frmBaoCaoHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHoaDon\frmBaoCaoHoaDon.Designer.cs">
+      <DependentUpon>frmBaoCaoHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormHoaDon\frmChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +166,24 @@
     </Compile>
     <Compile Include="Forms\FormHoaDon\frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHoaDon\rptInHoaDon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInHoaDon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FormKhachHang\frmInBaoCaoKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormKhachHang\frmInBaoCaoKhachHang.Designer.cs">
+      <DependentUpon>frmInBaoCaoKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormKhachHang\rptKhachHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptKhachHang.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\FormLichSuDungMay\frmLichSuDungMay.cs">
       <SubType>Form</SubType>
@@ -244,6 +299,9 @@
     <EmbeddedResource Include="CustomControls\RJTextBox.resx">
       <DependentUpon>RJTextBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBaoTriNew\frmBaoCaoChiTietBaoTri.resx">
+      <DependentUpon>frmBaoCaoChiTietBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormBaoTriNew\frmSuaChiTietPhieuBaoTri.resx">
       <DependentUpon>frmSuaChiTietPhieuBaoTri.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,11 +314,29 @@
     <EmbeddedResource Include="Forms\FormBaoTriNew\frmThemPhieuBaoTri.resx">
       <DependentUpon>frmThemPhieuBaoTri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBaoTriNew\rptChiTietBaoTri.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptChiTietBaoTri.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDangNhap\frmCheckAdmin.resx">
       <DependentUpon>frmCheckAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDangNhap\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHoaDon\frmBaoCaoHoaDon.resx">
+      <DependentUpon>frmBaoCaoHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHoaDon\rptInHoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInHoaDon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormKhachHang\frmInBaoCaoKhachHang.resx">
+      <DependentUpon>frmInBaoCaoKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormKhachHang\rptKhachHang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptKhachHang.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLichSuDungMay\frmLichSuDungMay.resx">
       <DependentUpon>frmLichSuDungMay.cs</DependentUpon>
@@ -332,6 +408,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="dsHoaDon.xsc">
+      <DependentUpon>dsHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="dsHoaDon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsHoaDon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsHoaDon.xss">
+      <DependentUpon>dsHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="dsKhachHang.xsc">
+      <DependentUpon>dsKhachHang.xsd</DependentUpon>
+    </None>
+    <None Include="dsKhachHang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsKhachHang.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsKhachHang.xss">
+      <DependentUpon>dsKhachHang.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -431,6 +529,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-maintenance-45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

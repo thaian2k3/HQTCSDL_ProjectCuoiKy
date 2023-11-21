@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project_CuoiKy.Forms.FormKhachHang;
 
 namespace Project_CuoiKy.Forms
 {
@@ -20,6 +21,9 @@ namespace Project_CuoiKy.Forms
         public frmKhachHang()
         {
             InitializeComponent();
+
+            dgvKhachHang.AutoSize = false;
+            dgvKhachHang.ScrollBars = ScrollBars.Both;
         }
 
         public void LoadData()
@@ -86,6 +90,17 @@ namespace Project_CuoiKy.Forms
         {
             string query = $"SELECT * FROM dbo.func_TimKhachHang('{txtTimKiem.Texts}')";
             dgvKhachHang.DataSource = api.TimKiemKhachHang(query);
+        }
+
+        private void btnInThongTin_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM V_ThongTinKhachHang";
+            
+            rptKhachHang r = new rptKhachHang();
+            r.SetDataSource(api.CreateTable(query));
+            frmInBaoCaoKhachHang f = new frmInBaoCaoKhachHang();
+            f.crysBaoCaoKhachHang.ReportSource = r;
+            f.ShowDialog();
         }
     }
 }

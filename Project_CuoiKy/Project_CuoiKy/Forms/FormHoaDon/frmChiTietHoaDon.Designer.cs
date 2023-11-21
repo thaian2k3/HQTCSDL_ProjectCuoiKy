@@ -50,6 +50,7 @@
             this.btnSua = new CustomControls.RJControls.RJButton();
             this.txtSoLuong = new CustomControls.RJControls.RJTextBox();
             this.lblSoLuong = new System.Windows.Forms.Label();
+            this.btnInHoaDon = new CustomControls.RJControls.RJButton();
             this.pnlBody.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).BeginInit();
@@ -68,6 +69,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnInHoaDon);
             this.panel1.Controls.Add(this.btnThanhToan);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 472);
@@ -91,7 +93,7 @@
             this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThanhToan.Location = new System.Drawing.Point(731, 24);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(5);
             this.btnThanhToan.Size = new System.Drawing.Size(130, 40);
             this.btnThanhToan.TabIndex = 55;
             this.btnThanhToan.Text = "Thanh toán";
@@ -286,7 +288,7 @@
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(289, 10);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSua.Padding = new System.Windows.Forms.Padding(5);
             this.btnSua.Size = new System.Drawing.Size(84, 40);
             this.btnSua.TabIndex = 53;
             this.btnSua.Text = "Sửa";
@@ -305,7 +307,7 @@
             this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSoLuong.Location = new System.Drawing.Point(95, 15);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Multiline = false;
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -331,6 +333,31 @@
             this.lblSoLuong.TabIndex = 0;
             this.lblSoLuong.Text = "Số lượng";
             // 
+            // btnInHoaDon
+            // 
+            this.btnInHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnInHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnInHoaDon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnInHoaDon.BorderRadius = 18;
+            this.btnInHoaDon.BorderSize = 2;
+            this.btnInHoaDon.FlatAppearance.BorderSize = 0;
+            this.btnInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnInHoaDon.Image = global::Project_CuoiKy.Properties.Resources.icons8_print_30;
+            this.btnInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInHoaDon.Location = new System.Drawing.Point(582, 24);
+            this.btnInHoaDon.Name = "btnInHoaDon";
+            this.btnInHoaDon.Padding = new System.Windows.Forms.Padding(5);
+            this.btnInHoaDon.Size = new System.Drawing.Size(130, 40);
+            this.btnInHoaDon.TabIndex = 56;
+            this.btnInHoaDon.Text = "In hóa đơn";
+            this.btnInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInHoaDon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnInHoaDon.UseVisualStyleBackColor = false;
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
+            // 
             // frmChiTietHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,7 +366,7 @@
             this.ClientSize = new System.Drawing.Size(889, 624);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmChiTietHoaDon";
             this.Text = "frmChiTietHoaDon";
             this.Load += new System.EventHandler(this.frmChiTietHoaDon_Load);
@@ -372,5 +399,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TongGiaTri;
         private System.Windows.Forms.Panel panel1;
         private CustomControls.RJControls.RJButton btnThanhToan;
+        private CustomControls.RJControls.RJButton btnInHoaDon;
     }
 }

@@ -35,6 +35,7 @@ namespace Project_CuoiKy.Forms.FormHoaDon
             dgvChiTietBaoTri.DataSource = api.CreateTable(query);
 
             btnThanhToan.Enabled = !isPaid;
+            btnInHoaDon.Enabled = isPaid;
         }
 
         private void dgvChiTietHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -74,9 +75,8 @@ namespace Project_CuoiKy.Forms.FormHoaDon
                 string query = $"UPDATE HoaDon SET TinhTrang = N'Đã thanh toán' WHERE MaHD='{maHD}'";
                 this.DialogResult = api.ExecQuery(query, "Thanh toán hóa đơn thành công") ? DialogResult.OK : DialogResult.None;
                 btnThanhToan.Enabled = false;
+                btnInHoaDon.Enabled = true;
                 LoadData();
-
-                
             }
         }
 
@@ -98,6 +98,17 @@ namespace Project_CuoiKy.Forms.FormHoaDon
                 // Nếu không phải số, không cho phép ký tự được nhập vào TextBox
                 e.Handled = true;
             }
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            string query = $"Exec proc_InChiTietHoaDon {maHD}";
+
+            rptInHoaDon r = new rptInHoaDon();
+            r.SetDataSource(api.CreateTable(query));
+            frmBaoCaoHoaDon f = new frmBaoCaoHoaDon();
+            f.crysBaoCaoHoaDon.ReportSource = r;
+            f.ShowDialog();
         }
     }
 }

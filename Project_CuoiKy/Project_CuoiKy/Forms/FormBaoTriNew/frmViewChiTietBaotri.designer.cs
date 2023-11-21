@@ -32,6 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlBody = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnInThongTin = new CustomControls.RJControls.RJButton();
             this.dgvChiTietBaoTri = new System.Windows.Forms.DataGridView();
             this.MaLK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaPhieuBT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,18 +51,56 @@
             this.btnThem = new CustomControls.RJControls.RJButton();
             this.lblBoLoc = new System.Windows.Forms.Label();
             this.pnlBody.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).BeginInit();
             this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBody
             // 
+            this.pnlBody.Controls.Add(this.panel1);
             this.pnlBody.Controls.Add(this.dgvChiTietBaoTri);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.Location = new System.Drawing.Point(0, 63);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(1070, 488);
+            this.pnlBody.Size = new System.Drawing.Size(1070, 586);
             this.pnlBody.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnInThongTin);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 495);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1070, 91);
+            this.panel1.TabIndex = 7;
+            // 
+            // btnInThongTin
+            // 
+            this.btnInThongTin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnInThongTin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnInThongTin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnInThongTin.BorderRadius = 18;
+            this.btnInThongTin.BorderSize = 2;
+            this.btnInThongTin.FlatAppearance.BorderSize = 0;
+            this.btnInThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInThongTin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnInThongTin.Image = global::Project_CuoiKy.Properties.Resources.icons8_print_30;
+            this.btnInThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInThongTin.Location = new System.Drawing.Point(918, 18);
+            this.btnInThongTin.Name = "btnInThongTin";
+            this.btnInThongTin.Padding = new System.Windows.Forms.Padding(5);
+            this.btnInThongTin.Size = new System.Drawing.Size(131, 45);
+            this.btnInThongTin.TabIndex = 29;
+            this.btnInThongTin.Text = "In thông tin";
+            this.btnInThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInThongTin.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnInThongTin.UseVisualStyleBackColor = false;
+            this.btnInThongTin.Click += new System.EventHandler(this.btnInThongTin_Click);
             // 
             // dgvChiTietBaoTri
             // 
@@ -116,7 +156,7 @@
             this.dgvChiTietBaoTri.RowTemplate.ReadOnly = true;
             this.dgvChiTietBaoTri.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvChiTietBaoTri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvChiTietBaoTri.Size = new System.Drawing.Size(1070, 488);
+            this.dgvChiTietBaoTri.Size = new System.Drawing.Size(1070, 586);
             this.dgvChiTietBaoTri.TabIndex = 0;
             this.dgvChiTietBaoTri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietBaoTri_CellClick);
             // 
@@ -257,7 +297,7 @@
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRefresh.Location = new System.Drawing.Point(816, 10);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5);
             this.btnRefresh.Size = new System.Drawing.Size(97, 40);
             this.btnRefresh.TabIndex = 63;
             this.btnRefresh.Text = "Reset";
@@ -281,7 +321,7 @@
             this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_add_30;
             this.btnThem.Location = new System.Drawing.Point(956, 10);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThem.Padding = new System.Windows.Forms.Padding(5);
             this.btnThem.Size = new System.Drawing.Size(93, 40);
             this.btnThem.TabIndex = 64;
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -305,14 +345,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 551);
+            this.ClientSize = new System.Drawing.Size(1070, 649);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmViewChiTietBaotri";
             this.Text = "frmBaotri";
             this.Load += new System.EventHandler(this.frmChiTietBaotri_Load);
             this.pnlBody.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).EndInit();
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
@@ -339,5 +380,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBaoTri;
         private System.Windows.Forms.DataGridViewImageColumn change;
         private System.Windows.Forms.DataGridViewImageColumn delete;
+        private System.Windows.Forms.Panel panel1;
+        private CustomControls.RJControls.RJButton btnInThongTin;
     }
 }

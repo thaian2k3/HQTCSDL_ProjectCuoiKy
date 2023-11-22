@@ -81,10 +81,10 @@
             this.pnlFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlFooter.Controls.Add(this.btnInThongTin);
             this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFooter.Location = new System.Drawing.Point(0, 468);
+            this.pnlFooter.Location = new System.Drawing.Point(0, 435);
             this.pnlFooter.Margin = new System.Windows.Forms.Padding(4);
             this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(1016, 77);
+            this.pnlFooter.Size = new System.Drawing.Size(1016, 110);
             this.pnlFooter.TabIndex = 3;
             // 
             // btnInThongTin
@@ -101,7 +101,7 @@
             this.btnInThongTin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnInThongTin.Image = global::Project_CuoiKy.Properties.Resources.icons8_print_30;
             this.btnInThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInThongTin.Location = new System.Drawing.Point(848, 19);
+            this.btnInThongTin.Location = new System.Drawing.Point(848, 14);
             this.btnInThongTin.Name = "btnInThongTin";
             this.btnInThongTin.Padding = new System.Windows.Forms.Padding(5);
             this.btnInThongTin.Size = new System.Drawing.Size(148, 45);

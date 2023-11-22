@@ -40,5 +40,6 @@ namespace Project_CuoiKy.Forms.FormHoaDon
 
             crysDoanhThu.ReportSource = r;
         }
+      
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.btnRefresh = new CustomControls.RJControls.RJButton();
             this.dtpNgayCuoi = new CustomControls.RJControls.RJDatePicker();
             this.dtpNgayDau = new CustomControls.RJControls.RJDatePicker();
             this.lblGach = new System.Windows.Forms.Label();
@@ -43,7 +42,6 @@
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.pnlHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlHeader.Controls.Add(this.btnRefresh);
             this.pnlHeader.Controls.Add(this.dtpNgayCuoi);
             this.pnlHeader.Controls.Add(this.dtpNgayDau);
             this.pnlHeader.Controls.Add(this.lblGach);
@@ -55,29 +53,6 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(986, 77);
             this.pnlHeader.TabIndex = 3;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnRefresh.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnRefresh.BorderRadius = 18;
-            this.btnRefresh.BorderSize = 2;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(445, 16);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5);
-            this.btnRefresh.Size = new System.Drawing.Size(97, 40);
-            this.btnRefresh.TabIndex = 62;
-            this.btnRefresh.Text = "Reset";
-            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnRefresh.UseVisualStyleBackColor = false;
             // 
             // dtpNgayCuoi
             // 
@@ -183,7 +158,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlHeader;
-        private CustomControls.RJControls.RJButton btnRefresh;
         private CustomControls.RJControls.RJDatePicker dtpNgayCuoi;
         private CustomControls.RJControls.RJDatePicker dtpNgayDau;
         private System.Windows.Forms.Label lblGach;

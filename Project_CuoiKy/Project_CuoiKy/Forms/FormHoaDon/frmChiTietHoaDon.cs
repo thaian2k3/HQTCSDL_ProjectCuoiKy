@@ -36,12 +36,15 @@ namespace Project_CuoiKy.Forms.FormHoaDon
 
             btnThanhToan.Enabled = !isPaid;
             btnInHoaDon.Enabled = isPaid;
+            btnSua.Visible = !isPaid;
+            txtSoLuong.Visible = !isPaid;
+            lblSoLuong.Visible = !isPaid;
         }
 
         private void dgvChiTietHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtSoLuong.Texts = helpers.DataInCol(dgvChiTietBaoTri, "SoLuong");
-            if (e.ColumnIndex == dgvChiTietBaoTri.Columns["dgvXoaHoaDon"].Index)
+            if (e.ColumnIndex == dgvChiTietBaoTri.Columns["dgvXoaHoaDon"].Index && !isPaid)
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn xóa chi tiết hóa đơn không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)

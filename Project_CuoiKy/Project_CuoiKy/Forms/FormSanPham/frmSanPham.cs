@@ -21,6 +21,7 @@ namespace Project_CuoiKy.Forms.FormSanPham
         private ApiService api = new ApiService();
         private Helpers helpers = new Helpers();
         private bool isLoading = true;
+        private bool isPaid = false;
 
         private string maHD;
         public frmSanPham()
@@ -31,6 +32,7 @@ namespace Project_CuoiKy.Forms.FormSanPham
             btnXuatHoaDon.Enabled = !(maHD is null);
 
             btnThem.Visible = ACCOUNT.Role == "ADMIN";
+            btnInHoaDon.Visible = isPaid;
         }
 
         private void LoadData()
@@ -72,9 +74,10 @@ namespace Project_CuoiKy.Forms.FormSanPham
             {
                 return;
             }
-            frmChiTietHoaDon f2 = new frmChiTietHoaDon(maHD, false);
+            frmChiTietHoaDon f2 = new frmChiTietHoaDon(maHD, isPaid);
             if (f2.ShowDialog() == DialogResult.OK)
             {
+                btnInHoaDon.Visible = isPaid = true;
                 LoadData();
             }
         }
@@ -274,6 +277,18 @@ namespace Project_CuoiKy.Forms.FormSanPham
         private void btnXuatHoaDon_Click(object sender, EventArgs e)
         {
             ShowFormChiTietHoaDon();
+            LoadDataCart(maHD);
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            string query = $"Exec proc_InChiTietHoaDon {maHD}";
+
+            rptInHoaDon r = new rptInHoaDon();
+            r.SetDataSource(api.CreateTable(query));
+            frmBaoCaoHoaDon f = new frmBaoCaoHoaDon();
+            f.crysBaoCaoHoaDon.ReportSource = r;
+            f.ShowDialog();
         }
     }
 }

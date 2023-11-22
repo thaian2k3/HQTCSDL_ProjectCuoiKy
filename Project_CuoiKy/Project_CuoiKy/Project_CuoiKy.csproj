@@ -161,11 +161,23 @@
     <Compile Include="Forms\FormHoaDon\frmChiTietHoaDon.Designer.cs">
       <DependentUpon>frmChiTietHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormHoaDon\frmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHoaDon\frmDoanhThu.Designer.cs">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormHoaDon\frmHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormHoaDon\frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHoaDon\rptDoanhThu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDoanhThu.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\FormHoaDon\rptInHoaDon.cs">
       <AutoGen>True</AutoGen>
@@ -326,6 +338,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormHoaDon\frmBaoCaoHoaDon.resx">
       <DependentUpon>frmBaoCaoHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHoaDon\frmDoanhThu.resx">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHoaDon\rptDoanhThu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDoanhThu.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormHoaDon\rptInHoaDon.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -86,5 +86,12 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         {
 
         }
+
+        private void btnInThongTin_Click(object sender, EventArgs e)
+        {
+            string ngayTao = helpers.DataInCol(dgvHoaDon, "NgayTao");
+            frmDoanhThu f = new frmDoanhThu(ngayTao);
+            f.ShowDialog();
+        }
     }
 }

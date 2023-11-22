@@ -38,6 +38,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlBody = new System.Windows.Forms.Panel();
+            this.pnlFooter = new System.Windows.Forms.Panel();
+            this.btnInThongTin = new CustomControls.RJControls.RJButton();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,19 +60,57 @@
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlBody.SuspendLayout();
+            this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBody
             // 
+            this.pnlBody.Controls.Add(this.pnlFooter);
             this.pnlBody.Controls.Add(this.dgvHoaDon);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(0, 94);
-            this.pnlBody.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlBody.Location = new System.Drawing.Point(0, 77);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(1355, 546);
+            this.pnlBody.Size = new System.Drawing.Size(1016, 545);
             this.pnlBody.TabIndex = 3;
+            // 
+            // pnlFooter
+            // 
+            this.pnlFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.pnlFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlFooter.Controls.Add(this.btnInThongTin);
+            this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlFooter.Location = new System.Drawing.Point(0, 468);
+            this.pnlFooter.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlFooter.Name = "pnlFooter";
+            this.pnlFooter.Size = new System.Drawing.Size(1016, 77);
+            this.pnlFooter.TabIndex = 3;
+            // 
+            // btnInThongTin
+            // 
+            this.btnInThongTin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnInThongTin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnInThongTin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnInThongTin.BorderRadius = 18;
+            this.btnInThongTin.BorderSize = 2;
+            this.btnInThongTin.FlatAppearance.BorderSize = 0;
+            this.btnInThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInThongTin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnInThongTin.Image = global::Project_CuoiKy.Properties.Resources.icons8_print_30;
+            this.btnInThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInThongTin.Location = new System.Drawing.Point(848, 19);
+            this.btnInThongTin.Name = "btnInThongTin";
+            this.btnInThongTin.Padding = new System.Windows.Forms.Padding(5);
+            this.btnInThongTin.Size = new System.Drawing.Size(148, 45);
+            this.btnInThongTin.TabIndex = 30;
+            this.btnInThongTin.Text = "In doanh thu";
+            this.btnInThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInThongTin.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnInThongTin.UseVisualStyleBackColor = false;
+            this.btnInThongTin.Click += new System.EventHandler(this.btnInThongTin_Click);
             // 
             // dgvHoaDon
             // 
@@ -109,7 +149,6 @@
             this.dgvHoaDon.EnableHeadersVisualStyles = false;
             this.dgvHoaDon.GridColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgvHoaDon.Location = new System.Drawing.Point(0, 0);
-            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersVisible = false;
@@ -122,7 +161,7 @@
             this.dgvHoaDon.RowTemplate.ReadOnly = true;
             this.dgvHoaDon.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvHoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHoaDon.Size = new System.Drawing.Size(1355, 546);
+            this.dgvHoaDon.Size = new System.Drawing.Size(1016, 545);
             this.dgvHoaDon.TabIndex = 0;
             this.dgvHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellClick);
             this.dgvHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellContentClick);
@@ -202,9 +241,9 @@
             this.pnlHeader.Controls.Add(this.txtTimKiem);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(5);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1355, 94);
+            this.pnlHeader.Size = new System.Drawing.Size(1016, 77);
             this.pnlHeader.TabIndex = 2;
             // 
             // btnRefresh
@@ -220,11 +259,10 @@
             this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnRefresh.Image = global::Project_CuoiKy.Properties.Resources.icons8_reset_30;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(593, 20);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Location = new System.Drawing.Point(445, 16);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnRefresh.Size = new System.Drawing.Size(129, 49);
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(5);
+            this.btnRefresh.Size = new System.Drawing.Size(97, 40);
             this.btnRefresh.TabIndex = 62;
             this.btnRefresh.Text = "Reset";
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -238,11 +276,10 @@
             this.dtpNgayCuoi.BorderSize = 0;
             this.dtpNgayCuoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.dtpNgayCuoi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayCuoi.Location = new System.Drawing.Point(332, 21);
-            this.dtpNgayCuoi.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayCuoi.Location = new System.Drawing.Point(249, 17);
             this.dtpNgayCuoi.MinimumSize = new System.Drawing.Size(4, 35);
             this.dtpNgayCuoi.Name = "dtpNgayCuoi";
-            this.dtpNgayCuoi.Size = new System.Drawing.Size(152, 35);
+            this.dtpNgayCuoi.Size = new System.Drawing.Size(115, 35);
             this.dtpNgayCuoi.SkinColor = System.Drawing.Color.MediumSlateBlue;
             this.dtpNgayCuoi.TabIndex = 61;
             this.dtpNgayCuoi.TextColor = System.Drawing.Color.White;
@@ -253,11 +290,10 @@
             this.dtpNgayDau.BorderSize = 0;
             this.dtpNgayDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.dtpNgayDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayDau.Location = new System.Drawing.Point(121, 21);
-            this.dtpNgayDau.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayDau.Location = new System.Drawing.Point(91, 17);
             this.dtpNgayDau.MinimumSize = new System.Drawing.Size(4, 35);
             this.dtpNgayDau.Name = "dtpNgayDau";
-            this.dtpNgayDau.Size = new System.Drawing.Size(147, 35);
+            this.dtpNgayDau.Size = new System.Drawing.Size(111, 35);
             this.dtpNgayDau.SkinColor = System.Drawing.Color.MediumSlateBlue;
             this.dtpNgayDau.TabIndex = 60;
             this.dtpNgayDau.TextColor = System.Drawing.Color.White;
@@ -267,10 +303,9 @@
             this.lblGach.AutoSize = true;
             this.lblGach.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGach.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblGach.Location = new System.Drawing.Point(289, 26);
-            this.lblGach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGach.Location = new System.Drawing.Point(217, 21);
             this.lblGach.Name = "lblGach";
-            this.lblGach.Size = new System.Drawing.Size(22, 29);
+            this.lblGach.Size = new System.Drawing.Size(17, 24);
             this.lblGach.TabIndex = 59;
             this.lblGach.Text = "-";
             // 
@@ -286,11 +321,11 @@
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnTim.Image = global::Project_CuoiKy.Properties.Resources.icons8_search_30;
-            this.btnTim.Location = new System.Drawing.Point(511, 20);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(5);
+            this.btnTim.Location = new System.Drawing.Point(383, 16);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(4);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Padding = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.btnTim.Size = new System.Drawing.Size(60, 50);
+            this.btnTim.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnTim.Size = new System.Drawing.Size(45, 41);
             this.btnTim.TabIndex = 58;
             this.btnTim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTim.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
@@ -302,10 +337,10 @@
             this.lblBoLoc.AutoSize = true;
             this.lblBoLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBoLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblBoLoc.Location = new System.Drawing.Point(16, 28);
-            this.lblBoLoc.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblBoLoc.Location = new System.Drawing.Point(12, 23);
+            this.lblBoLoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBoLoc.Name = "lblBoLoc";
-            this.lblBoLoc.Size = new System.Drawing.Size(72, 25);
+            this.lblBoLoc.Size = new System.Drawing.Size(59, 20);
             this.lblBoLoc.TabIndex = 47;
             this.lblBoLoc.Text = "Bộ lọc";
             // 
@@ -319,16 +354,16 @@
             this.txtTimKiem.BorderSize = 2;
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(885, 20);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtTimKiem.Location = new System.Drawing.Point(663, 16);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(5);
             this.txtTimKiem.Multiline = false;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(17, 12, 17, 12);
+            this.txtTimKiem.Padding = new System.Windows.Forms.Padding(13, 10, 13, 10);
             this.txtTimKiem.PasswordChar = false;
             this.txtTimKiem.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTimKiem.PlaceholderText = "Tìm kiếm hóa đơn";
             this.txtTimKiem.ReadOnly = false;
-            this.txtTimKiem.Size = new System.Drawing.Size(444, 50);
+            this.txtTimKiem.Size = new System.Drawing.Size(333, 41);
             this.txtTimKiem.TabIndex = 1;
             this.txtTimKiem.Texts = "";
             this.txtTimKiem.UnderlinedStyle = false;
@@ -345,7 +380,6 @@
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
-            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -358,7 +392,6 @@
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
-            this.dataGridViewImageColumn2.Width = 125;
             // 
             // dataGridViewImageColumn3
             // 
@@ -372,7 +405,6 @@
             this.dataGridViewImageColumn3.MinimumWidth = 6;
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.ReadOnly = true;
-            this.dataGridViewImageColumn3.Width = 125;
             // 
             // dataGridViewImageColumn4
             // 
@@ -386,20 +418,20 @@
             this.dataGridViewImageColumn4.MinimumWidth = 6;
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.ReadOnly = true;
-            this.dataGridViewImageColumn4.Width = 125;
             // 
             // frmHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1355, 640);
+            this.ClientSize = new System.Drawing.Size(1016, 622);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHoaDon";
             this.Text = "frmHoaDon";
             this.Load += new System.EventHandler(this.frmHoaDon_Load);
             this.pnlBody.ResumeLayout(false);
+            this.pnlFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
@@ -410,7 +442,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlBody;
-        private System.Windows.Forms.DataGridView dgvHoaDon;
         private System.Windows.Forms.Panel pnlHeader;
         private CustomControls.RJControls.RJTextBox txtTimKiem;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
@@ -429,5 +460,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TongGiaTri;
         private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
         private System.Windows.Forms.DataGridViewImageColumn dgvXacNhanThanhToan;
+        private System.Windows.Forms.Panel pnlFooter;
+        private CustomControls.RJControls.RJButton btnInThongTin;
+        private System.Windows.Forms.DataGridView dgvHoaDon;
     }
 }

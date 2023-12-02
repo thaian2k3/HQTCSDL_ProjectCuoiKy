@@ -88,7 +88,7 @@ namespace Project_CuoiKy.Forms
 
         private void txtTimKiem__TextChanged(object sender, EventArgs e)
         {
-            string query = $"SELECT * FROM dbo.func_TimKhachHang('{txtTimKiem.Texts}')";
+            string query = $"SELECT * FROM dbo.func_TimKhachHang(N'{txtTimKiem.Texts}')";
             dgvKhachHang.DataSource = api.TimKiemKhachHang(query);
         }
 

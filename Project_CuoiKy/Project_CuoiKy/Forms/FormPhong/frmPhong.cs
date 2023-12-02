@@ -118,7 +118,7 @@ namespace Project_CuoiKy.Forms.FormPhong
 
         private void txtTimKiem__TextChanged(object sender, EventArgs e)
         {
-            string query = $"SELECT * FROM dbo.func_TimPhong('{txtTimKiem.Texts}')";
+            string query = $"SELECT * FROM dbo.func_TimPhong(N'{txtTimKiem.Texts}')";
             dgvPhong.DataSource = api.CreateTable(query);
         }
 

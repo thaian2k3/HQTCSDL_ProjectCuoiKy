@@ -27,7 +27,16 @@ namespace Project_CuoiKy.Forms.FormLinhKien
   
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string maMay = cboMaMay.SelectedValue.ToString();
+            string maMay;
+            if (cboMaMay.SelectedValue != null)
+            {
+                maMay = cboMaMay.SelectedValue.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn mã máy", "Lưu ý", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+                return;
+            }
             string maNCC = cboNhaCC.SelectedValue.ToString();
             string loaiLK = cboLoaiLK.SelectedItem.ToString();
             string tenHang = txtTenHang.Texts;

@@ -41,7 +41,7 @@ namespace Project_CuoiKy.Forms.FormBaoTriNew
             {
              query = $"EXEC proc_CapNhatChiTietBaoTri {int.Parse(malk)},{int.Parse(maphieu)}, {int.Parse(sotien)}, N'{cboTinhTrang.SelectedValue}', N'{txtGhiChu.Texts}'"; 
             }
-            bool result = api.ExecQuery(query, "Sửa  thành công");
+            bool result = api.ExecQuery(query, "Sửa thành công");
             this.DialogResult = result ? DialogResult.OK : DialogResult.None;
         }
         private void LoadComboBox()

@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlBody = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnInHoaDon = new CustomControls.RJControls.RJButton();
             this.btnThanhToan = new CustomControls.RJControls.RJButton();
             this.dgvChiTietBaoTri = new System.Windows.Forms.DataGridView();
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +51,6 @@
             this.btnSua = new CustomControls.RJControls.RJButton();
             this.txtSoLuong = new CustomControls.RJControls.RJTextBox();
             this.lblSoLuong = new System.Windows.Forms.Label();
-            this.btnInHoaDon = new CustomControls.RJControls.RJButton();
             this.pnlBody.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietBaoTri)).BeginInit();
@@ -76,6 +76,31 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(889, 89);
             this.panel1.TabIndex = 1;
+            // 
+            // btnInHoaDon
+            // 
+            this.btnInHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnInHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
+            this.btnInHoaDon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
+            this.btnInHoaDon.BorderRadius = 18;
+            this.btnInHoaDon.BorderSize = 2;
+            this.btnInHoaDon.FlatAppearance.BorderSize = 0;
+            this.btnInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnInHoaDon.Image = global::Project_CuoiKy.Properties.Resources.icons8_print_30;
+            this.btnInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInHoaDon.Location = new System.Drawing.Point(582, 24);
+            this.btnInHoaDon.Name = "btnInHoaDon";
+            this.btnInHoaDon.Padding = new System.Windows.Forms.Padding(5);
+            this.btnInHoaDon.Size = new System.Drawing.Size(130, 40);
+            this.btnInHoaDon.TabIndex = 56;
+            this.btnInHoaDon.Text = "In hóa đơn";
+            this.btnInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInHoaDon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
+            this.btnInHoaDon.UseVisualStyleBackColor = false;
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
             // btnThanhToan
             // 
@@ -319,6 +344,7 @@
             this.txtSoLuong.TabIndex = 1;
             this.txtSoLuong.Texts = "";
             this.txtSoLuong.UnderlinedStyle = false;
+            this.txtSoLuong._TextChanged += new System.EventHandler(this.txtSoLuong__TextChanged);
             this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
             // lblSoLuong
@@ -332,31 +358,6 @@
             this.lblSoLuong.Size = new System.Drawing.Size(80, 20);
             this.lblSoLuong.TabIndex = 0;
             this.lblSoLuong.Text = "Số lượng";
-            // 
-            // btnInHoaDon
-            // 
-            this.btnInHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnInHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(246)))));
-            this.btnInHoaDon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(132)))), ((int)(((byte)(220)))));
-            this.btnInHoaDon.BorderRadius = 18;
-            this.btnInHoaDon.BorderSize = 2;
-            this.btnInHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnInHoaDon.Image = global::Project_CuoiKy.Properties.Resources.icons8_print_30;
-            this.btnInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInHoaDon.Location = new System.Drawing.Point(582, 24);
-            this.btnInHoaDon.Name = "btnInHoaDon";
-            this.btnInHoaDon.Padding = new System.Windows.Forms.Padding(5);
-            this.btnInHoaDon.Size = new System.Drawing.Size(130, 40);
-            this.btnInHoaDon.TabIndex = 56;
-            this.btnInHoaDon.Text = "In hóa đơn";
-            this.btnInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInHoaDon.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
-            this.btnInHoaDon.UseVisualStyleBackColor = false;
-            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
             // frmChiTietHoaDon
             // 

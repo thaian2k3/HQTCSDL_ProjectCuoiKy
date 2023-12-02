@@ -113,5 +113,10 @@ namespace Project_CuoiKy.Forms.FormHoaDon
             f.crysBaoCaoHoaDon.ReportSource = r;
             f.ShowDialog();
         }
+
+        private void txtSoLuong__TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

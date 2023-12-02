@@ -121,7 +121,7 @@
             this.txtMatKhau.Multiline = false;
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtMatKhau.PasswordChar = false;
+            this.txtMatKhau.PasswordChar = true;
             this.txtMatKhau.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMatKhau.PlaceholderText = "";
             this.txtMatKhau.ReadOnly = false;
@@ -161,6 +161,7 @@
             this.txtMaKH.BorderRadius = 15;
             this.txtMaKH.BorderSize = 2;
             this.txtMaKH.CausesValidation = false;
+            this.txtMaKH.Enabled = false;
             this.txtMaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMaKH.Location = new System.Drawing.Point(95, 131);
@@ -171,7 +172,7 @@
             this.txtMaKH.PasswordChar = false;
             this.txtMaKH.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMaKH.PlaceholderText = "";
-            this.txtMaKH.ReadOnly = false;
+            this.txtMaKH.ReadOnly = true;
             this.txtMaKH.Size = new System.Drawing.Size(250, 31);
             this.txtMaKH.TabIndex = 24;
             this.txtMaKH.Texts = "";

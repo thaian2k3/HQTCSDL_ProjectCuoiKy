@@ -192,7 +192,7 @@ namespace Project_CuoiKy.Forms.FormSanPham
 
         private void txtTimKiem__TextChanged(object sender, EventArgs e)
         {
-            string query = $"SELECT * FROM dbo.func_TimKiemSanPham('{txtTimKiem.Texts}')";
+            string query = $"SELECT * FROM dbo.func_TimKiemSanPham(N'{txtTimKiem.Texts}')";
             dgvSanPham.DataSource = api.CreateTable(query);
         }
 
@@ -247,17 +247,25 @@ namespace Project_CuoiKy.Forms.FormSanPham
             {
                 int quantity = int.Parse(helpers.DataInCol(dgvCart, "SoLuongCart"));
                 string userInput = Interaction.InputBox("Bạn muốn sửa số lượng bao nhiêu?", "Sửa số lượng sản phẩm", quantity.ToString());
+                
                 if (int.TryParse(userInput, out quantity) && quantity > 0)
                 {
                     // Thêm sản phẩm vào giỏ hàng với số lượng tương ứng
                     string maSP = helpers.DataInCol(dgvCart, "MaSPCart");
                     string oldQuantity = helpers.DataInCol(dgvCart, "SoLuongCart");
-                    string queryOldSoLuong = $"Update SanPham set SoLuongConLai = SoLuongConLai + {oldQuantity} where MaSP = {maSP}";
+                    string queryOldSoLuong = $"Update SanPham set SoLuongConLai = SoLuongConLai + {oldQuantity} where MaSP = {maSP} and SoLuongConLai > 0";
                     string query = $"Update ChiTietHoaDon set SoLuong = {quantity} where MaSP = {maSP} and MaHD = {maHD}";
-                    api.ExecQuery(queryOldSoLuong, "", false);
-                    api.ExecQuery(query, "Sửa số lượng thành công", false);
+                    if(api.ExecQuery(queryOldSoLuong, "", false))
+                    {
+                        api.ExecQuery(query, "Sửa số lượng thành công", false);
+                    }
                     LoadDataCart(maHD);
                     LoadData();
+                }
+                else
+                {
+                    // Hiển thị thông báo lỗi nếu người dùng nhập giá trị không hợp lệ
+                    MessageBox.Show("Số lượng không hợp lệ. Vui lòng nhập lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if (e.ColumnIndex == dgvCart.Columns["dgvXoaCart"].Index)
@@ -272,6 +280,7 @@ namespace Project_CuoiKy.Forms.FormSanPham
                 LoadData();
                 LoadDataCart(maHD);
             }
+            
         }
 
         private void btnXuatHoaDon_Click(object sender, EventArgs e)

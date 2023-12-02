@@ -16,7 +16,6 @@ namespace Project_CuoiKy.Forms.FormHoaDon
     {
         ApiService api = new ApiService();
         Helpers helper = new Helpers();
-        private string ngayTao;
 
         public frmDoanhThu()
         {
@@ -26,20 +25,47 @@ namespace Project_CuoiKy.Forms.FormHoaDon
         public frmDoanhThu(string ngayTao)
         {
             InitializeComponent();
-            this.ngayTao = ngayTao;
+        }
+
+        private void XuatDoanhThu(DateTime ngayDau, DateTime ngayCuoi)
+        {
+            string query = $"EXEC proc_LocHoaDonTheoNgay '{ngayDau}', '{ngayCuoi}'";
+            rptDoanhThu r = new rptDoanhThu();
+            r.SetDataSource(api.CreateTable(query));
+            r.SetParameterValue("pStartDate", ngayDau);
+            r.SetParameterValue("pEndDate", ngayCuoi);
+
+            crysDoanhThu.ReportSource = r;
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            
-            string query = $"EXEC proc_LocHoaDonTheoNgay '{dtpNgayDau.Value}', '{dtpNgayCuoi.Value}'";
-            rptDoanhThu r = new rptDoanhThu();
-            r.SetDataSource(api.CreateTable(query));
-            r.SetParameterValue("pStartDate", dtpNgayDau.Value);
-            r.SetParameterValue("pEndDate", dtpNgayCuoi.Value);
+            //string query = $"EXEC proc_LocHoaDonTheoNgay '{dtpNgayDau.Value}', '{dtpNgayCuoi.Value}'";
+            //rptDoanhThu r = new rptDoanhThu();
+            //r.SetDataSource(api.CreateTable(query));
+            //r.SetParameterValue("pStartDate", dtpNgayDau.Value);
+            //r.SetParameterValue("pEndDate", dtpNgayCuoi.Value);
 
-            crysDoanhThu.ReportSource = r;
+            //crysDoanhThu.ReportSource = r;
+            XuatDoanhThu(dtpNgayDau.Value, dtpNgayCuoi.Value);
         }
-      
+
+        private void btnWeek_Click(object sender, EventArgs e)
+        {
+            dtpNgayCuoi.Value = dtpNgayDau.Value.AddDays(7);
+            XuatDoanhThu(dtpNgayDau.Value, dtpNgayCuoi.Value);
+        }
+
+        private void btnMonth_Click(object sender, EventArgs e)
+        {
+            dtpNgayCuoi.Value = dtpNgayDau.Value.AddMonths(1);
+            XuatDoanhThu(dtpNgayDau.Value, dtpNgayCuoi.Value);
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            dtpNgayCuoi.Value = dtpNgayDau.Value.AddYears(1);
+            XuatDoanhThu(dtpNgayDau.Value, dtpNgayCuoi.Value);
+        }
     }
 }

@@ -49,10 +49,9 @@
             this.lblModel.AutoSize = true;
             this.lblModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblModel.Location = new System.Drawing.Point(346, 503);
-            this.lblModel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblModel.Location = new System.Drawing.Point(260, 409);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(66, 25);
+            this.lblModel.Size = new System.Drawing.Size(52, 20);
             this.lblModel.TabIndex = 64;
             this.lblModel.Text = "Model";
             // 
@@ -61,10 +60,9 @@
             this.lblTenHang.AutoSize = true;
             this.lblTenHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblTenHang.Location = new System.Drawing.Point(346, 408);
-            this.lblTenHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTenHang.Location = new System.Drawing.Point(260, 332);
             this.lblTenHang.Name = "lblTenHang";
-            this.lblTenHang.Size = new System.Drawing.Size(96, 25);
+            this.lblTenHang.Size = new System.Drawing.Size(76, 20);
             this.lblTenHang.TabIndex = 63;
             this.lblTenHang.Text = "Tên hãng";
             // 
@@ -73,10 +71,9 @@
             this.lblLoaiLK.AutoSize = true;
             this.lblLoaiLK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoaiLK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblLoaiLK.Location = new System.Drawing.Point(347, 317);
-            this.lblLoaiLK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLoaiLK.Location = new System.Drawing.Point(260, 258);
             this.lblLoaiLK.Name = "lblLoaiLK";
-            this.lblLoaiLK.Size = new System.Drawing.Size(125, 25);
+            this.lblLoaiLK.Size = new System.Drawing.Size(100, 20);
             this.lblLoaiLK.TabIndex = 62;
             this.lblLoaiLK.Text = "Loại linh kiện";
             // 
@@ -85,10 +82,9 @@
             this.lblMaMay.AutoSize = true;
             this.lblMaMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaMay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblMaMay.Location = new System.Drawing.Point(347, 123);
-            this.lblMaMay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMaMay.Location = new System.Drawing.Point(260, 100);
             this.lblMaMay.Name = "lblMaMay";
-            this.lblMaMay.Size = new System.Drawing.Size(358, 25);
+            this.lblMaMay.Size = new System.Drawing.Size(289, 20);
             this.lblMaMay.TabIndex = 59;
             this.lblMaMay.Text = "Bạn muốn thêm linh kiện vào máy nào ?";
             // 
@@ -97,10 +93,9 @@
             this.lblThemLinhKien.AutoSize = true;
             this.lblThemLinhKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThemLinhKien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblThemLinhKien.Location = new System.Drawing.Point(434, 62);
-            this.lblThemLinhKien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblThemLinhKien.Location = new System.Drawing.Point(326, 50);
             this.lblThemLinhKien.Name = "lblThemLinhKien";
-            this.lblThemLinhKien.Size = new System.Drawing.Size(203, 31);
+            this.lblThemLinhKien.Size = new System.Drawing.Size(166, 25);
             this.lblThemLinhKien.TabIndex = 58;
             this.lblThemLinhKien.Text = "Thêm linh kiện";
             // 
@@ -109,10 +104,9 @@
             this.lblNhaCC.AutoSize = true;
             this.lblNhaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNhaCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblNhaCC.Location = new System.Drawing.Point(346, 224);
-            this.lblNhaCC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNhaCC.Location = new System.Drawing.Point(260, 182);
             this.lblNhaCC.Name = "lblNhaCC";
-            this.lblNhaCC.Size = new System.Drawing.Size(133, 25);
+            this.lblNhaCC.Size = new System.Drawing.Size(107, 20);
             this.lblNhaCC.TabIndex = 69;
             this.lblNhaCC.Text = "Nhà cung cấp";
             // 
@@ -121,10 +115,9 @@
             this.lblThongSo.AutoSize = true;
             this.lblThongSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongSo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.lblThongSo.Location = new System.Drawing.Point(347, 597);
-            this.lblThongSo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblThongSo.Location = new System.Drawing.Point(260, 485);
             this.lblThongSo.Name = "lblThongSo";
-            this.lblThongSo.Size = new System.Drawing.Size(95, 25);
+            this.lblThongSo.Size = new System.Drawing.Size(75, 20);
             this.lblThongSo.TabIndex = 70;
             this.lblThongSo.Text = "Thông số";
             // 
@@ -144,13 +137,12 @@
             "Chuột"});
             this.cboLoaiLK.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cboLoaiLK.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboLoaiLK.Location = new System.Drawing.Point(351, 356);
-            this.cboLoaiLK.Margin = new System.Windows.Forms.Padding(4);
-            this.cboLoaiLK.MinimumSize = new System.Drawing.Size(267, 37);
+            this.cboLoaiLK.Location = new System.Drawing.Point(263, 289);
+            this.cboLoaiLK.MinimumSize = new System.Drawing.Size(200, 30);
             this.cboLoaiLK.Name = "cboLoaiLK";
             this.cboLoaiLK.Padding = new System.Windows.Forms.Padding(1);
             this.cboLoaiLK.SelectedValue = null;
-            this.cboLoaiLK.Size = new System.Drawing.Size(364, 37);
+            this.cboLoaiLK.Size = new System.Drawing.Size(273, 30);
             this.cboLoaiLK.TabIndex = 72;
             this.cboLoaiLK.Texts = "Loại linh kiện";
             // 
@@ -163,16 +155,16 @@
             this.txtThongSo.BorderSize = 2;
             this.txtThongSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThongSo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtThongSo.Location = new System.Drawing.Point(347, 626);
-            this.txtThongSo.Margin = new System.Windows.Forms.Padding(5);
+            this.txtThongSo.Location = new System.Drawing.Point(260, 509);
+            this.txtThongSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtThongSo.Multiline = false;
             this.txtThongSo.Name = "txtThongSo";
-            this.txtThongSo.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.txtThongSo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtThongSo.PasswordChar = false;
             this.txtThongSo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtThongSo.PlaceholderText = "";
             this.txtThongSo.ReadOnly = false;
-            this.txtThongSo.Size = new System.Drawing.Size(369, 39);
+            this.txtThongSo.Size = new System.Drawing.Size(277, 31);
             this.txtThongSo.TabIndex = 71;
             this.txtThongSo.Texts = "";
             this.txtThongSo.UnderlinedStyle = false;
@@ -188,13 +180,12 @@
             this.cboNhaCC.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.cboNhaCC.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cboNhaCC.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboNhaCC.Location = new System.Drawing.Point(351, 262);
-            this.cboNhaCC.Margin = new System.Windows.Forms.Padding(4);
-            this.cboNhaCC.MinimumSize = new System.Drawing.Size(267, 37);
+            this.cboNhaCC.Location = new System.Drawing.Point(263, 213);
+            this.cboNhaCC.MinimumSize = new System.Drawing.Size(200, 30);
             this.cboNhaCC.Name = "cboNhaCC";
             this.cboNhaCC.Padding = new System.Windows.Forms.Padding(1);
             this.cboNhaCC.SelectedValue = null;
-            this.cboNhaCC.Size = new System.Drawing.Size(364, 37);
+            this.cboNhaCC.Size = new System.Drawing.Size(273, 30);
             this.cboNhaCC.TabIndex = 68;
             this.cboNhaCC.Texts = "";
             // 
@@ -207,16 +198,16 @@
             this.txtModel.BorderSize = 2;
             this.txtModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtModel.Location = new System.Drawing.Point(346, 532);
-            this.txtModel.Margin = new System.Windows.Forms.Padding(5);
+            this.txtModel.Location = new System.Drawing.Point(260, 432);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtModel.Multiline = false;
             this.txtModel.Name = "txtModel";
-            this.txtModel.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.txtModel.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtModel.PasswordChar = false;
             this.txtModel.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtModel.PlaceholderText = "";
             this.txtModel.ReadOnly = false;
-            this.txtModel.Size = new System.Drawing.Size(369, 39);
+            this.txtModel.Size = new System.Drawing.Size(277, 31);
             this.txtModel.TabIndex = 67;
             this.txtModel.Texts = "";
             this.txtModel.UnderlinedStyle = false;
@@ -230,16 +221,16 @@
             this.txtTenHang.BorderSize = 2;
             this.txtTenHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTenHang.Location = new System.Drawing.Point(347, 437);
-            this.txtTenHang.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTenHang.Location = new System.Drawing.Point(260, 355);
+            this.txtTenHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenHang.Multiline = false;
             this.txtTenHang.Name = "txtTenHang";
-            this.txtTenHang.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.txtTenHang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtTenHang.PasswordChar = false;
             this.txtTenHang.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTenHang.PlaceholderText = "";
             this.txtTenHang.ReadOnly = false;
-            this.txtTenHang.Size = new System.Drawing.Size(369, 39);
+            this.txtTenHang.Size = new System.Drawing.Size(277, 31);
             this.txtTenHang.TabIndex = 66;
             this.txtTenHang.Texts = "";
             this.txtTenHang.UnderlinedStyle = false;
@@ -255,13 +246,12 @@
             this.cboMaMay.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.cboMaMay.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cboMaMay.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboMaMay.Location = new System.Drawing.Point(352, 173);
-            this.cboMaMay.Margin = new System.Windows.Forms.Padding(4);
-            this.cboMaMay.MinimumSize = new System.Drawing.Size(267, 37);
+            this.cboMaMay.Location = new System.Drawing.Point(264, 141);
+            this.cboMaMay.MinimumSize = new System.Drawing.Size(200, 30);
             this.cboMaMay.Name = "cboMaMay";
             this.cboMaMay.Padding = new System.Windows.Forms.Padding(1);
             this.cboMaMay.SelectedValue = null;
-            this.cboMaMay.Size = new System.Drawing.Size(364, 37);
+            this.cboMaMay.Size = new System.Drawing.Size(273, 30);
             this.cboMaMay.TabIndex = 61;
             this.cboMaMay.Texts = "";
             // 
@@ -279,13 +269,12 @@
             this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnThem.Image = global::Project_CuoiKy.Properties.Resources.icons8_edit_30;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(440, 691);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Location = new System.Drawing.Point(314, 563);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnThem.Size = new System.Drawing.Size(182, 49);
+            this.btnThem.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnThem.Size = new System.Drawing.Size(162, 40);
             this.btnThem.TabIndex = 60;
-            this.btnThem.Text = "Lưu thông tin";
+            this.btnThem.Text = "Thêm linh kiện";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(102)))), ((int)(((byte)(157)))));
             this.btnThem.UseVisualStyleBackColor = false;
@@ -293,10 +282,10 @@
             // 
             // frmThemLinhKien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(1067, 774);
+            this.ClientSize = new System.Drawing.Size(800, 629);
             this.Controls.Add(this.cboLoaiLK);
             this.Controls.Add(this.txtThongSo);
             this.Controls.Add(this.lblThongSo);
@@ -311,6 +300,7 @@
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.lblMaMay);
             this.Controls.Add(this.lblThemLinhKien);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmThemLinhKien";
             this.Text = "frmThemLinhKien";
             this.Load += new System.EventHandler(this.frmThemLinhKien_Load);

@@ -54,7 +54,7 @@ namespace Project_CuoiKy.Forms.FormBaoTri
         }
         private void LoadComboBox()
         {
-            cboMaLK = helpers.CboData("Select distinct MaLK from LinhKien", cboMaLK, "MaLK");
+            cboMaLK = helpers.CboData("Select distinct MaLK from LinhKien WHERE MaLK not in (select MaLK from ChiTietPhieuBaoTri)", cboMaLK, "MaLK");
             cboMaLK.Texts = "Chọn mã linh kiện";
         }
 

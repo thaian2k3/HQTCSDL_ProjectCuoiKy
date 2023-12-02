@@ -41,7 +41,6 @@ namespace Project_CuoiKy.Forms.FormLinhKien
             this.model = txtModel.Texts = model;
             this.tenHang = txtTenHang.Texts = tenHang;
             this.thongSo = txtThongSo.Texts = thongSo;
-            this.tinhTrang = txtTinhTrang.Texts = tinhTrang;
             this.loaiLinhKien = loaiLK;
             this.maNhaCC = maNCC;
             this.maMay = maMay;
@@ -65,9 +64,8 @@ namespace Project_CuoiKy.Forms.FormLinhKien
             string loaiLK = cboLoaiLK.SelectedValue.ToString();
             string tenHang = txtTenHang.Texts;
             string model = txtModel.Texts;
-            string tinhTrang = txtTinhTrang.Texts;
             string thongSo = txtThongSo.Texts;
-            string query = $"EXEC proc_SuaLinhKien {maLK}, {maMay}, {maNCC}, N'{loaiLK}', N'{tenHang}', N'{model}', N'{tinhTrang}', N'{thongSo}'";
+            string query = $"EXEC proc_SuaLinhKien {maLK}, {maMay}, {maNCC}, N'{loaiLK}', N'{tenHang}', N'{model}', N'{thongSo}'";
             this.DialogResult = api.ExecQuery(query, "Sửa linh kiện thành công") ? DialogResult.OK : DialogResult.None;
         }
 

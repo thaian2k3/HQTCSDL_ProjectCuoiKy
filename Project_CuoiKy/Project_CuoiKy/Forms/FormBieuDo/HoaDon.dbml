@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HQTCSDL_Project" Class="HoaDonDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-U2CN98S\SQLEXPRESS;Initial Catalog=HQTCSDL_Project;Integrated Security=True" SettingsObjectName="Project_CuoiKy.Properties.Settings" SettingsPropertyName="HQTCSDL_ProjectConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.HoaDon" Member="HoaDons">
+    <Type Name="HoaDon">
+      <Column Name="MaHD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaKH" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="TongGiaTri" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

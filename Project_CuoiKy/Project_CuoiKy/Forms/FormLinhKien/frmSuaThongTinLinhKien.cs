@@ -25,7 +25,6 @@ namespace Project_CuoiKy.Forms.FormLinhKien
         private string maNhaCC;
         private string loaiLinhKien;
         private string tenHang;
-        private string tinhTrang;
         private string thongSo;
         private string model;
         public frmSuaThongTinLinhKien()

@@ -100,5 +100,10 @@ namespace Project_CuoiKy
         {
             OpenChildForm(new Forms.FormBaoTri.frmPhieuBaoTri());
         }
+
+        private void btnBieuDo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormBieuDo.frmBieuDo());
+        }
     }
 }

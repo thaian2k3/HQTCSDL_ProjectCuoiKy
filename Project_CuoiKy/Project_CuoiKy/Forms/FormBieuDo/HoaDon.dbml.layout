@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HoaDon">
+  <DataContextMoniker Name="/HoaDonDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3705e5ba-377d-4d01-9aae-9252652aaa95" absoluteBounds="2.125, 1.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/HoaDonDataContext/HoaDon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9cff0e70-c1db-458f-8eac-e85f4b4d1504" absoluteBounds="2.14, 2.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
